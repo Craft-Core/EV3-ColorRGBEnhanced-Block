@@ -94,6 +94,15 @@
       <Parameter Name="D_Brown_in" Identification="Identification_Select.png" DataType="Single" Direction="Input" DefaultValue="0" />
       <Parameter Name="D_Pink_in" Identification="Identification_Select.png" DataType="Single" Direction="Input" DefaultValue="0" />
 
+
+      <Parameter Name="En_Red" Identification="Identification_Select.png" DataType="Single" Direction="Input" DefaultValue="1" />
+      <Parameter Name="En_Green" Identification="Identification_Select.png" DataType="Single" Direction="Input" DefaultValue="1" />
+      <Parameter Name="En_Blue" Identification="Identification_Select.png" DataType="Single" Direction="Input" DefaultValue="1" />
+      <Parameter Name="En_Yellow" Identification="Identification_Select.png" DataType="Single" Direction="Input" DefaultValue="1" />
+      <Parameter Name="En_White" Identification="Identification_Select.png" DataType="Single" Direction="Input" DefaultValue="1" />
+      <Parameter Name="En_Black" Identification="Identification_Select.png" DataType="Single" Direction="Input" DefaultValue="1" />
+      <Parameter Name="En_Brown" Identification="Identification_Select.png" DataType="Single" Direction="Input" DefaultValue="1" />
+      <Parameter Name="En_Pink" Identification="Identification_Select.png" DataType="Single" Direction="Input" DefaultValue="1" />
       <Parameter Name="BestColor" Identification="Identification_Select.png" DataType="Single" Direction="Output" />
       <Parameter Name="BestDistance" Identification="Identification_Select.png" DataType="Single" Direction="Output" />
 
@@ -172,6 +181,19 @@
           <ParameterReference Name="Ref_R" />
           <ParameterReference Name="Ref_G" />
           <ParameterReference Name="Ref_B" />
+          <Flags>PBROnly</Flags>
+        </Block>
+        <Block>
+          <Mode>Setup_Enable</Mode>
+          <Reference Type="VILib" Name="ColorClassifier_Setup_Enable.vix" />
+          <ParameterReference Name="En_Red" />
+          <ParameterReference Name="En_Green" />
+          <ParameterReference Name="En_Blue" />
+          <ParameterReference Name="En_Yellow" />
+          <ParameterReference Name="En_White" />
+          <ParameterReference Name="En_Black" />
+          <ParameterReference Name="En_Brown" />
+          <ParameterReference Name="En_Pink" />
           <Flags>PBROnly</Flags>
         </Block>
       </Category>

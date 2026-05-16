@@ -80,6 +80,30 @@
       <Parameter Name="Ref_B" DisplayName="Riferimento B">
         <Description><![CDATA[<p>Valore blu del colore predefinito da memorizzare</p>]]></Description>
       </Parameter>
+      <Parameter Name="En_Red" DisplayName="Attiva Rosso">
+        <Description><![CDATA[<p>1 = includi Rosso nella classificazione, 0 = ignora Rosso</p>]]></Description>
+      </Parameter>
+      <Parameter Name="En_Green" DisplayName="Attiva Verde">
+        <Description><![CDATA[<p>1 = includi Verde nella classificazione, 0 = ignora Verde</p>]]></Description>
+      </Parameter>
+      <Parameter Name="En_Blue" DisplayName="Attiva Blu">
+        <Description><![CDATA[<p>1 = includi Blu nella classificazione, 0 = ignora Blu</p>]]></Description>
+      </Parameter>
+      <Parameter Name="En_Yellow" DisplayName="Attiva Giallo">
+        <Description><![CDATA[<p>1 = includi Giallo nella classificazione, 0 = ignora Giallo</p>]]></Description>
+      </Parameter>
+      <Parameter Name="En_White" DisplayName="Attiva Bianco">
+        <Description><![CDATA[<p>1 = includi Bianco nella classificazione, 0 = ignora Bianco</p>]]></Description>
+      </Parameter>
+      <Parameter Name="En_Black" DisplayName="Attiva Nero">
+        <Description><![CDATA[<p>1 = includi Nero nella classificazione, 0 = ignora Nero</p>]]></Description>
+      </Parameter>
+      <Parameter Name="En_Brown" DisplayName="Attiva Marrone">
+        <Description><![CDATA[<p>1 = includi Marrone nella classificazione, 0 = ignora Marrone</p>]]></Description>
+      </Parameter>
+      <Parameter Name="En_Pink" DisplayName="Attiva Rosa">
+        <Description><![CDATA[<p>1 = includi Rosa nella classificazione, 0 = ignora Rosa</p>]]></Description>
+      </Parameter>
       <Parameter Name="BestColor" DisplayName="Miglior colore">
         <Description><![CDATA[<p>Indice (1–8) del colore predefinito più vicino</p>]]></Description>
       </Parameter>
@@ -161,6 +185,9 @@
         </Block>
         <Block Mode="Setup_Pink" DisplayName="Imposta Rosa">
           <Description><![CDATA[<p>Memorizzare il RGB di riferimento per Rosa (predefinito: R=200, G=50, B=150). Chiamare una volta all'avvio.</p>]]></Description>
+        </Block>
+        <Block Mode="Setup_Enable" DisplayName="Attiva colori">
+          <Description><![CDATA[<p>Imposta quali colori sono attivi (1=sì, 0=no). I colori disattivati restituiscono distanza 999999 e Identifica non li seleziona mai.</p>]]></Description>
         </Block>
       </Category>
       <Block Mode="Distance" DisplayName="Distanza">

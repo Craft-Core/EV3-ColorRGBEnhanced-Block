@@ -80,6 +80,30 @@
       <Parameter Name="Ref_B" DisplayName="Reference B">
         <Description><![CDATA[<p>Blue value of the preset colour to store</p>]]></Description>
       </Parameter>
+      <Parameter Name="En_Red" DisplayName="Enable Red">
+        <Description><![CDATA[<p>1 = include Red in classification, 0 = ignore Red</p>]]></Description>
+      </Parameter>
+      <Parameter Name="En_Green" DisplayName="Enable Green">
+        <Description><![CDATA[<p>1 = include Green in classification, 0 = ignore Green</p>]]></Description>
+      </Parameter>
+      <Parameter Name="En_Blue" DisplayName="Enable Blue">
+        <Description><![CDATA[<p>1 = include Blue in classification, 0 = ignore Blue</p>]]></Description>
+      </Parameter>
+      <Parameter Name="En_Yellow" DisplayName="Enable Yellow">
+        <Description><![CDATA[<p>1 = include Yellow in classification, 0 = ignore Yellow</p>]]></Description>
+      </Parameter>
+      <Parameter Name="En_White" DisplayName="Enable White">
+        <Description><![CDATA[<p>1 = include White in classification, 0 = ignore White</p>]]></Description>
+      </Parameter>
+      <Parameter Name="En_Black" DisplayName="Enable Black">
+        <Description><![CDATA[<p>1 = include Black in classification, 0 = ignore Black</p>]]></Description>
+      </Parameter>
+      <Parameter Name="En_Brown" DisplayName="Enable Brown">
+        <Description><![CDATA[<p>1 = include Brown in classification, 0 = ignore Brown</p>]]></Description>
+      </Parameter>
+      <Parameter Name="En_Pink" DisplayName="Enable Pink">
+        <Description><![CDATA[<p>1 = include Pink in classification, 0 = ignore Pink</p>]]></Description>
+      </Parameter>
       <Parameter Name="BestColor" DisplayName="Best colour">
         <Description><![CDATA[<p>Index (1–8) of the closest preset colour</p>]]></Description>
       </Parameter>
@@ -161,6 +185,9 @@
         </Block>
         <Block Mode="Setup_Pink" DisplayName="Set up Pink">
           <Description><![CDATA[<p>Store the reference RGB for Pink (default: R=200, G=50, B=150). Call once at programme start.</p>]]></Description>
+        </Block>
+        <Block Mode="Setup_Enable" DisplayName="Enable colours">
+          <Description><![CDATA[<p>Set which colours are active (1=on, 0=off). Disabled colours output distance 999999 and are never picked by Identify.</p>]]></Description>
         </Block>
       </Category>
       <Block Mode="Distance" DisplayName="Distance">

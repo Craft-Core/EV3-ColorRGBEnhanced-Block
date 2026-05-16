@@ -80,6 +80,30 @@
       <Parameter Name="Ref_B" DisplayName="Référence B">
         <Description><![CDATA[<p>Valeur bleue de la couleur à enregistrer</p>]]></Description>
       </Parameter>
+      <Parameter Name="En_Red" DisplayName="Activer Rouge">
+        <Description><![CDATA[<p>1 = inclure Rouge dans la classification, 0 = ignorer Rouge</p>]]></Description>
+      </Parameter>
+      <Parameter Name="En_Green" DisplayName="Activer Vert">
+        <Description><![CDATA[<p>1 = inclure Vert dans la classification, 0 = ignorer Vert</p>]]></Description>
+      </Parameter>
+      <Parameter Name="En_Blue" DisplayName="Activer Bleu">
+        <Description><![CDATA[<p>1 = inclure Bleu dans la classification, 0 = ignorer Bleu</p>]]></Description>
+      </Parameter>
+      <Parameter Name="En_Yellow" DisplayName="Activer Jaune">
+        <Description><![CDATA[<p>1 = inclure Jaune dans la classification, 0 = ignorer Jaune</p>]]></Description>
+      </Parameter>
+      <Parameter Name="En_White" DisplayName="Activer Blanc">
+        <Description><![CDATA[<p>1 = inclure Blanc dans la classification, 0 = ignorer Blanc</p>]]></Description>
+      </Parameter>
+      <Parameter Name="En_Black" DisplayName="Activer Noir">
+        <Description><![CDATA[<p>1 = inclure Noir dans la classification, 0 = ignorer Noir</p>]]></Description>
+      </Parameter>
+      <Parameter Name="En_Brown" DisplayName="Activer Marron">
+        <Description><![CDATA[<p>1 = inclure Marron dans la classification, 0 = ignorer Marron</p>]]></Description>
+      </Parameter>
+      <Parameter Name="En_Pink" DisplayName="Activer Rose">
+        <Description><![CDATA[<p>1 = inclure Rose dans la classification, 0 = ignorer Rose</p>]]></Description>
+      </Parameter>
       <Parameter Name="BestColor" DisplayName="Meilleure couleur">
         <Description><![CDATA[<p>Indice (1–8) de la couleur la plus proche</p>]]></Description>
       </Parameter>
@@ -161,6 +185,9 @@
         </Block>
         <Block Mode="Setup_Pink" DisplayName="Configurer Rose">
           <Description><![CDATA[<p>Enregistrer le RGB de référence pour Rose (défaut : R=200, G=50, B=150). Appeler une fois au démarrage.</p>]]></Description>
+        </Block>
+        <Block Mode="Setup_Enable" DisplayName="Activer les couleurs">
+          <Description><![CDATA[<p>Définit les couleurs actives (1=actif, 0=inactif). Les couleurs désactivées retournent 999999 et ne sont jamais choisies par Identify.</p>]]></Description>
         </Block>
       </Category>
       <Block Mode="Distance" DisplayName="Distance">

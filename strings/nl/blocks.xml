@@ -80,6 +80,30 @@
       <Parameter Name="Ref_B" DisplayName="Referentie B">
         <Description><![CDATA[<p>Blauwe waarde van de op te slaan voorkeurskleur</p>]]></Description>
       </Parameter>
+      <Parameter Name="En_Red" DisplayName="Rood inschakelen">
+        <Description><![CDATA[<p>1 = Rood opnemen in classificatie, 0 = Rood negeren</p>]]></Description>
+      </Parameter>
+      <Parameter Name="En_Green" DisplayName="Groen inschakelen">
+        <Description><![CDATA[<p>1 = Groen opnemen in classificatie, 0 = Groen negeren</p>]]></Description>
+      </Parameter>
+      <Parameter Name="En_Blue" DisplayName="Blauw inschakelen">
+        <Description><![CDATA[<p>1 = Blauw opnemen in classificatie, 0 = Blauw negeren</p>]]></Description>
+      </Parameter>
+      <Parameter Name="En_Yellow" DisplayName="Geel inschakelen">
+        <Description><![CDATA[<p>1 = Geel opnemen in classificatie, 0 = Geel negeren</p>]]></Description>
+      </Parameter>
+      <Parameter Name="En_White" DisplayName="Wit inschakelen">
+        <Description><![CDATA[<p>1 = Wit opnemen in classificatie, 0 = Wit negeren</p>]]></Description>
+      </Parameter>
+      <Parameter Name="En_Black" DisplayName="Zwart inschakelen">
+        <Description><![CDATA[<p>1 = Zwart opnemen in classificatie, 0 = Zwart negeren</p>]]></Description>
+      </Parameter>
+      <Parameter Name="En_Brown" DisplayName="Bruin inschakelen">
+        <Description><![CDATA[<p>1 = Bruin opnemen in classificatie, 0 = Bruin negeren</p>]]></Description>
+      </Parameter>
+      <Parameter Name="En_Pink" DisplayName="Roze inschakelen">
+        <Description><![CDATA[<p>1 = Roze opnemen in classificatie, 0 = Roze negeren</p>]]></Description>
+      </Parameter>
       <Parameter Name="BestColor" DisplayName="Beste kleur">
         <Description><![CDATA[<p>Index (1–8) van de dichtstbijzijnde voorkeurskleur</p>]]></Description>
       </Parameter>
@@ -161,6 +185,9 @@
         </Block>
         <Block Mode="Setup_Pink" DisplayName="Roze instellen">
           <Description><![CDATA[<p>Referentie-RGB opslaan voor Roze (standaard: R=200, G=50, B=150). Eén keer aanroepen bij programmastart.</p>]]></Description>
+        </Block>
+        <Block Mode="Setup_Enable" DisplayName="Kleuren inschakelen">
+          <Description><![CDATA[<p>Stelt in welke kleuren actief zijn (1=aan, 0=uit). Uitgeschakelde kleuren geven afstand 999999 en worden nooit gekozen door Identify.</p>]]></Description>
         </Block>
       </Category>
       <Block Mode="Distance" DisplayName="Afstand">

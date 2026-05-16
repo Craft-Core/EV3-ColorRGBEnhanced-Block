@@ -80,6 +80,30 @@
       <Parameter Name="Ref_B" DisplayName="Referenz B">
         <Description><![CDATA[<p>Blauer Wert der zu speichernden Voreinstellungsfarbe</p>]]></Description>
       </Parameter>
+      <Parameter Name="En_Red" DisplayName="Rot aktivieren">
+        <Description><![CDATA[<p>1 = Rot klassifizieren, 0 = Rot ignorieren</p>]]></Description>
+      </Parameter>
+      <Parameter Name="En_Green" DisplayName="Grün aktivieren">
+        <Description><![CDATA[<p>1 = Grün klassifizieren, 0 = Grün ignorieren</p>]]></Description>
+      </Parameter>
+      <Parameter Name="En_Blue" DisplayName="Blau aktivieren">
+        <Description><![CDATA[<p>1 = Blau klassifizieren, 0 = Blau ignorieren</p>]]></Description>
+      </Parameter>
+      <Parameter Name="En_Yellow" DisplayName="Gelb aktivieren">
+        <Description><![CDATA[<p>1 = Gelb klassifizieren, 0 = Gelb ignorieren</p>]]></Description>
+      </Parameter>
+      <Parameter Name="En_White" DisplayName="Weiß aktivieren">
+        <Description><![CDATA[<p>1 = Weiß klassifizieren, 0 = Weiß ignorieren</p>]]></Description>
+      </Parameter>
+      <Parameter Name="En_Black" DisplayName="Schwarz aktivieren">
+        <Description><![CDATA[<p>1 = Schwarz klassifizieren, 0 = Schwarz ignorieren</p>]]></Description>
+      </Parameter>
+      <Parameter Name="En_Brown" DisplayName="Braun aktivieren">
+        <Description><![CDATA[<p>1 = Braun klassifizieren, 0 = Braun ignorieren</p>]]></Description>
+      </Parameter>
+      <Parameter Name="En_Pink" DisplayName="Rosa aktivieren">
+        <Description><![CDATA[<p>1 = Rosa klassifizieren, 0 = Rosa ignorieren</p>]]></Description>
+      </Parameter>
       <Parameter Name="BestColor" DisplayName="Beste Farbe">
         <Description><![CDATA[<p>Index (1–8) der nächstgelegenen Voreinstellungsfarbe</p>]]></Description>
       </Parameter>
@@ -161,6 +185,9 @@
         </Block>
         <Block Mode="Setup_Pink" DisplayName="Rosa einrichten">
           <Description><![CDATA[<p>Referenz-RGB für Rosa speichern (Standard: R=200, G=50, B=150). Einmal beim Programmstart aufrufen.</p>]]></Description>
+        </Block>
+        <Block Mode="Setup_Enable" DisplayName="Farben aktivieren">
+          <Description><![CDATA[<p>Legt fest, welche Farben aktiv sind (1=an, 0=aus). Deaktivierte Farben liefern Distanz 999999 und werden von Identify nie gewählt.</p>]]></Description>
         </Block>
       </Category>
       <Block Mode="Distance" DisplayName="Distanz">

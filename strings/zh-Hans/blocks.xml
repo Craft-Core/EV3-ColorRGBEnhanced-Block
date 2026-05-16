@@ -80,6 +80,30 @@
       <Parameter Name="Ref_B" DisplayName="参考 B">
         <Description><![CDATA[<p>要保存的预设颜色的蓝值</p>]]></Description>
       </Parameter>
+      <Parameter Name="En_Red" DisplayName="启用红">
+        <Description><![CDATA[<p>1 = 将红纳入分类，0 = 忽略红</p>]]></Description>
+      </Parameter>
+      <Parameter Name="En_Green" DisplayName="启用绿">
+        <Description><![CDATA[<p>1 = 将绿纳入分类，0 = 忽略绿</p>]]></Description>
+      </Parameter>
+      <Parameter Name="En_Blue" DisplayName="启用蓝">
+        <Description><![CDATA[<p>1 = 将蓝纳入分类，0 = 忽略蓝</p>]]></Description>
+      </Parameter>
+      <Parameter Name="En_Yellow" DisplayName="启用黄">
+        <Description><![CDATA[<p>1 = 将黄纳入分类，0 = 忽略黄</p>]]></Description>
+      </Parameter>
+      <Parameter Name="En_White" DisplayName="启用白">
+        <Description><![CDATA[<p>1 = 将白纳入分类，0 = 忽略白</p>]]></Description>
+      </Parameter>
+      <Parameter Name="En_Black" DisplayName="启用黑">
+        <Description><![CDATA[<p>1 = 将黑纳入分类，0 = 忽略黑</p>]]></Description>
+      </Parameter>
+      <Parameter Name="En_Brown" DisplayName="启用棕">
+        <Description><![CDATA[<p>1 = 将棕纳入分类，0 = 忽略棕</p>]]></Description>
+      </Parameter>
+      <Parameter Name="En_Pink" DisplayName="启用粉">
+        <Description><![CDATA[<p>1 = 将粉纳入分类，0 = 忽略粉</p>]]></Description>
+      </Parameter>
       <Parameter Name="BestColor" DisplayName="最佳颜色">
         <Description><![CDATA[<p>最接近的预设颜色的编号 (1–8)</p>]]></Description>
       </Parameter>
@@ -161,6 +185,9 @@
         </Block>
         <Block Mode="Setup_Pink" DisplayName="设置粉">
           <Description><![CDATA[<p>保存粉的参考 RGB（默认：R=200，G=50，B=150）。在程序开始时调用一次。</p>]]></Description>
+        </Block>
+        <Block Mode="Setup_Enable" DisplayName="启用颜色">
+          <Description><![CDATA[<p>设置哪些颜色有效（1=开，0=关）。禁用的颜色输出距离 999999，Identify 永远不会选择它们。</p>]]></Description>
         </Block>
       </Category>
       <Block Mode="Distance" DisplayName="距离">

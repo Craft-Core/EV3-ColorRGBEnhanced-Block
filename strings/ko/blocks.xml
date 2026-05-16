@@ -80,6 +80,30 @@
       <Parameter Name="Ref_B" DisplayName="기준 B">
         <Description><![CDATA[<p>저장할 프리셋 컬러의 파랑 값</p>]]></Description>
       </Parameter>
+      <Parameter Name="En_Red" DisplayName="빨강 ON/OFF">
+        <Description><![CDATA[<p>1 = 빨강을 분류에 포함, 0 = 빨강 무시</p>]]></Description>
+      </Parameter>
+      <Parameter Name="En_Green" DisplayName="초록 ON/OFF">
+        <Description><![CDATA[<p>1 = 초록을 분류에 포함, 0 = 초록 무시</p>]]></Description>
+      </Parameter>
+      <Parameter Name="En_Blue" DisplayName="파랑 ON/OFF">
+        <Description><![CDATA[<p>1 = 파랑을 분류에 포함, 0 = 파랑 무시</p>]]></Description>
+      </Parameter>
+      <Parameter Name="En_Yellow" DisplayName="노랑 ON/OFF">
+        <Description><![CDATA[<p>1 = 노랑을 분류에 포함, 0 = 노랑 무시</p>]]></Description>
+      </Parameter>
+      <Parameter Name="En_White" DisplayName="흰색 ON/OFF">
+        <Description><![CDATA[<p>1 = 흰색을 분류에 포함, 0 = 흰색 무시</p>]]></Description>
+      </Parameter>
+      <Parameter Name="En_Black" DisplayName="검정 ON/OFF">
+        <Description><![CDATA[<p>1 = 검정을 분류에 포함, 0 = 검정 무시</p>]]></Description>
+      </Parameter>
+      <Parameter Name="En_Brown" DisplayName="갈색 ON/OFF">
+        <Description><![CDATA[<p>1 = 갈색을 분류에 포함, 0 = 갈색 무시</p>]]></Description>
+      </Parameter>
+      <Parameter Name="En_Pink" DisplayName="분홍 ON/OFF">
+        <Description><![CDATA[<p>1 = 분홍을 분류에 포함, 0 = 분홍 무시</p>]]></Description>
+      </Parameter>
       <Parameter Name="BestColor" DisplayName="최근접 컬러">
         <Description><![CDATA[<p>가장 가까운 프리셋 컬러 번호 (1–8)</p>]]></Description>
       </Parameter>
@@ -161,6 +185,9 @@
         </Block>
         <Block Mode="Setup_Pink" DisplayName="분홍 설정">
           <Description><![CDATA[<p>분홍의 기준 RGB를 저장합니다 (기본값: R=200, G=50, B=150). 프로그램 시작 시 한 번 호출하세요.</p>]]></Description>
+        </Block>
+        <Block Mode="Setup_Enable" DisplayName="사용할 색상 설정">
+          <Description><![CDATA[<p>사용할 색상을 설정합니다 (1=ON, 0=OFF). 비활성화된 색상은 거리 999999를 출력하며 Identify에서 절대 선택되지 않습니다.</p>]]></Description>
         </Block>
       </Category>
       <Block Mode="Distance" DisplayName="거리">

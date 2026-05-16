@@ -80,6 +80,30 @@
       <Parameter Name="Ref_B" DisplayName="基準 B">
         <Description><![CDATA[<p>保存するプリセット色の青値</p>]]></Description>
       </Parameter>
+      <Parameter Name="En_Red" DisplayName="赤 ON/OFF">
+        <Description><![CDATA[<p>1 = 赤を分類対象にする、0 = 赤を無視する</p>]]></Description>
+      </Parameter>
+      <Parameter Name="En_Green" DisplayName="緑 ON/OFF">
+        <Description><![CDATA[<p>1 = 緑を分類対象にする、0 = 緑を無視する</p>]]></Description>
+      </Parameter>
+      <Parameter Name="En_Blue" DisplayName="青 ON/OFF">
+        <Description><![CDATA[<p>1 = 青を分類対象にする、0 = 青を無視する</p>]]></Description>
+      </Parameter>
+      <Parameter Name="En_Yellow" DisplayName="黄 ON/OFF">
+        <Description><![CDATA[<p>1 = 黄を分類対象にする、0 = 黄を無視する</p>]]></Description>
+      </Parameter>
+      <Parameter Name="En_White" DisplayName="白 ON/OFF">
+        <Description><![CDATA[<p>1 = 白を分類対象にする、0 = 白を無視する</p>]]></Description>
+      </Parameter>
+      <Parameter Name="En_Black" DisplayName="黒 ON/OFF">
+        <Description><![CDATA[<p>1 = 黒を分類対象にする、0 = 黒を無視する</p>]]></Description>
+      </Parameter>
+      <Parameter Name="En_Brown" DisplayName="茶 ON/OFF">
+        <Description><![CDATA[<p>1 = 茶を分類対象にする、0 = 茶を無視する</p>]]></Description>
+      </Parameter>
+      <Parameter Name="En_Pink" DisplayName="ピンク ON/OFF">
+        <Description><![CDATA[<p>1 = ピンクを分類対象にする、0 = ピンクを無視する</p>]]></Description>
+      </Parameter>
       <Parameter Name="BestColor" DisplayName="最近色">
         <Description><![CDATA[<p>最も近いプリセット色の番号 (1–8)</p>]]></Description>
       </Parameter>
@@ -161,6 +185,9 @@
         </Block>
         <Block Mode="Setup_Pink" DisplayName="ピンクを設定">
           <Description><![CDATA[<p>ピンクの基準 RGB を保存します（デフォルト: R=200, G=50, B=150）。プログラム開始時に1回呼び出してください。</p>]]></Description>
+        </Block>
+        <Block Mode="Setup_Enable" DisplayName="使用する色を設定">
+          <Description><![CDATA[<p>使用する色を指定します (1=ON, 0=OFF)。無効な色は距離 999999 が出力され、Identify では絶対に選ばれません。</p>]]></Description>
         </Block>
       </Category>
       <Block Mode="Distance" DisplayName="距離">

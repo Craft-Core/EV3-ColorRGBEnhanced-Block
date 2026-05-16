@@ -80,6 +80,30 @@
       <Parameter Name="Ref_B" DisplayName="Referens B">
         <Description><![CDATA[<p>Blå värde för förinställd färg som ska sparas</p>]]></Description>
       </Parameter>
+      <Parameter Name="En_Red" DisplayName="Aktivera Röd">
+        <Description><![CDATA[<p>1 = inkludera Röd i klassificering, 0 = ignorera Röd</p>]]></Description>
+      </Parameter>
+      <Parameter Name="En_Green" DisplayName="Aktivera Grön">
+        <Description><![CDATA[<p>1 = inkludera Grön i klassificering, 0 = ignorera Grön</p>]]></Description>
+      </Parameter>
+      <Parameter Name="En_Blue" DisplayName="Aktivera Blå">
+        <Description><![CDATA[<p>1 = inkludera Blå i klassificering, 0 = ignorera Blå</p>]]></Description>
+      </Parameter>
+      <Parameter Name="En_Yellow" DisplayName="Aktivera Gul">
+        <Description><![CDATA[<p>1 = inkludera Gul i klassificering, 0 = ignorera Gul</p>]]></Description>
+      </Parameter>
+      <Parameter Name="En_White" DisplayName="Aktivera Vit">
+        <Description><![CDATA[<p>1 = inkludera Vit i klassificering, 0 = ignorera Vit</p>]]></Description>
+      </Parameter>
+      <Parameter Name="En_Black" DisplayName="Aktivera Svart">
+        <Description><![CDATA[<p>1 = inkludera Svart i klassificering, 0 = ignorera Svart</p>]]></Description>
+      </Parameter>
+      <Parameter Name="En_Brown" DisplayName="Aktivera Brun">
+        <Description><![CDATA[<p>1 = inkludera Brun i klassificering, 0 = ignorera Brun</p>]]></Description>
+      </Parameter>
+      <Parameter Name="En_Pink" DisplayName="Aktivera Rosa">
+        <Description><![CDATA[<p>1 = inkludera Rosa i klassificering, 0 = ignorera Rosa</p>]]></Description>
+      </Parameter>
       <Parameter Name="BestColor" DisplayName="Bästa färg">
         <Description><![CDATA[<p>Index (1–8) för närmaste förinställda färg</p>]]></Description>
       </Parameter>
@@ -161,6 +185,9 @@
         </Block>
         <Block Mode="Setup_Pink" DisplayName="Konfigurera Rosa">
           <Description><![CDATA[<p>Spara referens-RGB för Rosa (standard: R=200, G=50, B=150). Anropa en gång vid programstart.</p>]]></Description>
+        </Block>
+        <Block Mode="Setup_Enable" DisplayName="Aktivera färger">
+          <Description><![CDATA[<p>Anger vilka färger som är aktiva (1=på, 0=av). Inaktiverade färger ger avstånd 999999 och väljs aldrig av Identify.</p>]]></Description>
         </Block>
       </Category>
       <Block Mode="Distance" DisplayName="Avstånd">

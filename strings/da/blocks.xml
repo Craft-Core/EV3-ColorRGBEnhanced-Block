@@ -80,6 +80,30 @@
       <Parameter Name="Ref_B" DisplayName="Reference B">
         <Description><![CDATA[<p>Blå værdi af den forudindstillede farve, der skal gemmes</p>]]></Description>
       </Parameter>
+      <Parameter Name="En_Red" DisplayName="Aktiver Rød">
+        <Description><![CDATA[<p>1 = inkluder Rød i klassifikation, 0 = ignorer Rød</p>]]></Description>
+      </Parameter>
+      <Parameter Name="En_Green" DisplayName="Aktiver Grøn">
+        <Description><![CDATA[<p>1 = inkluder Grøn i klassifikation, 0 = ignorer Grøn</p>]]></Description>
+      </Parameter>
+      <Parameter Name="En_Blue" DisplayName="Aktiver Blå">
+        <Description><![CDATA[<p>1 = inkluder Blå i klassifikation, 0 = ignorer Blå</p>]]></Description>
+      </Parameter>
+      <Parameter Name="En_Yellow" DisplayName="Aktiver Gul">
+        <Description><![CDATA[<p>1 = inkluder Gul i klassifikation, 0 = ignorer Gul</p>]]></Description>
+      </Parameter>
+      <Parameter Name="En_White" DisplayName="Aktiver Hvid">
+        <Description><![CDATA[<p>1 = inkluder Hvid i klassifikation, 0 = ignorer Hvid</p>]]></Description>
+      </Parameter>
+      <Parameter Name="En_Black" DisplayName="Aktiver Sort">
+        <Description><![CDATA[<p>1 = inkluder Sort i klassifikation, 0 = ignorer Sort</p>]]></Description>
+      </Parameter>
+      <Parameter Name="En_Brown" DisplayName="Aktiver Brun">
+        <Description><![CDATA[<p>1 = inkluder Brun i klassifikation, 0 = ignorer Brun</p>]]></Description>
+      </Parameter>
+      <Parameter Name="En_Pink" DisplayName="Aktiver Pink">
+        <Description><![CDATA[<p>1 = inkluder Pink i klassifikation, 0 = ignorer Pink</p>]]></Description>
+      </Parameter>
       <Parameter Name="BestColor" DisplayName="Bedste farve">
         <Description><![CDATA[<p>Indeks (1–8) for den nærmeste forudindstillede farve</p>]]></Description>
       </Parameter>
@@ -161,6 +185,9 @@
         </Block>
         <Block Mode="Setup_Pink" DisplayName="Opsæt Pink">
           <Description><![CDATA[<p>Gem reference-RGB for Pink (standard: R=200, G=50, B=150). Kald én gang ved programstart.</p>]]></Description>
+        </Block>
+        <Block Mode="Setup_Enable" DisplayName="Aktiver farver">
+          <Description><![CDATA[<p>Angiver hvilke farver der er aktive (1=til, 0=fra). Deaktiverede farver giver afstand 999999 og vælges aldrig af Identify.</p>]]></Description>
         </Block>
       </Category>
       <Block Mode="Distance" DisplayName="Afstand">

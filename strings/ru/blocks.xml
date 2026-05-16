@@ -80,6 +80,30 @@
       <Parameter Name="Ref_B" DisplayName="Опорное B">
         <Description><![CDATA[<p>Синее значение сохраняемого цвета</p>]]></Description>
       </Parameter>
+      <Parameter Name="En_Red" DisplayName="Вкл. Красный">
+        <Description><![CDATA[<p>1 = включить Красный в классификацию, 0 = игнорировать Красный</p>]]></Description>
+      </Parameter>
+      <Parameter Name="En_Green" DisplayName="Вкл. Зелёный">
+        <Description><![CDATA[<p>1 = включить Зелёный в классификацию, 0 = игнорировать Зелёный</p>]]></Description>
+      </Parameter>
+      <Parameter Name="En_Blue" DisplayName="Вкл. Синий">
+        <Description><![CDATA[<p>1 = включить Синий в классификацию, 0 = игнорировать Синий</p>]]></Description>
+      </Parameter>
+      <Parameter Name="En_Yellow" DisplayName="Вкл. Жёлтый">
+        <Description><![CDATA[<p>1 = включить Жёлтый в классификацию, 0 = игнорировать Жёлтый</p>]]></Description>
+      </Parameter>
+      <Parameter Name="En_White" DisplayName="Вкл. Белый">
+        <Description><![CDATA[<p>1 = включить Белый в классификацию, 0 = игнорировать Белый</p>]]></Description>
+      </Parameter>
+      <Parameter Name="En_Black" DisplayName="Вкл. Чёрный">
+        <Description><![CDATA[<p>1 = включить Чёрный в классификацию, 0 = игнорировать Чёрный</p>]]></Description>
+      </Parameter>
+      <Parameter Name="En_Brown" DisplayName="Вкл. Коричневый">
+        <Description><![CDATA[<p>1 = включить Коричневый в классификацию, 0 = игнорировать Коричневый</p>]]></Description>
+      </Parameter>
+      <Parameter Name="En_Pink" DisplayName="Вкл. Розовый">
+        <Description><![CDATA[<p>1 = включить Розовый в классификацию, 0 = игнорировать Розовый</p>]]></Description>
+      </Parameter>
       <Parameter Name="BestColor" DisplayName="Лучший цвет">
         <Description><![CDATA[<p>Номер (1–8) ближайшего цвета</p>]]></Description>
       </Parameter>
@@ -161,6 +185,9 @@
         </Block>
         <Block Mode="Setup_Pink" DisplayName="Настроить Розовый">
           <Description><![CDATA[<p>Сохранить эталонный RGB для Розовый (по умолчанию: R=200, G=50, B=150). Вызвать один раз в начале программы.</p>]]></Description>
+        </Block>
+        <Block Mode="Setup_Enable" DisplayName="Включить цвета">
+          <Description><![CDATA[<p>Задаёт активные цвета (1=вкл, 0=выкл). Отключённые цвета выдают расстояние 999999 и никогда не выбираются Identify.</p>]]></Description>
         </Block>
       </Category>
       <Block Mode="Distance" DisplayName="Расстояние">
