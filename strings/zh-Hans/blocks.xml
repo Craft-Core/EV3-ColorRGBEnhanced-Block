@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<EditorStrings>
+  <PolyGroups ModuleName="ColorSensorRGB">
+    <PolyGroup Name="ColorSensorRGB" DisplayName="颜色传感器 RGB 增强版" DisplayNamePrefix="ColorSensorRGB">
+      <Parameter Name="Port" DisplayName="端口">
+        <Description><![CDATA[<p>EV3 颜色传感器连接的端口 (1–4)</p>]]></Description>
+      </Parameter>
+      <Parameter Name="Red" DisplayName="红">
+        <Description><![CDATA[<p>RGB 中的红色分量 (0–255)</p>]]></Description>
+      </Parameter>
+      <Parameter Name="Green" DisplayName="绿">
+        <Description><![CDATA[<p>RGB 中的绿色分量 (0–255)</p>]]></Description>
+      </Parameter>
+      <Parameter Name="Blue" DisplayName="蓝">
+        <Description><![CDATA[<p>RGB 中的蓝色分量 (0–255)</p>]]></Description>
+      </Parameter>
+      <Parameter Name="Red_Range" DisplayName="红色参考值">
+        <Description><![CDATA[<p>用于对比的红色参考值</p>]]></Description>
+      </Parameter>
+      <Parameter Name="Green_Range" DisplayName="绿色参考值">
+        <Description><![CDATA[<p>用于对比的绿色参考值</p>]]></Description>
+      </Parameter>
+      <Parameter Name="Blue_Range" DisplayName="蓝色参考值">
+        <Description><![CDATA[<p>用于对比的蓝色参考值</p>]]></Description>
+      </Parameter>
+      <Parameter Name="Error_Amount" DisplayName="允许误差">
+        <Description><![CDATA[<p>认为匹配成功的每通道允许偏差</p>]]></Description>
+      </Parameter>
+      <Parameter Name="Result" DisplayName="匹配">
+        <Description><![CDATA[<p>实测 RGB 在误差范围内返回真</p>]]></Description>
+      </Parameter>
+      <Parameter Name="Hue" DisplayName="色调">
+        <Description><![CDATA[<p>色调 (0–360 度)</p>]]></Description>
+      </Parameter>
+      <Parameter Name="Saturation" DisplayName="饱和度">
+        <Description><![CDATA[<p>饱和度 (0–100)</p>]]></Description>
+      </Parameter>
+      <Parameter Name="Value" DisplayName="明度值">
+        <Description><![CDATA[<p>明度/亮度 (0–100)</p>]]></Description>
+      </Parameter>
+      <Parameter Name="Lightness" DisplayName="亮度">
+        <Description><![CDATA[<p>亮度 (0–100)</p>]]></Description>
+      </Parameter>
+      <Block Mode="ReadRGB" DisplayName="测量 – RGB 颜色">
+        <Description><![CDATA[<p>从颜色传感器读取原始的红、绿、蓝值。</p>]]></Description>
+      </Block>
+      <Block Mode="ReadHSV" DisplayName="测量 – HSVL 颜色">
+        <Description><![CDATA[<p>从传感器的 RGB 推导并读取色调、饱和度、明度和亮度。</p>]]></Description>
+      </Block>
+      <Block Mode="DectRGB" DisplayName="比较 – RGB 颜色">
+        <Description><![CDATA[<p>将实时 RGB 与参考三元组比较并返回布尔值。</p>]]></Description>
+      </Block>
+    </PolyGroup>
+    <PolyGroup Name="ColorClassifier" DisplayName="颜色分类器" DisplayNamePrefix="ColorClassifier">
+      <Description><![CDATA[<p>“数据操作”选项卡中的基于距离的颜色分类实用工具。</p>]]></Description>
+      <Parameter Name="R_in" DisplayName="R 输入">
+        <Description><![CDATA[<p>需要分类的实时红色值</p>]]></Description>
+      </Parameter>
+      <Parameter Name="G_in" DisplayName="G 输入">
+        <Description><![CDATA[<p>需要分类的实时绿色值</p>]]></Description>
+      </Parameter>
+      <Parameter Name="B_in" DisplayName="B 输入">
+        <Description><![CDATA[<p>需要分类的实时蓝色值</p>]]></Description>
+      </Parameter>
+      <Parameter Name="R_n" DisplayName="Rn">
+        <Description><![CDATA[<p>归一化的红: R / (R+G+B) × 100</p>]]></Description>
+      </Parameter>
+      <Parameter Name="G_n" DisplayName="Gn">
+        <Description><![CDATA[<p>归一化的绿: G / (R+G+B) × 100</p>]]></Description>
+      </Parameter>
+      <Parameter Name="B_n" DisplayName="Bn">
+        <Description><![CDATA[<p>归一化的蓝: B / (R+G+B) × 100</p>]]></Description>
+      </Parameter>
+      <Parameter Name="Ref_R" DisplayName="参考 R">
+        <Description><![CDATA[<p>要保存的预设颜色的红值</p>]]></Description>
+      </Parameter>
+      <Parameter Name="Ref_G" DisplayName="参考 G">
+        <Description><![CDATA[<p>要保存的预设颜色的绿值</p>]]></Description>
+      </Parameter>
+      <Parameter Name="Ref_B" DisplayName="参考 B">
+        <Description><![CDATA[<p>要保存的预设颜色的蓝值</p>]]></Description>
+      </Parameter>
+      <Parameter Name="BestColor" DisplayName="最佳颜色">
+        <Description><![CDATA[<p>最接近的预设颜色的编号 (1–8)</p>]]></Description>
+      </Parameter>
+      <Parameter Name="BestDistance" DisplayName="最佳距离">
+        <Description><![CDATA[<p>到最接近颜色的距离</p>]]></Description>
+      </Parameter>
+      <Parameter Name="D1" DisplayName="距离 1">
+        <Description><![CDATA[<p>输入 RGB 到预设颜色 1 的平方距离</p>]]></Description>
+      </Parameter>
+      <Parameter Name="D2" DisplayName="距离 2">
+        <Description><![CDATA[<p>输入 RGB 到预设颜色 2 的平方距离</p>]]></Description>
+      </Parameter>
+      <Parameter Name="D3" DisplayName="距离 3">
+        <Description><![CDATA[<p>输入 RGB 到预设颜色 3 的平方距离</p>]]></Description>
+      </Parameter>
+      <Parameter Name="D4" DisplayName="距离 4">
+        <Description><![CDATA[<p>输入 RGB 到预设颜色 4 的平方距离</p>]]></Description>
+      </Parameter>
+      <Parameter Name="D5" DisplayName="距离 5">
+        <Description><![CDATA[<p>输入 RGB 到预设颜色 5 的平方距离</p>]]></Description>
+      </Parameter>
+      <Parameter Name="D6" DisplayName="距离 6">
+        <Description><![CDATA[<p>输入 RGB 到预设颜色 6 的平方距离</p>]]></Description>
+      </Parameter>
+      <Parameter Name="D7" DisplayName="距离 7">
+        <Description><![CDATA[<p>输入 RGB 到预设颜色 7 的平方距离</p>]]></Description>
+      </Parameter>
+      <Parameter Name="D8" DisplayName="距离 8">
+        <Description><![CDATA[<p>输入 RGB 到预设颜色 8 的平方距离</p>]]></Description>
+      </Parameter>
+      <Parameter Name="D1_in" DisplayName="距离 1">
+        <Description><![CDATA[<p>到颜色 1 的距离（从 Distance 模式连线）</p>]]></Description>
+      </Parameter>
+      <Parameter Name="D2_in" DisplayName="距离 2">
+        <Description><![CDATA[<p>到颜色 2 的距离（从 Distance 模式连线）</p>]]></Description>
+      </Parameter>
+      <Parameter Name="D3_in" DisplayName="距离 3">
+        <Description><![CDATA[<p>到颜色 3 的距离（从 Distance 模式连线）</p>]]></Description>
+      </Parameter>
+      <Parameter Name="D4_in" DisplayName="距离 4">
+        <Description><![CDATA[<p>到颜色 4 的距离（从 Distance 模式连线）</p>]]></Description>
+      </Parameter>
+      <Parameter Name="D5_in" DisplayName="距离 5">
+        <Description><![CDATA[<p>到颜色 5 的距离（从 Distance 模式连线）</p>]]></Description>
+      </Parameter>
+      <Parameter Name="D6_in" DisplayName="距离 6">
+        <Description><![CDATA[<p>到颜色 6 的距离（从 Distance 模式连线）</p>]]></Description>
+      </Parameter>
+      <Parameter Name="D7_in" DisplayName="距离 7">
+        <Description><![CDATA[<p>到颜色 7 的距离（从 Distance 模式连线）</p>]]></Description>
+      </Parameter>
+      <Parameter Name="D8_in" DisplayName="距离 8">
+        <Description><![CDATA[<p>到颜色 8 的距离（从 Distance 模式连线）</p>]]></Description>
+      </Parameter>
+      <Block Mode="Normalize" DisplayName="归一化 – RGB">
+        <Description><![CDATA[<p>将原始 R、G、B 转换为比例（每个通道除以总和，乘 100）。消除亮度影响，只保留颜色信息。</p>]]></Description>
+      </Block>
+      <Category Name="Setup" DisplayName="设置">
+        <Block Mode="Setup_C1" DisplayName="设置颜色 1">
+          <Description><![CDATA[<p>将给定的 R、G、B 作为颜色插槽 1 的参考值保存。在程序开始时每个插槽调用一次。</p>]]></Description>
+        </Block>
+        <Block Mode="Setup_C2" DisplayName="设置颜色 2">
+          <Description><![CDATA[<p>将给定的 R、G、B 作为颜色插槽 2 的参考值保存。在程序开始时每个插槽调用一次。</p>]]></Description>
+        </Block>
+        <Block Mode="Setup_C3" DisplayName="设置颜色 3">
+          <Description><![CDATA[<p>将给定的 R、G、B 作为颜色插槽 3 的参考值保存。在程序开始时每个插槽调用一次。</p>]]></Description>
+        </Block>
+        <Block Mode="Setup_C4" DisplayName="设置颜色 4">
+          <Description><![CDATA[<p>将给定的 R、G、B 作为颜色插槽 4 的参考值保存。在程序开始时每个插槽调用一次。</p>]]></Description>
+        </Block>
+        <Block Mode="Setup_C5" DisplayName="设置颜色 5">
+          <Description><![CDATA[<p>将给定的 R、G、B 作为颜色插槽 5 的参考值保存。在程序开始时每个插槽调用一次。</p>]]></Description>
+        </Block>
+        <Block Mode="Setup_C6" DisplayName="设置颜色 6">
+          <Description><![CDATA[<p>将给定的 R、G、B 作为颜色插槽 6 的参考值保存。在程序开始时每个插槽调用一次。</p>]]></Description>
+        </Block>
+        <Block Mode="Setup_C7" DisplayName="设置颜色 7">
+          <Description><![CDATA[<p>将给定的 R、G、B 作为颜色插槽 7 的参考值保存。在程序开始时每个插槽调用一次。</p>]]></Description>
+        </Block>
+        <Block Mode="Setup_C8" DisplayName="设置颜色 8">
+          <Description><![CDATA[<p>将给定的 R、G、B 作为颜色插槽 8 的参考值保存。在程序开始时每个插槽调用一次。</p>]]></Description>
+        </Block>
+      </Category>
+      <Block Mode="Distance" DisplayName="距离">
+        <Description><![CDATA[<p>计算实时 RGB 到 8 个预设颜色中每个的平方距离。将输出连接到 Identify 模块。</p>]]></Description>
+      </Block>
+      <Block Mode="Identify" DisplayName="识别">
+        <Description><![CDATA[<p>接收 Distance 模块的 8 个距离，返回最接近颜色的编号 (1–8) 和实际距离。</p>]]></Description>
+      </Block>
+    </PolyGroup>
+  </PolyGroups>
+</EditorStrings>

@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<EditorStrings>
+  <PolyGroups ModuleName="ColorSensorRGB">
+    <PolyGroup Name="ColorSensorRGB" DisplayName="Датчик цвета RGB расширенный" DisplayNamePrefix="ColorSensorRGB">
+      <Parameter Name="Port" DisplayName="Порт">
+        <Description><![CDATA[<p>Порт датчика (1–4) цветного датчика EV3</p>]]></Description>
+      </Parameter>
+      <Parameter Name="Red" DisplayName="Красный">
+        <Description><![CDATA[<p>Красная компонента RGB (0–255)</p>]]></Description>
+      </Parameter>
+      <Parameter Name="Green" DisplayName="Зелёный">
+        <Description><![CDATA[<p>Зелёная компонента RGB (0–255)</p>]]></Description>
+      </Parameter>
+      <Parameter Name="Blue" DisplayName="Синий">
+        <Description><![CDATA[<p>Синяя компонента RGB (0–255)</p>]]></Description>
+      </Parameter>
+      <Parameter Name="Red_Range" DisplayName="Опорное R">
+        <Description><![CDATA[<p>Опорное значение красного для сравнения</p>]]></Description>
+      </Parameter>
+      <Parameter Name="Green_Range" DisplayName="Опорное G">
+        <Description><![CDATA[<p>Опорное значение зелёного для сравнения</p>]]></Description>
+      </Parameter>
+      <Parameter Name="Blue_Range" DisplayName="Опорное B">
+        <Description><![CDATA[<p>Опорное значение синего для сравнения</p>]]></Description>
+      </Parameter>
+      <Parameter Name="Error_Amount" DisplayName="Допуск">
+        <Description><![CDATA[<p>Допустимое отклонение по каналу для совпадения</p>]]></Description>
+      </Parameter>
+      <Parameter Name="Result" DisplayName="Совпадение">
+        <Description><![CDATA[<p>Истина, если RGB в пределах допуска</p>]]></Description>
+      </Parameter>
+      <Parameter Name="Hue" DisplayName="Оттенок">
+        <Description><![CDATA[<p>Компонента оттенка (0–360 град.)</p>]]></Description>
+      </Parameter>
+      <Parameter Name="Saturation" DisplayName="Насыщенность">
+        <Description><![CDATA[<p>Насыщенность (0–100)</p>]]></Description>
+      </Parameter>
+      <Parameter Name="Value" DisplayName="Яркость">
+        <Description><![CDATA[<p>Яркость (0–100)</p>]]></Description>
+      </Parameter>
+      <Parameter Name="Lightness" DisplayName="Светлота">
+        <Description><![CDATA[<p>Светлота (0–100)</p>]]></Description>
+      </Parameter>
+      <Block Mode="ReadRGB" DisplayName="Измерить – цвет RGB">
+        <Description><![CDATA[<p>Читает сырые R, G, B с датчика цвета.</p>]]></Description>
+      </Block>
+      <Block Mode="ReadHSV" DisplayName="Измерить – цвет HSVL">
+        <Description><![CDATA[<p>Читает H, S, V, L, вычисленные из RGB датчика.</p>]]></Description>
+      </Block>
+      <Block Mode="DectRGB" DisplayName="Сравнить – цвет RGB">
+        <Description><![CDATA[<p>Сравнивает RGB с опорным и возвращает булево значение.</p>]]></Description>
+      </Block>
+    </PolyGroup>
+    <PolyGroup Name="ColorClassifier" DisplayName="Классификатор цвета" DisplayNamePrefix="ColorClassifier">
+      <Description><![CDATA[<p>Инструменты классификации по расстоянию для вкладки 'Операции с данными'.</p>]]></Description>
+      <Parameter Name="R_in" DisplayName="R вход">
+        <Description><![CDATA[<p>Текущее значение красного</p>]]></Description>
+      </Parameter>
+      <Parameter Name="G_in" DisplayName="G вход">
+        <Description><![CDATA[<p>Текущее значение зелёного</p>]]></Description>
+      </Parameter>
+      <Parameter Name="B_in" DisplayName="B вход">
+        <Description><![CDATA[<p>Текущее значение синего</p>]]></Description>
+      </Parameter>
+      <Parameter Name="R_n" DisplayName="Rn">
+        <Description><![CDATA[<p>Нормированный R: R / (R+G+B) × 100</p>]]></Description>
+      </Parameter>
+      <Parameter Name="G_n" DisplayName="Gn">
+        <Description><![CDATA[<p>Нормированный G: G / (R+G+B) × 100</p>]]></Description>
+      </Parameter>
+      <Parameter Name="B_n" DisplayName="Bn">
+        <Description><![CDATA[<p>Нормированный B: B / (R+G+B) × 100</p>]]></Description>
+      </Parameter>
+      <Parameter Name="Ref_R" DisplayName="Опорное R">
+        <Description><![CDATA[<p>Красное значение сохраняемого цвета</p>]]></Description>
+      </Parameter>
+      <Parameter Name="Ref_G" DisplayName="Опорное G">
+        <Description><![CDATA[<p>Зелёное значение сохраняемого цвета</p>]]></Description>
+      </Parameter>
+      <Parameter Name="Ref_B" DisplayName="Опорное B">
+        <Description><![CDATA[<p>Синее значение сохраняемого цвета</p>]]></Description>
+      </Parameter>
+      <Parameter Name="BestColor" DisplayName="Лучший цвет">
+        <Description><![CDATA[<p>Номер (1–8) ближайшего цвета</p>]]></Description>
+      </Parameter>
+      <Parameter Name="BestDistance" DisplayName="Лучшее расстояние">
+        <Description><![CDATA[<p>Расстояние до ближайшего цвета</p>]]></Description>
+      </Parameter>
+      <Parameter Name="D1" DisplayName="Расстояние 1">
+        <Description><![CDATA[<p>Квадрат расстояния от RGB до цвета 1</p>]]></Description>
+      </Parameter>
+      <Parameter Name="D2" DisplayName="Расстояние 2">
+        <Description><![CDATA[<p>Квадрат расстояния от RGB до цвета 2</p>]]></Description>
+      </Parameter>
+      <Parameter Name="D3" DisplayName="Расстояние 3">
+        <Description><![CDATA[<p>Квадрат расстояния от RGB до цвета 3</p>]]></Description>
+      </Parameter>
+      <Parameter Name="D4" DisplayName="Расстояние 4">
+        <Description><![CDATA[<p>Квадрат расстояния от RGB до цвета 4</p>]]></Description>
+      </Parameter>
+      <Parameter Name="D5" DisplayName="Расстояние 5">
+        <Description><![CDATA[<p>Квадрат расстояния от RGB до цвета 5</p>]]></Description>
+      </Parameter>
+      <Parameter Name="D6" DisplayName="Расстояние 6">
+        <Description><![CDATA[<p>Квадрат расстояния от RGB до цвета 6</p>]]></Description>
+      </Parameter>
+      <Parameter Name="D7" DisplayName="Расстояние 7">
+        <Description><![CDATA[<p>Квадрат расстояния от RGB до цвета 7</p>]]></Description>
+      </Parameter>
+      <Parameter Name="D8" DisplayName="Расстояние 8">
+        <Description><![CDATA[<p>Квадрат расстояния от RGB до цвета 8</p>]]></Description>
+      </Parameter>
+      <Parameter Name="D1_in" DisplayName="Расстояние 1">
+        <Description><![CDATA[<p>Расстояние до цвета 1 (из режима Distance)</p>]]></Description>
+      </Parameter>
+      <Parameter Name="D2_in" DisplayName="Расстояние 2">
+        <Description><![CDATA[<p>Расстояние до цвета 2 (из режима Distance)</p>]]></Description>
+      </Parameter>
+      <Parameter Name="D3_in" DisplayName="Расстояние 3">
+        <Description><![CDATA[<p>Расстояние до цвета 3 (из режима Distance)</p>]]></Description>
+      </Parameter>
+      <Parameter Name="D4_in" DisplayName="Расстояние 4">
+        <Description><![CDATA[<p>Расстояние до цвета 4 (из режима Distance)</p>]]></Description>
+      </Parameter>
+      <Parameter Name="D5_in" DisplayName="Расстояние 5">
+        <Description><![CDATA[<p>Расстояние до цвета 5 (из режима Distance)</p>]]></Description>
+      </Parameter>
+      <Parameter Name="D6_in" DisplayName="Расстояние 6">
+        <Description><![CDATA[<p>Расстояние до цвета 6 (из режима Distance)</p>]]></Description>
+      </Parameter>
+      <Parameter Name="D7_in" DisplayName="Расстояние 7">
+        <Description><![CDATA[<p>Расстояние до цвета 7 (из режима Distance)</p>]]></Description>
+      </Parameter>
+      <Parameter Name="D8_in" DisplayName="Расстояние 8">
+        <Description><![CDATA[<p>Расстояние до цвета 8 (из режима Distance)</p>]]></Description>
+      </Parameter>
+      <Block Mode="Normalize" DisplayName="Нормализация – RGB">
+        <Description><![CDATA[<p>Преобразует сырые R, G, B в доли (канал/сумма, ×100). Убирает влияние яркости.</p>]]></Description>
+      </Block>
+      <Category Name="Setup" DisplayName="Настройка">
+        <Block Mode="Setup_C1" DisplayName="Настроить цвет 1">
+          <Description><![CDATA[<p>Сохраняет R, G, B как эталон для слота 1. Вызвать один раз в начале программы.</p>]]></Description>
+        </Block>
+        <Block Mode="Setup_C2" DisplayName="Настроить цвет 2">
+          <Description><![CDATA[<p>Сохраняет R, G, B как эталон для слота 2. Вызвать один раз в начале программы.</p>]]></Description>
+        </Block>
+        <Block Mode="Setup_C3" DisplayName="Настроить цвет 3">
+          <Description><![CDATA[<p>Сохраняет R, G, B как эталон для слота 3. Вызвать один раз в начале программы.</p>]]></Description>
+        </Block>
+        <Block Mode="Setup_C4" DisplayName="Настроить цвет 4">
+          <Description><![CDATA[<p>Сохраняет R, G, B как эталон для слота 4. Вызвать один раз в начале программы.</p>]]></Description>
+        </Block>
+        <Block Mode="Setup_C5" DisplayName="Настроить цвет 5">
+          <Description><![CDATA[<p>Сохраняет R, G, B как эталон для слота 5. Вызвать один раз в начале программы.</p>]]></Description>
+        </Block>
+        <Block Mode="Setup_C6" DisplayName="Настроить цвет 6">
+          <Description><![CDATA[<p>Сохраняет R, G, B как эталон для слота 6. Вызвать один раз в начале программы.</p>]]></Description>
+        </Block>
+        <Block Mode="Setup_C7" DisplayName="Настроить цвет 7">
+          <Description><![CDATA[<p>Сохраняет R, G, B как эталон для слота 7. Вызвать один раз в начале программы.</p>]]></Description>
+        </Block>
+        <Block Mode="Setup_C8" DisplayName="Настроить цвет 8">
+          <Description><![CDATA[<p>Сохраняет R, G, B как эталон для слота 8. Вызвать один раз в начале программы.</p>]]></Description>
+        </Block>
+      </Category>
+      <Block Mode="Distance" DisplayName="Расстояние">
+        <Description><![CDATA[<p>Вычисляет квадрат расстояния от RGB до каждого из 8 цветов. Подключите выходы к Identify.</p>]]></Description>
+      </Block>
+      <Block Mode="Identify" DisplayName="Идентификация">
+        <Description><![CDATA[<p>Принимает 8 расстояний от блока Distance и возвращает номер (1–8) ближайшего цвета и расстояние до него.</p>]]></Description>
+      </Block>
+    </PolyGroup>
+  </PolyGroups>
+</EditorStrings>

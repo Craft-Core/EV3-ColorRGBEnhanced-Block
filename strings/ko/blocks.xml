@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<EditorStrings>
+  <PolyGroups ModuleName="ColorSensorRGB">
+    <PolyGroup Name="ColorSensorRGB" DisplayName="컬러 센서 RGB Enhanced" DisplayNamePrefix="ColorSensorRGB">
+      <Parameter Name="Port" DisplayName="포트">
+        <Description><![CDATA[<p>EV3 컬러 센서가 연결된 포트 (1–4)</p>]]></Description>
+      </Parameter>
+      <Parameter Name="Red" DisplayName="빨강">
+        <Description><![CDATA[<p>RGB의 빨강 성분 (0–255)</p>]]></Description>
+      </Parameter>
+      <Parameter Name="Green" DisplayName="초록">
+        <Description><![CDATA[<p>RGB의 초록 성분 (0–255)</p>]]></Description>
+      </Parameter>
+      <Parameter Name="Blue" DisplayName="파랑">
+        <Description><![CDATA[<p>RGB의 파랑 성분 (0–255)</p>]]></Description>
+      </Parameter>
+      <Parameter Name="Red_Range" DisplayName="빨강 기준값">
+        <Description><![CDATA[<p>비교할 빨강 기준값</p>]]></Description>
+      </Parameter>
+      <Parameter Name="Green_Range" DisplayName="초록 기준값">
+        <Description><![CDATA[<p>비교할 초록 기준값</p>]]></Description>
+      </Parameter>
+      <Parameter Name="Blue_Range" DisplayName="파랑 기준값">
+        <Description><![CDATA[<p>비교할 파랑 기준값</p>]]></Description>
+      </Parameter>
+      <Parameter Name="Error_Amount" DisplayName="허용 오차">
+        <Description><![CDATA[<p>일치로 간주하기 위한 채널별 허용 오차</p>]]></Description>
+      </Parameter>
+      <Parameter Name="Result" DisplayName="일치">
+        <Description><![CDATA[<p>측정한 RGB가 오차 범위 내면 참</p>]]></Description>
+      </Parameter>
+      <Parameter Name="Hue" DisplayName="색조">
+        <Description><![CDATA[<p>색조 성분 (0–360도)</p>]]></Description>
+      </Parameter>
+      <Parameter Name="Saturation" DisplayName="채도">
+        <Description><![CDATA[<p>채도 성분 (0–100)</p>]]></Description>
+      </Parameter>
+      <Parameter Name="Value" DisplayName="명도">
+        <Description><![CDATA[<p>명도/밝기 (0–100)</p>]]></Description>
+      </Parameter>
+      <Parameter Name="Lightness" DisplayName="밝기">
+        <Description><![CDATA[<p>밝기 (0–100)</p>]]></Description>
+      </Parameter>
+      <Block Mode="ReadRGB" DisplayName="측정 – RGB 컬러">
+        <Description><![CDATA[<p>컬러 센서에서 원시 빨강, 초록, 파랑 값을 읽습니다.</p>]]></Description>
+      </Block>
+      <Block Mode="ReadHSV" DisplayName="측정 – HSVL 컬러">
+        <Description><![CDATA[<p>센서의 RGB로부터 색조, 채도, 명도, 밝기를 읽습니다.</p>]]></Description>
+      </Block>
+      <Block Mode="DectRGB" DisplayName="비교 – RGB 컬러">
+        <Description><![CDATA[<p>실시간 RGB를 기준과 비교하여 부울 값을 반환합니다.</p>]]></Description>
+      </Block>
+    </PolyGroup>
+    <PolyGroup Name="ColorClassifier" DisplayName="컬러 분류기" DisplayNamePrefix="ColorClassifier">
+      <Description><![CDATA[<p>데이터 조작 탭용 거리 기반 컬러 분류 유틸리티.</p>]]></Description>
+      <Parameter Name="R_in" DisplayName="R 입력">
+        <Description><![CDATA[<p>분류할 실시간 빨강 값</p>]]></Description>
+      </Parameter>
+      <Parameter Name="G_in" DisplayName="G 입력">
+        <Description><![CDATA[<p>분류할 실시간 초록 값</p>]]></Description>
+      </Parameter>
+      <Parameter Name="B_in" DisplayName="B 입력">
+        <Description><![CDATA[<p>분류할 실시간 파랑 값</p>]]></Description>
+      </Parameter>
+      <Parameter Name="R_n" DisplayName="Rn">
+        <Description><![CDATA[<p>정규화된 빨강: R / (R+G+B) × 100</p>]]></Description>
+      </Parameter>
+      <Parameter Name="G_n" DisplayName="Gn">
+        <Description><![CDATA[<p>정규화된 초록: G / (R+G+B) × 100</p>]]></Description>
+      </Parameter>
+      <Parameter Name="B_n" DisplayName="Bn">
+        <Description><![CDATA[<p>정규화된 파랑: B / (R+G+B) × 100</p>]]></Description>
+      </Parameter>
+      <Parameter Name="Ref_R" DisplayName="기준 R">
+        <Description><![CDATA[<p>저장할 프리셋 컬러의 빨강 값</p>]]></Description>
+      </Parameter>
+      <Parameter Name="Ref_G" DisplayName="기준 G">
+        <Description><![CDATA[<p>저장할 프리셋 컬러의 초록 값</p>]]></Description>
+      </Parameter>
+      <Parameter Name="Ref_B" DisplayName="기준 B">
+        <Description><![CDATA[<p>저장할 프리셋 컬러의 파랑 값</p>]]></Description>
+      </Parameter>
+      <Parameter Name="BestColor" DisplayName="최근접 컬러">
+        <Description><![CDATA[<p>가장 가까운 프리셋 컬러 번호 (1–8)</p>]]></Description>
+      </Parameter>
+      <Parameter Name="BestDistance" DisplayName="최근접 거리">
+        <Description><![CDATA[<p>가장 가까운 컬러까지의 거리</p>]]></Description>
+      </Parameter>
+      <Parameter Name="D1" DisplayName="거리 1">
+        <Description><![CDATA[<p>입력 RGB에서 프리셋 컬러 1까지의 제곱 거리</p>]]></Description>
+      </Parameter>
+      <Parameter Name="D2" DisplayName="거리 2">
+        <Description><![CDATA[<p>입력 RGB에서 프리셋 컬러 2까지의 제곱 거리</p>]]></Description>
+      </Parameter>
+      <Parameter Name="D3" DisplayName="거리 3">
+        <Description><![CDATA[<p>입력 RGB에서 프리셋 컬러 3까지의 제곱 거리</p>]]></Description>
+      </Parameter>
+      <Parameter Name="D4" DisplayName="거리 4">
+        <Description><![CDATA[<p>입력 RGB에서 프리셋 컬러 4까지의 제곱 거리</p>]]></Description>
+      </Parameter>
+      <Parameter Name="D5" DisplayName="거리 5">
+        <Description><![CDATA[<p>입력 RGB에서 프리셋 컬러 5까지의 제곱 거리</p>]]></Description>
+      </Parameter>
+      <Parameter Name="D6" DisplayName="거리 6">
+        <Description><![CDATA[<p>입력 RGB에서 프리셋 컬러 6까지의 제곱 거리</p>]]></Description>
+      </Parameter>
+      <Parameter Name="D7" DisplayName="거리 7">
+        <Description><![CDATA[<p>입력 RGB에서 프리셋 컬러 7까지의 제곱 거리</p>]]></Description>
+      </Parameter>
+      <Parameter Name="D8" DisplayName="거리 8">
+        <Description><![CDATA[<p>입력 RGB에서 프리셋 컬러 8까지의 제곱 거리</p>]]></Description>
+      </Parameter>
+      <Parameter Name="D1_in" DisplayName="거리 1">
+        <Description><![CDATA[<p>컬러 1까지의 거리 (Distance 모드에서 연결)</p>]]></Description>
+      </Parameter>
+      <Parameter Name="D2_in" DisplayName="거리 2">
+        <Description><![CDATA[<p>컬러 2까지의 거리 (Distance 모드에서 연결)</p>]]></Description>
+      </Parameter>
+      <Parameter Name="D3_in" DisplayName="거리 3">
+        <Description><![CDATA[<p>컬러 3까지의 거리 (Distance 모드에서 연결)</p>]]></Description>
+      </Parameter>
+      <Parameter Name="D4_in" DisplayName="거리 4">
+        <Description><![CDATA[<p>컬러 4까지의 거리 (Distance 모드에서 연결)</p>]]></Description>
+      </Parameter>
+      <Parameter Name="D5_in" DisplayName="거리 5">
+        <Description><![CDATA[<p>컬러 5까지의 거리 (Distance 모드에서 연결)</p>]]></Description>
+      </Parameter>
+      <Parameter Name="D6_in" DisplayName="거리 6">
+        <Description><![CDATA[<p>컬러 6까지의 거리 (Distance 모드에서 연결)</p>]]></Description>
+      </Parameter>
+      <Parameter Name="D7_in" DisplayName="거리 7">
+        <Description><![CDATA[<p>컬러 7까지의 거리 (Distance 모드에서 연결)</p>]]></Description>
+      </Parameter>
+      <Parameter Name="D8_in" DisplayName="거리 8">
+        <Description><![CDATA[<p>컬러 8까지의 거리 (Distance 모드에서 연결)</p>]]></Description>
+      </Parameter>
+      <Block Mode="Normalize" DisplayName="정규화 – RGB">
+        <Description><![CDATA[<p>원시 R, G, B를 비율로 변환합니다 (각 채널/합계 × 100). 밝기 영향을 제거하고 색상 정보만 남깁니다.</p>]]></Description>
+      </Block>
+      <Category Name="Setup" DisplayName="설정">
+        <Block Mode="Setup_C1" DisplayName="컬러 1 설정">
+          <Description><![CDATA[<p>주어진 R, G, B를 컬러 슬롯 1의 기준으로 저장합니다. 프로그램 시작 시 슬롯당 한 번 호출하세요.</p>]]></Description>
+        </Block>
+        <Block Mode="Setup_C2" DisplayName="컬러 2 설정">
+          <Description><![CDATA[<p>주어진 R, G, B를 컬러 슬롯 2의 기준으로 저장합니다. 프로그램 시작 시 슬롯당 한 번 호출하세요.</p>]]></Description>
+        </Block>
+        <Block Mode="Setup_C3" DisplayName="컬러 3 설정">
+          <Description><![CDATA[<p>주어진 R, G, B를 컬러 슬롯 3의 기준으로 저장합니다. 프로그램 시작 시 슬롯당 한 번 호출하세요.</p>]]></Description>
+        </Block>
+        <Block Mode="Setup_C4" DisplayName="컬러 4 설정">
+          <Description><![CDATA[<p>주어진 R, G, B를 컬러 슬롯 4의 기준으로 저장합니다. 프로그램 시작 시 슬롯당 한 번 호출하세요.</p>]]></Description>
+        </Block>
+        <Block Mode="Setup_C5" DisplayName="컬러 5 설정">
+          <Description><![CDATA[<p>주어진 R, G, B를 컬러 슬롯 5의 기준으로 저장합니다. 프로그램 시작 시 슬롯당 한 번 호출하세요.</p>]]></Description>
+        </Block>
+        <Block Mode="Setup_C6" DisplayName="컬러 6 설정">
+          <Description><![CDATA[<p>주어진 R, G, B를 컬러 슬롯 6의 기준으로 저장합니다. 프로그램 시작 시 슬롯당 한 번 호출하세요.</p>]]></Description>
+        </Block>
+        <Block Mode="Setup_C7" DisplayName="컬러 7 설정">
+          <Description><![CDATA[<p>주어진 R, G, B를 컬러 슬롯 7의 기준으로 저장합니다. 프로그램 시작 시 슬롯당 한 번 호출하세요.</p>]]></Description>
+        </Block>
+        <Block Mode="Setup_C8" DisplayName="컬러 8 설정">
+          <Description><![CDATA[<p>주어진 R, G, B를 컬러 슬롯 8의 기준으로 저장합니다. 프로그램 시작 시 슬롯당 한 번 호출하세요.</p>]]></Description>
+        </Block>
+      </Category>
+      <Block Mode="Distance" DisplayName="거리">
+        <Description><![CDATA[<p>실시간 RGB에서 8개 프리셋 컬러 각각까지의 제곱 거리를 계산합니다. 출력을 Identify 블록에 연결하세요.</p>]]></Description>
+      </Block>
+      <Block Mode="Identify" DisplayName="식별">
+        <Description><![CDATA[<p>Distance 블록에서 8개의 거리를 받아 가장 가까운 컬러의 번호 (1–8)와 실제 거리를 반환합니다.</p>]]></Description>
+      </Block>
+    </PolyGroup>
+  </PolyGroups>
+</EditorStrings>

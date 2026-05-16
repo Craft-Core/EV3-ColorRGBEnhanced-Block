@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<EditorStrings>
+  <PolyGroups ModuleName="ColorSensorRGB">
+    <PolyGroup Name="ColorSensorRGB" DisplayName="Farvesensor RGB Udvidet" DisplayNamePrefix="ColorSensorRGB">
+      <Parameter Name="Port" DisplayName="Port">
+        <Description><![CDATA[<p>Sensorport (1–4) for EV3-farvesensoren</p>]]></Description>
+      </Parameter>
+      <Parameter Name="Red" DisplayName="Rød">
+        <Description><![CDATA[<p>Rød komponent af RGB (0–255)</p>]]></Description>
+      </Parameter>
+      <Parameter Name="Green" DisplayName="Grøn">
+        <Description><![CDATA[<p>Grøn komponent af RGB (0–255)</p>]]></Description>
+      </Parameter>
+      <Parameter Name="Blue" DisplayName="Blå">
+        <Description><![CDATA[<p>Blå komponent af RGB (0–255)</p>]]></Description>
+      </Parameter>
+      <Parameter Name="Red_Range" DisplayName="Rød reference">
+        <Description><![CDATA[<p>Rød referenceværdi til sammenligning</p>]]></Description>
+      </Parameter>
+      <Parameter Name="Green_Range" DisplayName="Grøn reference">
+        <Description><![CDATA[<p>Grøn referenceværdi til sammenligning</p>]]></Description>
+      </Parameter>
+      <Parameter Name="Blue_Range" DisplayName="Blå reference">
+        <Description><![CDATA[<p>Blå referenceværdi til sammenligning</p>]]></Description>
+      </Parameter>
+      <Parameter Name="Error_Amount" DisplayName="Tolerance">
+        <Description><![CDATA[<p>Tilladt afvigelse pr. kanal for positivt match</p>]]></Description>
+      </Parameter>
+      <Parameter Name="Result" DisplayName="Match">
+        <Description><![CDATA[<p>Sand når målt RGB er inden for tolerance</p>]]></Description>
+      </Parameter>
+      <Parameter Name="Hue" DisplayName="Farvetone">
+        <Description><![CDATA[<p>Farvetonekomponent (0–360 grader)</p>]]></Description>
+      </Parameter>
+      <Parameter Name="Saturation" DisplayName="Mætning">
+        <Description><![CDATA[<p>Mætningskomponent (0–100)</p>]]></Description>
+      </Parameter>
+      <Parameter Name="Value" DisplayName="Værdi">
+        <Description><![CDATA[<p>Værdi/lysstyrke (0–100)</p>]]></Description>
+      </Parameter>
+      <Parameter Name="Lightness" DisplayName="Lyshed">
+        <Description><![CDATA[<p>Lyshed (0–100)</p>]]></Description>
+      </Parameter>
+      <Block Mode="ReadRGB" DisplayName="Mål – RGB-farve">
+        <Description><![CDATA[<p>Læs rå Rød-, Grøn- og Blå-værdier fra farvesensoren.</p>]]></Description>
+      </Block>
+      <Block Mode="ReadHSV" DisplayName="Mål – HSVL-farve">
+        <Description><![CDATA[<p>Læs farvetone, mætning, værdi og lyshed beregnet fra sensorens RGB.</p>]]></Description>
+      </Block>
+      <Block Mode="DectRGB" DisplayName="Sammenlign – RGB-farve">
+        <Description><![CDATA[<p>Sammenlign live RGB med en referencetripel og returner en boolsk værdi.</p>]]></Description>
+      </Block>
+    </PolyGroup>
+    <PolyGroup Name="ColorClassifier" DisplayName="Farveklassificering" DisplayNamePrefix="ColorClassifier">
+      <Description><![CDATA[<p>Afstandsbaserede farveklassificeringsværktøjer til fanen Datahandlinger.</p>]]></Description>
+      <Parameter Name="R_in" DisplayName="R-indgang">
+        <Description><![CDATA[<p>Live rød kanalværdi til klassificering</p>]]></Description>
+      </Parameter>
+      <Parameter Name="G_in" DisplayName="G-indgang">
+        <Description><![CDATA[<p>Live grøn kanalværdi til klassificering</p>]]></Description>
+      </Parameter>
+      <Parameter Name="B_in" DisplayName="B-indgang">
+        <Description><![CDATA[<p>Live blå kanalværdi til klassificering</p>]]></Description>
+      </Parameter>
+      <Parameter Name="R_n" DisplayName="Rn">
+        <Description><![CDATA[<p>Normaliseret rød: R / (R+G+B) × 100</p>]]></Description>
+      </Parameter>
+      <Parameter Name="G_n" DisplayName="Gn">
+        <Description><![CDATA[<p>Normaliseret grøn: G / (R+G+B) × 100</p>]]></Description>
+      </Parameter>
+      <Parameter Name="B_n" DisplayName="Bn">
+        <Description><![CDATA[<p>Normaliseret blå: B / (R+G+B) × 100</p>]]></Description>
+      </Parameter>
+      <Parameter Name="Ref_R" DisplayName="Reference R">
+        <Description><![CDATA[<p>Rød værdi af den forudindstillede farve, der skal gemmes</p>]]></Description>
+      </Parameter>
+      <Parameter Name="Ref_G" DisplayName="Reference G">
+        <Description><![CDATA[<p>Grøn værdi af den forudindstillede farve, der skal gemmes</p>]]></Description>
+      </Parameter>
+      <Parameter Name="Ref_B" DisplayName="Reference B">
+        <Description><![CDATA[<p>Blå værdi af den forudindstillede farve, der skal gemmes</p>]]></Description>
+      </Parameter>
+      <Parameter Name="BestColor" DisplayName="Bedste farve">
+        <Description><![CDATA[<p>Indeks (1–8) for den nærmeste forudindstillede farve</p>]]></Description>
+      </Parameter>
+      <Parameter Name="BestDistance" DisplayName="Bedste afstand">
+        <Description><![CDATA[<p>Afstand til den nærmeste forudindstillede farve</p>]]></Description>
+      </Parameter>
+      <Parameter Name="D1" DisplayName="Afstand 1">
+        <Description><![CDATA[<p>Kvadreret afstand fra input-RGB til forudindstillet farve 1</p>]]></Description>
+      </Parameter>
+      <Parameter Name="D2" DisplayName="Afstand 2">
+        <Description><![CDATA[<p>Kvadreret afstand fra input-RGB til forudindstillet farve 2</p>]]></Description>
+      </Parameter>
+      <Parameter Name="D3" DisplayName="Afstand 3">
+        <Description><![CDATA[<p>Kvadreret afstand fra input-RGB til forudindstillet farve 3</p>]]></Description>
+      </Parameter>
+      <Parameter Name="D4" DisplayName="Afstand 4">
+        <Description><![CDATA[<p>Kvadreret afstand fra input-RGB til forudindstillet farve 4</p>]]></Description>
+      </Parameter>
+      <Parameter Name="D5" DisplayName="Afstand 5">
+        <Description><![CDATA[<p>Kvadreret afstand fra input-RGB til forudindstillet farve 5</p>]]></Description>
+      </Parameter>
+      <Parameter Name="D6" DisplayName="Afstand 6">
+        <Description><![CDATA[<p>Kvadreret afstand fra input-RGB til forudindstillet farve 6</p>]]></Description>
+      </Parameter>
+      <Parameter Name="D7" DisplayName="Afstand 7">
+        <Description><![CDATA[<p>Kvadreret afstand fra input-RGB til forudindstillet farve 7</p>]]></Description>
+      </Parameter>
+      <Parameter Name="D8" DisplayName="Afstand 8">
+        <Description><![CDATA[<p>Kvadreret afstand fra input-RGB til forudindstillet farve 8</p>]]></Description>
+      </Parameter>
+      <Parameter Name="D1_in" DisplayName="Afstand 1">
+        <Description><![CDATA[<p>Afstand til farve 1 (forbind fra Distance-tilstand)</p>]]></Description>
+      </Parameter>
+      <Parameter Name="D2_in" DisplayName="Afstand 2">
+        <Description><![CDATA[<p>Afstand til farve 2 (forbind fra Distance-tilstand)</p>]]></Description>
+      </Parameter>
+      <Parameter Name="D3_in" DisplayName="Afstand 3">
+        <Description><![CDATA[<p>Afstand til farve 3 (forbind fra Distance-tilstand)</p>]]></Description>
+      </Parameter>
+      <Parameter Name="D4_in" DisplayName="Afstand 4">
+        <Description><![CDATA[<p>Afstand til farve 4 (forbind fra Distance-tilstand)</p>]]></Description>
+      </Parameter>
+      <Parameter Name="D5_in" DisplayName="Afstand 5">
+        <Description><![CDATA[<p>Afstand til farve 5 (forbind fra Distance-tilstand)</p>]]></Description>
+      </Parameter>
+      <Parameter Name="D6_in" DisplayName="Afstand 6">
+        <Description><![CDATA[<p>Afstand til farve 6 (forbind fra Distance-tilstand)</p>]]></Description>
+      </Parameter>
+      <Parameter Name="D7_in" DisplayName="Afstand 7">
+        <Description><![CDATA[<p>Afstand til farve 7 (forbind fra Distance-tilstand)</p>]]></Description>
+      </Parameter>
+      <Parameter Name="D8_in" DisplayName="Afstand 8">
+        <Description><![CDATA[<p>Afstand til farve 8 (forbind fra Distance-tilstand)</p>]]></Description>
+      </Parameter>
+      <Block Mode="Normalize" DisplayName="Normaliser – RGB">
+        <Description><![CDATA[<p>Konverterer rå R, G, B til forhold (hver kanal divideret med summen, × 100). Fjerner lysstyrkens påvirkning.</p>]]></Description>
+      </Block>
+      <Category Name="Setup" DisplayName="Opsætning">
+        <Block Mode="Setup_C1" DisplayName="Opsæt farve 1">
+          <Description><![CDATA[<p>Gemmer de angivne R, G, B som reference for farveslot 1. Kald én gang pr. slot ved programstart.</p>]]></Description>
+        </Block>
+        <Block Mode="Setup_C2" DisplayName="Opsæt farve 2">
+          <Description><![CDATA[<p>Gemmer de angivne R, G, B som reference for farveslot 2. Kald én gang pr. slot ved programstart.</p>]]></Description>
+        </Block>
+        <Block Mode="Setup_C3" DisplayName="Opsæt farve 3">
+          <Description><![CDATA[<p>Gemmer de angivne R, G, B som reference for farveslot 3. Kald én gang pr. slot ved programstart.</p>]]></Description>
+        </Block>
+        <Block Mode="Setup_C4" DisplayName="Opsæt farve 4">
+          <Description><![CDATA[<p>Gemmer de angivne R, G, B som reference for farveslot 4. Kald én gang pr. slot ved programstart.</p>]]></Description>
+        </Block>
+        <Block Mode="Setup_C5" DisplayName="Opsæt farve 5">
+          <Description><![CDATA[<p>Gemmer de angivne R, G, B som reference for farveslot 5. Kald én gang pr. slot ved programstart.</p>]]></Description>
+        </Block>
+        <Block Mode="Setup_C6" DisplayName="Opsæt farve 6">
+          <Description><![CDATA[<p>Gemmer de angivne R, G, B som reference for farveslot 6. Kald én gang pr. slot ved programstart.</p>]]></Description>
+        </Block>
+        <Block Mode="Setup_C7" DisplayName="Opsæt farve 7">
+          <Description><![CDATA[<p>Gemmer de angivne R, G, B som reference for farveslot 7. Kald én gang pr. slot ved programstart.</p>]]></Description>
+        </Block>
+        <Block Mode="Setup_C8" DisplayName="Opsæt farve 8">
+          <Description><![CDATA[<p>Gemmer de angivne R, G, B som reference for farveslot 8. Kald én gang pr. slot ved programstart.</p>]]></Description>
+        </Block>
+      </Category>
+      <Block Mode="Distance" DisplayName="Afstand">
+        <Description><![CDATA[<p>Beregner den kvadrerede afstand fra live RGB til hver af de 8 forudindstillede farver. Forbind udgangene til Identify-blokken.</p>]]></Description>
+      </Block>
+      <Block Mode="Identify" DisplayName="Identificer">
+        <Description><![CDATA[<p>Tager de 8 afstande fra Distance-blokken og returnerer indekset (1–8) for den nærmeste farve plus den faktiske afstand.</p>]]></Description>
+      </Block>
+    </PolyGroup>
+  </PolyGroups>
+</EditorStrings>

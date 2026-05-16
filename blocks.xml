@@ -1,0 +1,213 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<EditorDefinitions>
+  <PolyGroups ModuleName="ColorSensorRGB" ModuleVersion="2.0 (Multi-language + ColorClassifier)">
+	<PolyGroup Name="ColorSensorRGB" BlockFamily="Sensor">
+      <Parameter Name="Port" CompilerDirectives="OneInputPort" Direction="Input" DefaultValue="1.3" />
+      <Parameter Name="Red" Identification="Identification_Red.png" DataType="Single" Direction="Output" />
+      <Parameter Name="Green" Identification="Identification_Green.png" DataType="Single" Direction="Output" />
+      <Parameter Name="Blue" Identification="Identification_Blue.png" DataType="Single" Direction="Output" />
+	  
+	  <Parameter Name="Red_Range" Identification="Identification_Red.png" DataType="Single" Direction="Input" DefaultValue="170"/>
+	  <Parameter Name="Green_Range" Identification="Identification_Green.png" DataType="Single" Direction="Input" DefaultValue="160"/>
+	  <Parameter Name="Blue_Range" Identification="Identification_Blue.png" DataType="Single" Direction="Input" DefaultValue="120"/>
+	  <Parameter Name="Error_Amount" Identification="Identification_er.png" DataType="Single" Direction="Input" DefaultValue="20"/>
+	  <Parameter Name="Result" Identification="Identification_Select.png" DataType="Boolean" Direction="Output"/>
+	  
+	  <Parameter Name="Hue" Identification="Identification_H.png" DataType="Single" Direction="Output" />
+      <Parameter Name="Lightness" Identification="Identification_L.png" DataType="Single" Direction="Output" />
+      <Parameter Name="Saturation" Identification="Identification_S.png" DataType="Single" Direction="Output" />
+      <Parameter Name="Value" Identification="Identification_V.png" DataType="Single" Direction="Output" />
+      <Hardware>
+        <NXTPlotColor>#ffff3132</NXTPlotColor>
+        <EV3PlotColor>#ff785028</EV3PlotColor>
+        <EV3AutoID>29</EV3AutoID>
+        <OtherAutoID>4</OtherAutoID>
+        <OtherAutoID>2</OtherAutoID>
+        <Direction>Input</Direction>
+        <DefaultPort>1.3</DefaultPort>
+      </Hardware>
+      <Block>
+        <Mode>ReadRGB</Mode>
+        <Reference Type="VILib" Name="ColorSensorRGBValue.vix" />
+        <ParameterReference Name="Port" />
+        <ParameterReference Name="Red" />
+        <ParameterReference Name="Green" />
+        <ParameterReference Name="Blue" />
+        <PaletteInfo Weight="0.5" />
+        <Flags>PBROnly</Flags>
+        <Hardware>RudolphColor</Hardware>
+      </Block>
+	  <Block>
+        <Mode>ReadHSV</Mode>
+        <Reference Type="VILib" Name="OFDL_EV3Color_HSV.vix" />
+        <ParameterReference Name="Port" />
+        <ParameterReference Name="Hue" />
+        <ParameterReference Name="Saturation" />
+        <ParameterReference Name="Value" />
+        <ParameterReference Name="Lightness" />
+        <Flags>PBROnly</Flags>
+        <Hardware>RudolphColor</Hardware>
+      </Block>
+	  <Block>
+        <Mode>DectRGB</Mode>
+        <Reference Type="VILib" Name="ColorSensorRGBDect.vix" />
+        <ParameterReference Name="Port" />
+		<ParameterReference Name="Red" />
+        <ParameterReference Name="Green" />
+        <ParameterReference Name="Blue" />
+		<ParameterReference Name="Error_Amount" />
+        <ParameterReference Name="Red_Range" />
+        <ParameterReference Name="Green_Range" />
+        <ParameterReference Name="Blue_Range" />
+        <ParameterReference Name="Result" />     
+        <Flags>PBROnly</Flags>
+        <Hardware>RudolphColor</Hardware>
+      </Block>
+
+    </PolyGroup>
+
+    <PolyGroup Name="ColorClassifier" BlockFamily="DataOperations">
+      <Parameter Name="R_in" Identification="Identification_Red.png" DataType="Single" Direction="Input" DefaultValue="0" />
+      <Parameter Name="G_in" Identification="Identification_Green.png" DataType="Single" Direction="Input" DefaultValue="0" />
+      <Parameter Name="B_in" Identification="Identification_Blue.png" DataType="Single" Direction="Input" DefaultValue="0" />
+      <Parameter Name="R_n" Identification="Identification_Red.png" DataType="Single" Direction="Output" />
+      <Parameter Name="G_n" Identification="Identification_Green.png" DataType="Single" Direction="Output" />
+      <Parameter Name="B_n" Identification="Identification_Blue.png" DataType="Single" Direction="Output" />
+
+      <Parameter Name="Ref_R" Identification="Identification_Red.png" DataType="Single" Direction="Input" DefaultValue="0" />
+      <Parameter Name="Ref_G" Identification="Identification_Green.png" DataType="Single" Direction="Input" DefaultValue="0" />
+      <Parameter Name="Ref_B" Identification="Identification_Blue.png" DataType="Single" Direction="Input" DefaultValue="0" />
+
+      <Parameter Name="D1" Identification="Identification_Select.png" DataType="Single" Direction="Output" />
+      <Parameter Name="D2" Identification="Identification_Select.png" DataType="Single" Direction="Output" />
+      <Parameter Name="D3" Identification="Identification_Select.png" DataType="Single" Direction="Output" />
+      <Parameter Name="D4" Identification="Identification_Select.png" DataType="Single" Direction="Output" />
+      <Parameter Name="D5" Identification="Identification_Select.png" DataType="Single" Direction="Output" />
+      <Parameter Name="D6" Identification="Identification_Select.png" DataType="Single" Direction="Output" />
+      <Parameter Name="D7" Identification="Identification_Select.png" DataType="Single" Direction="Output" />
+      <Parameter Name="D8" Identification="Identification_Select.png" DataType="Single" Direction="Output" />
+
+      <Parameter Name="D1_in" Identification="Identification_Select.png" DataType="Single" Direction="Input" DefaultValue="0" />
+      <Parameter Name="D2_in" Identification="Identification_Select.png" DataType="Single" Direction="Input" DefaultValue="0" />
+      <Parameter Name="D3_in" Identification="Identification_Select.png" DataType="Single" Direction="Input" DefaultValue="0" />
+      <Parameter Name="D4_in" Identification="Identification_Select.png" DataType="Single" Direction="Input" DefaultValue="0" />
+      <Parameter Name="D5_in" Identification="Identification_Select.png" DataType="Single" Direction="Input" DefaultValue="0" />
+      <Parameter Name="D6_in" Identification="Identification_Select.png" DataType="Single" Direction="Input" DefaultValue="0" />
+      <Parameter Name="D7_in" Identification="Identification_Select.png" DataType="Single" Direction="Input" DefaultValue="0" />
+      <Parameter Name="D8_in" Identification="Identification_Select.png" DataType="Single" Direction="Input" DefaultValue="0" />
+
+      <Parameter Name="BestColor" Identification="Identification_Select.png" DataType="Single" Direction="Output" />
+      <Parameter Name="BestDistance" Identification="Identification_Select.png" DataType="Single" Direction="Output" />
+
+      <Block>
+        <Mode>Normalize</Mode>
+        <Reference Type="VILib" Name="ColorClassifier_Normalize.vix" />
+        <ParameterReference Name="R_in" />
+        <ParameterReference Name="G_in" />
+        <ParameterReference Name="B_in" />
+        <ParameterReference Name="R_n" />
+        <ParameterReference Name="G_n" />
+        <ParameterReference Name="B_n" />
+        <PaletteInfo Weight="0.5" />
+        <Flags>PBROnly</Flags>
+      </Block>
+      <Category Name="Setup">
+        <Block>
+          <Mode>Setup_C1</Mode>
+          <Reference Type="VILib" Name="ColorClassifier_Setup_C1.vix" />
+          <ParameterReference Name="Ref_R" />
+          <ParameterReference Name="Ref_G" />
+          <ParameterReference Name="Ref_B" />
+          <Flags>PBROnly</Flags>
+        </Block>
+        <Block>
+          <Mode>Setup_C2</Mode>
+          <Reference Type="VILib" Name="ColorClassifier_Setup_C2.vix" />
+          <ParameterReference Name="Ref_R" />
+          <ParameterReference Name="Ref_G" />
+          <ParameterReference Name="Ref_B" />
+          <Flags>PBROnly</Flags>
+        </Block>
+        <Block>
+          <Mode>Setup_C3</Mode>
+          <Reference Type="VILib" Name="ColorClassifier_Setup_C3.vix" />
+          <ParameterReference Name="Ref_R" />
+          <ParameterReference Name="Ref_G" />
+          <ParameterReference Name="Ref_B" />
+          <Flags>PBROnly</Flags>
+        </Block>
+        <Block>
+          <Mode>Setup_C4</Mode>
+          <Reference Type="VILib" Name="ColorClassifier_Setup_C4.vix" />
+          <ParameterReference Name="Ref_R" />
+          <ParameterReference Name="Ref_G" />
+          <ParameterReference Name="Ref_B" />
+          <Flags>PBROnly</Flags>
+        </Block>
+        <Block>
+          <Mode>Setup_C5</Mode>
+          <Reference Type="VILib" Name="ColorClassifier_Setup_C5.vix" />
+          <ParameterReference Name="Ref_R" />
+          <ParameterReference Name="Ref_G" />
+          <ParameterReference Name="Ref_B" />
+          <Flags>PBROnly</Flags>
+        </Block>
+        <Block>
+          <Mode>Setup_C6</Mode>
+          <Reference Type="VILib" Name="ColorClassifier_Setup_C6.vix" />
+          <ParameterReference Name="Ref_R" />
+          <ParameterReference Name="Ref_G" />
+          <ParameterReference Name="Ref_B" />
+          <Flags>PBROnly</Flags>
+        </Block>
+        <Block>
+          <Mode>Setup_C7</Mode>
+          <Reference Type="VILib" Name="ColorClassifier_Setup_C7.vix" />
+          <ParameterReference Name="Ref_R" />
+          <ParameterReference Name="Ref_G" />
+          <ParameterReference Name="Ref_B" />
+          <Flags>PBROnly</Flags>
+        </Block>
+        <Block>
+          <Mode>Setup_C8</Mode>
+          <Reference Type="VILib" Name="ColorClassifier_Setup_C8.vix" />
+          <ParameterReference Name="Ref_R" />
+          <ParameterReference Name="Ref_G" />
+          <ParameterReference Name="Ref_B" />
+          <Flags>PBROnly</Flags>
+        </Block>
+      </Category>
+      <Block>
+        <Mode>Distance</Mode>
+        <Reference Type="VILib" Name="ColorClassifier_Distance.vix" />
+        <ParameterReference Name="R_in" />
+        <ParameterReference Name="G_in" />
+        <ParameterReference Name="B_in" />
+        <ParameterReference Name="D1" />
+        <ParameterReference Name="D2" />
+        <ParameterReference Name="D3" />
+        <ParameterReference Name="D4" />
+        <ParameterReference Name="D5" />
+        <ParameterReference Name="D6" />
+        <ParameterReference Name="D7" />
+        <ParameterReference Name="D8" />
+        <Flags>PBROnly</Flags>
+      </Block>
+      <Block>
+        <Mode>Identify</Mode>
+        <Reference Type="VILib" Name="ColorClassifier_Identify.vix" />
+        <ParameterReference Name="D1_in" />
+        <ParameterReference Name="D2_in" />
+        <ParameterReference Name="D3_in" />
+        <ParameterReference Name="D4_in" />
+        <ParameterReference Name="D5_in" />
+        <ParameterReference Name="D6_in" />
+        <ParameterReference Name="D7_in" />
+        <ParameterReference Name="D8_in" />
+        <ParameterReference Name="BestColor" />
+        <ParameterReference Name="BestDistance" />
+        <Flags>PBROnly</Flags>
+      </Block>
+    </PolyGroup>
+  </PolyGroups>
+</EditorDefinitions>

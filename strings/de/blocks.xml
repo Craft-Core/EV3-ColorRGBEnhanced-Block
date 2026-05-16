@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<EditorStrings>
+  <PolyGroups ModuleName="ColorSensorRGB">
+    <PolyGroup Name="ColorSensorRGB" DisplayName="Farbsensor RGB Erweitert" DisplayNamePrefix="ColorSensorRGB">
+      <Parameter Name="Port" DisplayName="Port">
+        <Description><![CDATA[<p>Sensorport (1–4) des EV3-Farbsensors</p>]]></Description>
+      </Parameter>
+      <Parameter Name="Red" DisplayName="Rot">
+        <Description><![CDATA[<p>Rote Komponente des RGB-Werts (0–255)</p>]]></Description>
+      </Parameter>
+      <Parameter Name="Green" DisplayName="Grün">
+        <Description><![CDATA[<p>Grüne Komponente des RGB-Werts (0–255)</p>]]></Description>
+      </Parameter>
+      <Parameter Name="Blue" DisplayName="Blau">
+        <Description><![CDATA[<p>Blaue Komponente des RGB-Werts (0–255)</p>]]></Description>
+      </Parameter>
+      <Parameter Name="Red_Range" DisplayName="Referenz Rot">
+        <Description><![CDATA[<p>Referenzwert für Rot</p>]]></Description>
+      </Parameter>
+      <Parameter Name="Green_Range" DisplayName="Referenz Grün">
+        <Description><![CDATA[<p>Referenzwert für Grün</p>]]></Description>
+      </Parameter>
+      <Parameter Name="Blue_Range" DisplayName="Referenz Blau">
+        <Description><![CDATA[<p>Referenzwert für Blau</p>]]></Description>
+      </Parameter>
+      <Parameter Name="Error_Amount" DisplayName="Toleranz">
+        <Description><![CDATA[<p>Zulässige Abweichung pro Kanal für Treffer</p>]]></Description>
+      </Parameter>
+      <Parameter Name="Result" DisplayName="Treffer">
+        <Description><![CDATA[<p>Wahr, wenn RGB innerhalb der Toleranz zur Referenz liegt</p>]]></Description>
+      </Parameter>
+      <Parameter Name="Hue" DisplayName="Farbton">
+        <Description><![CDATA[<p>Farbton (0–360 Grad)</p>]]></Description>
+      </Parameter>
+      <Parameter Name="Saturation" DisplayName="Sättigung">
+        <Description><![CDATA[<p>Sättigung (0–100)</p>]]></Description>
+      </Parameter>
+      <Parameter Name="Value" DisplayName="Wert">
+        <Description><![CDATA[<p>Helligkeitswert (0–100)</p>]]></Description>
+      </Parameter>
+      <Parameter Name="Lightness" DisplayName="Helligkeit">
+        <Description><![CDATA[<p>Helligkeit (0–100)</p>]]></Description>
+      </Parameter>
+      <Block Mode="ReadRGB" DisplayName="Messen – RGB-Farbe">
+        <Description><![CDATA[<p>Rohe Rot-, Grün- und Blauwerte vom Farbsensor lesen.</p>]]></Description>
+      </Block>
+      <Block Mode="ReadHSV" DisplayName="Messen – HSVL-Farbe">
+        <Description><![CDATA[<p>Farbton, Sättigung, Wert und Helligkeit aus dem RGB-Wert berechnen.</p>]]></Description>
+      </Block>
+      <Block Mode="DectRGB" DisplayName="Vergleichen – RGB-Farbe">
+        <Description><![CDATA[<p>Live-RGB mit einem Referenz-Triple vergleichen, gibt Boolean zurück.</p>]]></Description>
+      </Block>
+    </PolyGroup>
+    <PolyGroup Name="ColorClassifier" DisplayName="Farb-Klassifikator" DisplayNamePrefix="ColorClassifier">
+      <Description><![CDATA[<p>Distanzbasierte Farbklassifikation für den Tab „Datenoperationen“.</p>]]></Description>
+      <Parameter Name="R_in" DisplayName="R-Eingang">
+        <Description><![CDATA[<p>Lebender Rotwert zur Klassifizierung</p>]]></Description>
+      </Parameter>
+      <Parameter Name="G_in" DisplayName="G-Eingang">
+        <Description><![CDATA[<p>Lebender Grünwert zur Klassifizierung</p>]]></Description>
+      </Parameter>
+      <Parameter Name="B_in" DisplayName="B-Eingang">
+        <Description><![CDATA[<p>Lebender Blauwert zur Klassifizierung</p>]]></Description>
+      </Parameter>
+      <Parameter Name="R_n" DisplayName="Rn">
+        <Description><![CDATA[<p>Normiertes Rot: R / (R+G+B) × 100</p>]]></Description>
+      </Parameter>
+      <Parameter Name="G_n" DisplayName="Gn">
+        <Description><![CDATA[<p>Normiertes Grün: G / (R+G+B) × 100</p>]]></Description>
+      </Parameter>
+      <Parameter Name="B_n" DisplayName="Bn">
+        <Description><![CDATA[<p>Normiertes Blau: B / (R+G+B) × 100</p>]]></Description>
+      </Parameter>
+      <Parameter Name="Ref_R" DisplayName="Referenz R">
+        <Description><![CDATA[<p>Roter Wert der zu speichernden Voreinstellungsfarbe</p>]]></Description>
+      </Parameter>
+      <Parameter Name="Ref_G" DisplayName="Referenz G">
+        <Description><![CDATA[<p>Grüner Wert der zu speichernden Voreinstellungsfarbe</p>]]></Description>
+      </Parameter>
+      <Parameter Name="Ref_B" DisplayName="Referenz B">
+        <Description><![CDATA[<p>Blauer Wert der zu speichernden Voreinstellungsfarbe</p>]]></Description>
+      </Parameter>
+      <Parameter Name="BestColor" DisplayName="Beste Farbe">
+        <Description><![CDATA[<p>Index (1–8) der nächstgelegenen Voreinstellungsfarbe</p>]]></Description>
+      </Parameter>
+      <Parameter Name="BestDistance" DisplayName="Beste Distanz">
+        <Description><![CDATA[<p>Distanz zur nächstgelegenen Voreinstellungsfarbe</p>]]></Description>
+      </Parameter>
+      <Parameter Name="D1" DisplayName="Distanz 1">
+        <Description><![CDATA[<p>Quadrierte Distanz vom Eingangs-RGB zur Voreinstellungsfarbe 1</p>]]></Description>
+      </Parameter>
+      <Parameter Name="D2" DisplayName="Distanz 2">
+        <Description><![CDATA[<p>Quadrierte Distanz vom Eingangs-RGB zur Voreinstellungsfarbe 2</p>]]></Description>
+      </Parameter>
+      <Parameter Name="D3" DisplayName="Distanz 3">
+        <Description><![CDATA[<p>Quadrierte Distanz vom Eingangs-RGB zur Voreinstellungsfarbe 3</p>]]></Description>
+      </Parameter>
+      <Parameter Name="D4" DisplayName="Distanz 4">
+        <Description><![CDATA[<p>Quadrierte Distanz vom Eingangs-RGB zur Voreinstellungsfarbe 4</p>]]></Description>
+      </Parameter>
+      <Parameter Name="D5" DisplayName="Distanz 5">
+        <Description><![CDATA[<p>Quadrierte Distanz vom Eingangs-RGB zur Voreinstellungsfarbe 5</p>]]></Description>
+      </Parameter>
+      <Parameter Name="D6" DisplayName="Distanz 6">
+        <Description><![CDATA[<p>Quadrierte Distanz vom Eingangs-RGB zur Voreinstellungsfarbe 6</p>]]></Description>
+      </Parameter>
+      <Parameter Name="D7" DisplayName="Distanz 7">
+        <Description><![CDATA[<p>Quadrierte Distanz vom Eingangs-RGB zur Voreinstellungsfarbe 7</p>]]></Description>
+      </Parameter>
+      <Parameter Name="D8" DisplayName="Distanz 8">
+        <Description><![CDATA[<p>Quadrierte Distanz vom Eingangs-RGB zur Voreinstellungsfarbe 8</p>]]></Description>
+      </Parameter>
+      <Parameter Name="D1_in" DisplayName="Distanz 1">
+        <Description><![CDATA[<p>Distanz zu Farbe 1 (vom Distance-Modus verdrahten)</p>]]></Description>
+      </Parameter>
+      <Parameter Name="D2_in" DisplayName="Distanz 2">
+        <Description><![CDATA[<p>Distanz zu Farbe 2 (vom Distance-Modus verdrahten)</p>]]></Description>
+      </Parameter>
+      <Parameter Name="D3_in" DisplayName="Distanz 3">
+        <Description><![CDATA[<p>Distanz zu Farbe 3 (vom Distance-Modus verdrahten)</p>]]></Description>
+      </Parameter>
+      <Parameter Name="D4_in" DisplayName="Distanz 4">
+        <Description><![CDATA[<p>Distanz zu Farbe 4 (vom Distance-Modus verdrahten)</p>]]></Description>
+      </Parameter>
+      <Parameter Name="D5_in" DisplayName="Distanz 5">
+        <Description><![CDATA[<p>Distanz zu Farbe 5 (vom Distance-Modus verdrahten)</p>]]></Description>
+      </Parameter>
+      <Parameter Name="D6_in" DisplayName="Distanz 6">
+        <Description><![CDATA[<p>Distanz zu Farbe 6 (vom Distance-Modus verdrahten)</p>]]></Description>
+      </Parameter>
+      <Parameter Name="D7_in" DisplayName="Distanz 7">
+        <Description><![CDATA[<p>Distanz zu Farbe 7 (vom Distance-Modus verdrahten)</p>]]></Description>
+      </Parameter>
+      <Parameter Name="D8_in" DisplayName="Distanz 8">
+        <Description><![CDATA[<p>Distanz zu Farbe 8 (vom Distance-Modus verdrahten)</p>]]></Description>
+      </Parameter>
+      <Block Mode="Normalize" DisplayName="Normieren – RGB">
+        <Description><![CDATA[<p>Wandelt rohe R, G, B in Verhältnisse (jeder Kanal geteilt durch die Summe, mal 100). Entfernt Helligkeitseinfluss, behält nur die Farbe.</p>]]></Description>
+      </Block>
+      <Category Name="Setup" DisplayName="Einrichten">
+        <Block Mode="Setup_C1" DisplayName="Farbe 1 einrichten">
+          <Description><![CDATA[<p>Speichert die angegebenen R, G, B als Referenz für Farbslot 1. Beim Programmstart einmal pro Slot aufrufen.</p>]]></Description>
+        </Block>
+        <Block Mode="Setup_C2" DisplayName="Farbe 2 einrichten">
+          <Description><![CDATA[<p>Speichert die angegebenen R, G, B als Referenz für Farbslot 2. Beim Programmstart einmal pro Slot aufrufen.</p>]]></Description>
+        </Block>
+        <Block Mode="Setup_C3" DisplayName="Farbe 3 einrichten">
+          <Description><![CDATA[<p>Speichert die angegebenen R, G, B als Referenz für Farbslot 3. Beim Programmstart einmal pro Slot aufrufen.</p>]]></Description>
+        </Block>
+        <Block Mode="Setup_C4" DisplayName="Farbe 4 einrichten">
+          <Description><![CDATA[<p>Speichert die angegebenen R, G, B als Referenz für Farbslot 4. Beim Programmstart einmal pro Slot aufrufen.</p>]]></Description>
+        </Block>
+        <Block Mode="Setup_C5" DisplayName="Farbe 5 einrichten">
+          <Description><![CDATA[<p>Speichert die angegebenen R, G, B als Referenz für Farbslot 5. Beim Programmstart einmal pro Slot aufrufen.</p>]]></Description>
+        </Block>
+        <Block Mode="Setup_C6" DisplayName="Farbe 6 einrichten">
+          <Description><![CDATA[<p>Speichert die angegebenen R, G, B als Referenz für Farbslot 6. Beim Programmstart einmal pro Slot aufrufen.</p>]]></Description>
+        </Block>
+        <Block Mode="Setup_C7" DisplayName="Farbe 7 einrichten">
+          <Description><![CDATA[<p>Speichert die angegebenen R, G, B als Referenz für Farbslot 7. Beim Programmstart einmal pro Slot aufrufen.</p>]]></Description>
+        </Block>
+        <Block Mode="Setup_C8" DisplayName="Farbe 8 einrichten">
+          <Description><![CDATA[<p>Speichert die angegebenen R, G, B als Referenz für Farbslot 8. Beim Programmstart einmal pro Slot aufrufen.</p>]]></Description>
+        </Block>
+      </Category>
+      <Block Mode="Distance" DisplayName="Distanz">
+        <Description><![CDATA[<p>Berechnet die quadrierte Distanz vom Live-RGB zu jeder der 8 Voreinstellungsfarben. Ausgänge in den Identify-Block verdrahten.</p>]]></Description>
+      </Block>
+      <Block Mode="Identify" DisplayName="Identifizieren">
+        <Description><![CDATA[<p>Nimmt die 8 Distanzen vom Distance-Block und gibt den Index (1–8) der nächstgelegenen Farbe plus die tatsächliche Distanz zurück.</p>]]></Description>
+      </Block>
+    </PolyGroup>
+  </PolyGroups>
+</EditorStrings>

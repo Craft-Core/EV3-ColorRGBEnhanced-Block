@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<EditorStrings>
+  <PolyGroups ModuleName="ColorSensorRGB">
+    <PolyGroup Name="ColorSensorRGB" DisplayName="Kleursensor RGB Verbeterd" DisplayNamePrefix="ColorSensorRGB">
+      <Parameter Name="Port" DisplayName="Poort">
+        <Description><![CDATA[<p>Sensorpoort (1–4) van de EV3-kleursensor</p>]]></Description>
+      </Parameter>
+      <Parameter Name="Red" DisplayName="Rood">
+        <Description><![CDATA[<p>Roodcomponent van RGB (0–255)</p>]]></Description>
+      </Parameter>
+      <Parameter Name="Green" DisplayName="Groen">
+        <Description><![CDATA[<p>Groencomponent van RGB (0–255)</p>]]></Description>
+      </Parameter>
+      <Parameter Name="Blue" DisplayName="Blauw">
+        <Description><![CDATA[<p>Blauwcomponent van RGB (0–255)</p>]]></Description>
+      </Parameter>
+      <Parameter Name="Red_Range" DisplayName="Referentie Rood">
+        <Description><![CDATA[<p>Roodreferentiewaarde voor vergelijking</p>]]></Description>
+      </Parameter>
+      <Parameter Name="Green_Range" DisplayName="Referentie Groen">
+        <Description><![CDATA[<p>Groenreferentiewaarde voor vergelijking</p>]]></Description>
+      </Parameter>
+      <Parameter Name="Blue_Range" DisplayName="Referentie Blauw">
+        <Description><![CDATA[<p>Blauwreferentiewaarde voor vergelijking</p>]]></Description>
+      </Parameter>
+      <Parameter Name="Error_Amount" DisplayName="Tolerantie">
+        <Description><![CDATA[<p>Toegestane afwijking per kanaal voor positieve match</p>]]></Description>
+      </Parameter>
+      <Parameter Name="Result" DisplayName="Komt overeen">
+        <Description><![CDATA[<p>Waar als gemeten RGB binnen tolerantie van referentie ligt</p>]]></Description>
+      </Parameter>
+      <Parameter Name="Hue" DisplayName="Tint">
+        <Description><![CDATA[<p>Tintcomponent (0–360 graden)</p>]]></Description>
+      </Parameter>
+      <Parameter Name="Saturation" DisplayName="Verzadiging">
+        <Description><![CDATA[<p>Verzadiging (0–100)</p>]]></Description>
+      </Parameter>
+      <Parameter Name="Value" DisplayName="Waarde">
+        <Description><![CDATA[<p>Waarde/helderheid (0–100)</p>]]></Description>
+      </Parameter>
+      <Parameter Name="Lightness" DisplayName="Lichtheid">
+        <Description><![CDATA[<p>Lichtheid (0–100)</p>]]></Description>
+      </Parameter>
+      <Block Mode="ReadRGB" DisplayName="Meten – RGB-kleur">
+        <Description><![CDATA[<p>Lees ruwe Rood-, Groen- en Blauwwaarden van de kleursensor.</p>]]></Description>
+      </Block>
+      <Block Mode="ReadHSV" DisplayName="Meten – HSVL-kleur">
+        <Description><![CDATA[<p>Lees tint, verzadiging, waarde en lichtheid afgeleid van de RGB van de sensor.</p>]]></Description>
+      </Block>
+      <Block Mode="DectRGB" DisplayName="Vergelijken – RGB-kleur">
+        <Description><![CDATA[<p>Vergelijk live RGB met een referentietriplet en retourneer een boolean.</p>]]></Description>
+      </Block>
+    </PolyGroup>
+    <PolyGroup Name="ColorClassifier" DisplayName="Kleurclassificator" DisplayNamePrefix="ColorClassifier">
+      <Description><![CDATA[<p>Op afstand gebaseerde kleurclassificatie-tools voor het tabblad Gegevensbewerkingen.</p>]]></Description>
+      <Parameter Name="R_in" DisplayName="R-ingang">
+        <Description><![CDATA[<p>Live rode kanaalwaarde om te classificeren</p>]]></Description>
+      </Parameter>
+      <Parameter Name="G_in" DisplayName="G-ingang">
+        <Description><![CDATA[<p>Live groene kanaalwaarde om te classificeren</p>]]></Description>
+      </Parameter>
+      <Parameter Name="B_in" DisplayName="B-ingang">
+        <Description><![CDATA[<p>Live blauwe kanaalwaarde om te classificeren</p>]]></Description>
+      </Parameter>
+      <Parameter Name="R_n" DisplayName="Rn">
+        <Description><![CDATA[<p>Genormaliseerd rood: R / (R+G+B) × 100</p>]]></Description>
+      </Parameter>
+      <Parameter Name="G_n" DisplayName="Gn">
+        <Description><![CDATA[<p>Genormaliseerd groen: G / (R+G+B) × 100</p>]]></Description>
+      </Parameter>
+      <Parameter Name="B_n" DisplayName="Bn">
+        <Description><![CDATA[<p>Genormaliseerd blauw: B / (R+G+B) × 100</p>]]></Description>
+      </Parameter>
+      <Parameter Name="Ref_R" DisplayName="Referentie R">
+        <Description><![CDATA[<p>Rode waarde van de op te slaan voorkeurskleur</p>]]></Description>
+      </Parameter>
+      <Parameter Name="Ref_G" DisplayName="Referentie G">
+        <Description><![CDATA[<p>Groene waarde van de op te slaan voorkeurskleur</p>]]></Description>
+      </Parameter>
+      <Parameter Name="Ref_B" DisplayName="Referentie B">
+        <Description><![CDATA[<p>Blauwe waarde van de op te slaan voorkeurskleur</p>]]></Description>
+      </Parameter>
+      <Parameter Name="BestColor" DisplayName="Beste kleur">
+        <Description><![CDATA[<p>Index (1–8) van de dichtstbijzijnde voorkeurskleur</p>]]></Description>
+      </Parameter>
+      <Parameter Name="BestDistance" DisplayName="Beste afstand">
+        <Description><![CDATA[<p>Afstand tot de dichtstbijzijnde voorkeurskleur</p>]]></Description>
+      </Parameter>
+      <Parameter Name="D1" DisplayName="Afstand 1">
+        <Description><![CDATA[<p>Kwadratische afstand van invoer-RGB tot voorkeurskleur 1</p>]]></Description>
+      </Parameter>
+      <Parameter Name="D2" DisplayName="Afstand 2">
+        <Description><![CDATA[<p>Kwadratische afstand van invoer-RGB tot voorkeurskleur 2</p>]]></Description>
+      </Parameter>
+      <Parameter Name="D3" DisplayName="Afstand 3">
+        <Description><![CDATA[<p>Kwadratische afstand van invoer-RGB tot voorkeurskleur 3</p>]]></Description>
+      </Parameter>
+      <Parameter Name="D4" DisplayName="Afstand 4">
+        <Description><![CDATA[<p>Kwadratische afstand van invoer-RGB tot voorkeurskleur 4</p>]]></Description>
+      </Parameter>
+      <Parameter Name="D5" DisplayName="Afstand 5">
+        <Description><![CDATA[<p>Kwadratische afstand van invoer-RGB tot voorkeurskleur 5</p>]]></Description>
+      </Parameter>
+      <Parameter Name="D6" DisplayName="Afstand 6">
+        <Description><![CDATA[<p>Kwadratische afstand van invoer-RGB tot voorkeurskleur 6</p>]]></Description>
+      </Parameter>
+      <Parameter Name="D7" DisplayName="Afstand 7">
+        <Description><![CDATA[<p>Kwadratische afstand van invoer-RGB tot voorkeurskleur 7</p>]]></Description>
+      </Parameter>
+      <Parameter Name="D8" DisplayName="Afstand 8">
+        <Description><![CDATA[<p>Kwadratische afstand van invoer-RGB tot voorkeurskleur 8</p>]]></Description>
+      </Parameter>
+      <Parameter Name="D1_in" DisplayName="Afstand 1">
+        <Description><![CDATA[<p>Afstand tot kleur 1 (bedraad vanaf Distance-modus)</p>]]></Description>
+      </Parameter>
+      <Parameter Name="D2_in" DisplayName="Afstand 2">
+        <Description><![CDATA[<p>Afstand tot kleur 2 (bedraad vanaf Distance-modus)</p>]]></Description>
+      </Parameter>
+      <Parameter Name="D3_in" DisplayName="Afstand 3">
+        <Description><![CDATA[<p>Afstand tot kleur 3 (bedraad vanaf Distance-modus)</p>]]></Description>
+      </Parameter>
+      <Parameter Name="D4_in" DisplayName="Afstand 4">
+        <Description><![CDATA[<p>Afstand tot kleur 4 (bedraad vanaf Distance-modus)</p>]]></Description>
+      </Parameter>
+      <Parameter Name="D5_in" DisplayName="Afstand 5">
+        <Description><![CDATA[<p>Afstand tot kleur 5 (bedraad vanaf Distance-modus)</p>]]></Description>
+      </Parameter>
+      <Parameter Name="D6_in" DisplayName="Afstand 6">
+        <Description><![CDATA[<p>Afstand tot kleur 6 (bedraad vanaf Distance-modus)</p>]]></Description>
+      </Parameter>
+      <Parameter Name="D7_in" DisplayName="Afstand 7">
+        <Description><![CDATA[<p>Afstand tot kleur 7 (bedraad vanaf Distance-modus)</p>]]></Description>
+      </Parameter>
+      <Parameter Name="D8_in" DisplayName="Afstand 8">
+        <Description><![CDATA[<p>Afstand tot kleur 8 (bedraad vanaf Distance-modus)</p>]]></Description>
+      </Parameter>
+      <Block Mode="Normalize" DisplayName="Normaliseren – RGB">
+        <Description><![CDATA[<p>Converteert ruwe R, G, B naar verhoudingen (elk kanaal gedeeld door de som, × 100). Verwijdert helderheidsinvloed.</p>]]></Description>
+      </Block>
+      <Category Name="Setup" DisplayName="Instellen">
+        <Block Mode="Setup_C1" DisplayName="Kleur 1 instellen">
+          <Description><![CDATA[<p>Slaat de opgegeven R, G, B op als referentie voor slot 1. Roep eenmaal per slot aan bij programmastart.</p>]]></Description>
+        </Block>
+        <Block Mode="Setup_C2" DisplayName="Kleur 2 instellen">
+          <Description><![CDATA[<p>Slaat de opgegeven R, G, B op als referentie voor slot 2. Roep eenmaal per slot aan bij programmastart.</p>]]></Description>
+        </Block>
+        <Block Mode="Setup_C3" DisplayName="Kleur 3 instellen">
+          <Description><![CDATA[<p>Slaat de opgegeven R, G, B op als referentie voor slot 3. Roep eenmaal per slot aan bij programmastart.</p>]]></Description>
+        </Block>
+        <Block Mode="Setup_C4" DisplayName="Kleur 4 instellen">
+          <Description><![CDATA[<p>Slaat de opgegeven R, G, B op als referentie voor slot 4. Roep eenmaal per slot aan bij programmastart.</p>]]></Description>
+        </Block>
+        <Block Mode="Setup_C5" DisplayName="Kleur 5 instellen">
+          <Description><![CDATA[<p>Slaat de opgegeven R, G, B op als referentie voor slot 5. Roep eenmaal per slot aan bij programmastart.</p>]]></Description>
+        </Block>
+        <Block Mode="Setup_C6" DisplayName="Kleur 6 instellen">
+          <Description><![CDATA[<p>Slaat de opgegeven R, G, B op als referentie voor slot 6. Roep eenmaal per slot aan bij programmastart.</p>]]></Description>
+        </Block>
+        <Block Mode="Setup_C7" DisplayName="Kleur 7 instellen">
+          <Description><![CDATA[<p>Slaat de opgegeven R, G, B op als referentie voor slot 7. Roep eenmaal per slot aan bij programmastart.</p>]]></Description>
+        </Block>
+        <Block Mode="Setup_C8" DisplayName="Kleur 8 instellen">
+          <Description><![CDATA[<p>Slaat de opgegeven R, G, B op als referentie voor slot 8. Roep eenmaal per slot aan bij programmastart.</p>]]></Description>
+        </Block>
+      </Category>
+      <Block Mode="Distance" DisplayName="Afstand">
+        <Description><![CDATA[<p>Berekent de kwadratische afstand van live RGB tot elk van de 8 voorkeurskleuren. Bedraad de uitgangen naar het Identify-blok.</p>]]></Description>
+      </Block>
+      <Block Mode="Identify" DisplayName="Identificeren">
+        <Description><![CDATA[<p>Neemt de 8 afstanden van het Distance-blok en retourneert de index (1–8) van de dichtstbijzijnde kleur plus de werkelijke afstand.</p>]]></Description>
+      </Block>
+    </PolyGroup>
+  </PolyGroups>
+</EditorStrings>

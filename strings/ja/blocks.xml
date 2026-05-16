@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<EditorStrings>
+  <PolyGroups ModuleName="ColorSensorRGB">
+    <PolyGroup Name="ColorSensorRGB" DisplayName="カラーセンサー RGB 拡張" DisplayNamePrefix="ColorSensorRGB">
+      <Parameter Name="Port" DisplayName="ポート">
+        <Description><![CDATA[<p>EV3 カラーセンサーが接続されているポート (1–4)</p>]]></Description>
+      </Parameter>
+      <Parameter Name="Red" DisplayName="赤">
+        <Description><![CDATA[<p>RGB の赤成分 (0–255)</p>]]></Description>
+      </Parameter>
+      <Parameter Name="Green" DisplayName="緑">
+        <Description><![CDATA[<p>RGB の緑成分 (0–255)</p>]]></Description>
+      </Parameter>
+      <Parameter Name="Blue" DisplayName="青">
+        <Description><![CDATA[<p>RGB の青成分 (0–255)</p>]]></Description>
+      </Parameter>
+      <Parameter Name="Red_Range" DisplayName="赤の基準値">
+        <Description><![CDATA[<p>比較対象となる赤の基準値</p>]]></Description>
+      </Parameter>
+      <Parameter Name="Green_Range" DisplayName="緑の基準値">
+        <Description><![CDATA[<p>比較対象となる緑の基準値</p>]]></Description>
+      </Parameter>
+      <Parameter Name="Blue_Range" DisplayName="青の基準値">
+        <Description><![CDATA[<p>比較対象となる青の基準値</p>]]></Description>
+      </Parameter>
+      <Parameter Name="Error_Amount" DisplayName="許容誤差">
+        <Description><![CDATA[<p>一致と判定するためのチャンネルごとの許容差</p>]]></Description>
+      </Parameter>
+      <Parameter Name="Result" DisplayName="一致">
+        <Description><![CDATA[<p>RGB が基準値の許容範囲内なら真</p>]]></Description>
+      </Parameter>
+      <Parameter Name="Hue" DisplayName="色相">
+        <Description><![CDATA[<p>色相 (0–360 度)</p>]]></Description>
+      </Parameter>
+      <Parameter Name="Saturation" DisplayName="彩度">
+        <Description><![CDATA[<p>彩度 (0–100)</p>]]></Description>
+      </Parameter>
+      <Parameter Name="Value" DisplayName="明度">
+        <Description><![CDATA[<p>明度/輝度 (0–100)</p>]]></Description>
+      </Parameter>
+      <Parameter Name="Lightness" DisplayName="ライトネス">
+        <Description><![CDATA[<p>ライトネス (0–100)</p>]]></Description>
+      </Parameter>
+      <Block Mode="ReadRGB" DisplayName="測定 – RGB カラー">
+        <Description><![CDATA[<p>カラーセンサーから生の RGB 値を読み取ります。</p>]]></Description>
+      </Block>
+      <Block Mode="ReadHSV" DisplayName="測定 – HSVL カラー">
+        <Description><![CDATA[<p>センサーの RGB から色相・彩度・明度・ライトネスを算出して読み取ります。</p>]]></Description>
+      </Block>
+      <Block Mode="DectRGB" DisplayName="比較 – RGB カラー">
+        <Description><![CDATA[<p>ライブ RGB を基準 RGB と比較し、一致したかどうかをブール値で返します。</p>]]></Description>
+      </Block>
+    </PolyGroup>
+    <PolyGroup Name="ColorClassifier" DisplayName="カラー分類器" DisplayNamePrefix="ColorClassifier">
+      <Description><![CDATA[<p>データー操作タブ向けの距離ベースのカラー分類ユーティリティ。</p>]]></Description>
+      <Parameter Name="R_in" DisplayName="R 入力">
+        <Description><![CDATA[<p>分類対象のライブ赤成分</p>]]></Description>
+      </Parameter>
+      <Parameter Name="G_in" DisplayName="G 入力">
+        <Description><![CDATA[<p>分類対象のライブ緑成分</p>]]></Description>
+      </Parameter>
+      <Parameter Name="B_in" DisplayName="B 入力">
+        <Description><![CDATA[<p>分類対象のライブ青成分</p>]]></Description>
+      </Parameter>
+      <Parameter Name="R_n" DisplayName="Rn">
+        <Description><![CDATA[<p>正規化された赤: R / (R+G+B) × 100</p>]]></Description>
+      </Parameter>
+      <Parameter Name="G_n" DisplayName="Gn">
+        <Description><![CDATA[<p>正規化された緑: G / (R+G+B) × 100</p>]]></Description>
+      </Parameter>
+      <Parameter Name="B_n" DisplayName="Bn">
+        <Description><![CDATA[<p>正規化された青: B / (R+G+B) × 100</p>]]></Description>
+      </Parameter>
+      <Parameter Name="Ref_R" DisplayName="基準 R">
+        <Description><![CDATA[<p>保存するプリセット色の赤値</p>]]></Description>
+      </Parameter>
+      <Parameter Name="Ref_G" DisplayName="基準 G">
+        <Description><![CDATA[<p>保存するプリセット色の緑値</p>]]></Description>
+      </Parameter>
+      <Parameter Name="Ref_B" DisplayName="基準 B">
+        <Description><![CDATA[<p>保存するプリセット色の青値</p>]]></Description>
+      </Parameter>
+      <Parameter Name="BestColor" DisplayName="最近色">
+        <Description><![CDATA[<p>最も近いプリセット色の番号 (1–8)</p>]]></Description>
+      </Parameter>
+      <Parameter Name="BestDistance" DisplayName="最近距離">
+        <Description><![CDATA[<p>最も近いプリセット色までの距離</p>]]></Description>
+      </Parameter>
+      <Parameter Name="D1" DisplayName="距離 1">
+        <Description><![CDATA[<p>入力 RGB からプリセット色 1 までの二乗距離</p>]]></Description>
+      </Parameter>
+      <Parameter Name="D2" DisplayName="距離 2">
+        <Description><![CDATA[<p>入力 RGB からプリセット色 2 までの二乗距離</p>]]></Description>
+      </Parameter>
+      <Parameter Name="D3" DisplayName="距離 3">
+        <Description><![CDATA[<p>入力 RGB からプリセット色 3 までの二乗距離</p>]]></Description>
+      </Parameter>
+      <Parameter Name="D4" DisplayName="距離 4">
+        <Description><![CDATA[<p>入力 RGB からプリセット色 4 までの二乗距離</p>]]></Description>
+      </Parameter>
+      <Parameter Name="D5" DisplayName="距離 5">
+        <Description><![CDATA[<p>入力 RGB からプリセット色 5 までの二乗距離</p>]]></Description>
+      </Parameter>
+      <Parameter Name="D6" DisplayName="距離 6">
+        <Description><![CDATA[<p>入力 RGB からプリセット色 6 までの二乗距離</p>]]></Description>
+      </Parameter>
+      <Parameter Name="D7" DisplayName="距離 7">
+        <Description><![CDATA[<p>入力 RGB からプリセット色 7 までの二乗距離</p>]]></Description>
+      </Parameter>
+      <Parameter Name="D8" DisplayName="距離 8">
+        <Description><![CDATA[<p>入力 RGB からプリセット色 8 までの二乗距離</p>]]></Description>
+      </Parameter>
+      <Parameter Name="D1_in" DisplayName="距離 1">
+        <Description><![CDATA[<p>色 1 までの距離 (Distance モードから配線)</p>]]></Description>
+      </Parameter>
+      <Parameter Name="D2_in" DisplayName="距離 2">
+        <Description><![CDATA[<p>色 2 までの距離 (Distance モードから配線)</p>]]></Description>
+      </Parameter>
+      <Parameter Name="D3_in" DisplayName="距離 3">
+        <Description><![CDATA[<p>色 3 までの距離 (Distance モードから配線)</p>]]></Description>
+      </Parameter>
+      <Parameter Name="D4_in" DisplayName="距離 4">
+        <Description><![CDATA[<p>色 4 までの距離 (Distance モードから配線)</p>]]></Description>
+      </Parameter>
+      <Parameter Name="D5_in" DisplayName="距離 5">
+        <Description><![CDATA[<p>色 5 までの距離 (Distance モードから配線)</p>]]></Description>
+      </Parameter>
+      <Parameter Name="D6_in" DisplayName="距離 6">
+        <Description><![CDATA[<p>色 6 までの距離 (Distance モードから配線)</p>]]></Description>
+      </Parameter>
+      <Parameter Name="D7_in" DisplayName="距離 7">
+        <Description><![CDATA[<p>色 7 までの距離 (Distance モードから配線)</p>]]></Description>
+      </Parameter>
+      <Parameter Name="D8_in" DisplayName="距離 8">
+        <Description><![CDATA[<p>色 8 までの距離 (Distance モードから配線)</p>]]></Description>
+      </Parameter>
+      <Block Mode="Normalize" DisplayName="正規化 – RGB">
+        <Description><![CDATA[<p>生の R, G, B を比率に変換します (各チャンネル÷合計、100倍)。明るさの影響を除去し、色情報のみを残します。</p>]]></Description>
+      </Block>
+      <Category Name="Setup" DisplayName="設定">
+        <Block Mode="Setup_C1" DisplayName="色 1 を設定">
+          <Description><![CDATA[<p>指定した R, G, B を色スロット 1 の基準値として保存します。プログラム開始時にスロットごとに1回呼び出します。</p>]]></Description>
+        </Block>
+        <Block Mode="Setup_C2" DisplayName="色 2 を設定">
+          <Description><![CDATA[<p>指定した R, G, B を色スロット 2 の基準値として保存します。プログラム開始時にスロットごとに1回呼び出します。</p>]]></Description>
+        </Block>
+        <Block Mode="Setup_C3" DisplayName="色 3 を設定">
+          <Description><![CDATA[<p>指定した R, G, B を色スロット 3 の基準値として保存します。プログラム開始時にスロットごとに1回呼び出します。</p>]]></Description>
+        </Block>
+        <Block Mode="Setup_C4" DisplayName="色 4 を設定">
+          <Description><![CDATA[<p>指定した R, G, B を色スロット 4 の基準値として保存します。プログラム開始時にスロットごとに1回呼び出します。</p>]]></Description>
+        </Block>
+        <Block Mode="Setup_C5" DisplayName="色 5 を設定">
+          <Description><![CDATA[<p>指定した R, G, B を色スロット 5 の基準値として保存します。プログラム開始時にスロットごとに1回呼び出します。</p>]]></Description>
+        </Block>
+        <Block Mode="Setup_C6" DisplayName="色 6 を設定">
+          <Description><![CDATA[<p>指定した R, G, B を色スロット 6 の基準値として保存します。プログラム開始時にスロットごとに1回呼び出します。</p>]]></Description>
+        </Block>
+        <Block Mode="Setup_C7" DisplayName="色 7 を設定">
+          <Description><![CDATA[<p>指定した R, G, B を色スロット 7 の基準値として保存します。プログラム開始時にスロットごとに1回呼び出します。</p>]]></Description>
+        </Block>
+        <Block Mode="Setup_C8" DisplayName="色 8 を設定">
+          <Description><![CDATA[<p>指定した R, G, B を色スロット 8 の基準値として保存します。プログラム開始時にスロットごとに1回呼び出します。</p>]]></Description>
+        </Block>
+      </Category>
+      <Block Mode="Distance" DisplayName="距離">
+        <Description><![CDATA[<p>ライブ RGB から 8 つのプリセット色までの二乗距離を計算します。出力を Identify ブロックに配線してください。</p>]]></Description>
+      </Block>
+      <Block Mode="Identify" DisplayName="識別">
+        <Description><![CDATA[<p>Distance ブロックからの 8 つの距離を受け取り、最も近い色の番号 (1–8) と実際の距離を返します。</p>]]></Description>
+      </Block>
+    </PolyGroup>
+  </PolyGroups>
+</EditorStrings>
