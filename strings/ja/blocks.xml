@@ -86,81 +86,81 @@
       <Parameter Name="BestDistance" DisplayName="最近距離">
         <Description><![CDATA[<p>最も近いプリセット色までの距離</p>]]></Description>
       </Parameter>
-      <Parameter Name="D1" DisplayName="色 1">
-        <Description><![CDATA[<p>入力 RGB からプリセット色 1 までの二乗距離</p>]]></Description>
+      <Parameter Name="D_Red" DisplayName="赤">
+        <Description><![CDATA[<p>Squared distance from input RGB to 赤 reference</p>]]></Description>
       </Parameter>
-      <Parameter Name="D2" DisplayName="色 2">
-        <Description><![CDATA[<p>入力 RGB からプリセット色 2 までの二乗距離</p>]]></Description>
+      <Parameter Name="D_Green" DisplayName="緑">
+        <Description><![CDATA[<p>Squared distance from input RGB to 緑 reference</p>]]></Description>
       </Parameter>
-      <Parameter Name="D3" DisplayName="色 3">
-        <Description><![CDATA[<p>入力 RGB からプリセット色 3 までの二乗距離</p>]]></Description>
+      <Parameter Name="D_Blue" DisplayName="青">
+        <Description><![CDATA[<p>Squared distance from input RGB to 青 reference</p>]]></Description>
       </Parameter>
-      <Parameter Name="D4" DisplayName="色 4">
-        <Description><![CDATA[<p>入力 RGB からプリセット色 4 までの二乗距離</p>]]></Description>
+      <Parameter Name="D_Yellow" DisplayName="黄">
+        <Description><![CDATA[<p>Squared distance from input RGB to 黄 reference</p>]]></Description>
       </Parameter>
-      <Parameter Name="D5" DisplayName="色 5">
-        <Description><![CDATA[<p>入力 RGB からプリセット色 5 までの二乗距離</p>]]></Description>
+      <Parameter Name="D_White" DisplayName="白">
+        <Description><![CDATA[<p>Squared distance from input RGB to 白 reference</p>]]></Description>
       </Parameter>
-      <Parameter Name="D6" DisplayName="色 6">
-        <Description><![CDATA[<p>入力 RGB からプリセット色 6 までの二乗距離</p>]]></Description>
+      <Parameter Name="D_Black" DisplayName="黒">
+        <Description><![CDATA[<p>Squared distance from input RGB to 黒 reference</p>]]></Description>
       </Parameter>
-      <Parameter Name="D7" DisplayName="色 7">
-        <Description><![CDATA[<p>入力 RGB からプリセット色 7 までの二乗距離</p>]]></Description>
+      <Parameter Name="D_Brown" DisplayName="茶">
+        <Description><![CDATA[<p>Squared distance from input RGB to 茶 reference</p>]]></Description>
       </Parameter>
-      <Parameter Name="D8" DisplayName="色 8">
-        <Description><![CDATA[<p>入力 RGB からプリセット色 8 までの二乗距離</p>]]></Description>
+      <Parameter Name="D_Pink" DisplayName="ピンク">
+        <Description><![CDATA[<p>Squared distance from input RGB to ピンク reference</p>]]></Description>
       </Parameter>
-      <Parameter Name="D1_in" DisplayName="色 1">
-        <Description><![CDATA[<p>色 1 までの距離 (Distance モードから配線)</p>]]></Description>
+      <Parameter Name="D_Red_in" DisplayName="赤">
+        <Description><![CDATA[<p>Distance to 赤 (from Distance mode)</p>]]></Description>
       </Parameter>
-      <Parameter Name="D2_in" DisplayName="色 2">
-        <Description><![CDATA[<p>色 2 までの距離 (Distance モードから配線)</p>]]></Description>
+      <Parameter Name="D_Green_in" DisplayName="緑">
+        <Description><![CDATA[<p>Distance to 緑 (from Distance mode)</p>]]></Description>
       </Parameter>
-      <Parameter Name="D3_in" DisplayName="色 3">
-        <Description><![CDATA[<p>色 3 までの距離 (Distance モードから配線)</p>]]></Description>
+      <Parameter Name="D_Blue_in" DisplayName="青">
+        <Description><![CDATA[<p>Distance to 青 (from Distance mode)</p>]]></Description>
       </Parameter>
-      <Parameter Name="D4_in" DisplayName="色 4">
-        <Description><![CDATA[<p>色 4 までの距離 (Distance モードから配線)</p>]]></Description>
+      <Parameter Name="D_Yellow_in" DisplayName="黄">
+        <Description><![CDATA[<p>Distance to 黄 (from Distance mode)</p>]]></Description>
       </Parameter>
-      <Parameter Name="D5_in" DisplayName="色 5">
-        <Description><![CDATA[<p>色 5 までの距離 (Distance モードから配線)</p>]]></Description>
+      <Parameter Name="D_White_in" DisplayName="白">
+        <Description><![CDATA[<p>Distance to 白 (from Distance mode)</p>]]></Description>
       </Parameter>
-      <Parameter Name="D6_in" DisplayName="色 6">
-        <Description><![CDATA[<p>色 6 までの距離 (Distance モードから配線)</p>]]></Description>
+      <Parameter Name="D_Black_in" DisplayName="黒">
+        <Description><![CDATA[<p>Distance to 黒 (from Distance mode)</p>]]></Description>
       </Parameter>
-      <Parameter Name="D7_in" DisplayName="色 7">
-        <Description><![CDATA[<p>色 7 までの距離 (Distance モードから配線)</p>]]></Description>
+      <Parameter Name="D_Brown_in" DisplayName="茶">
+        <Description><![CDATA[<p>Distance to 茶 (from Distance mode)</p>]]></Description>
       </Parameter>
-      <Parameter Name="D8_in" DisplayName="色 8">
-        <Description><![CDATA[<p>色 8 までの距離 (Distance モードから配線)</p>]]></Description>
+      <Parameter Name="D_Pink_in" DisplayName="ピンク">
+        <Description><![CDATA[<p>Distance to ピンク (from Distance mode)</p>]]></Description>
       </Parameter>
       <Block Mode="Normalize" DisplayName="正規化 – RGB">
         <Description><![CDATA[<p>生の R, G, B を比率に変換します (各チャンネル÷合計、100倍)。明るさの影響を除去し、色情報のみを残します。</p>]]></Description>
       </Block>
       <Category Name="Setup" DisplayName="設定">
-        <Block Mode="Setup_C1" DisplayName="色 1 を設定">
-          <Description><![CDATA[<p>指定した R, G, B を色スロット 1 の基準値として保存します。プログラム開始時にスロットごとに1回呼び出します。</p>]]></Description>
+        <Block Mode="Setup_Red" DisplayName="赤を設定">
+          <Description><![CDATA[<p>赤の基準 RGB を保存します（デフォルト: R=255, G=0, B=0）。プログラム開始時に1回呼び出してください。</p>]]></Description>
         </Block>
-        <Block Mode="Setup_C2" DisplayName="色 2 を設定">
-          <Description><![CDATA[<p>指定した R, G, B を色スロット 2 の基準値として保存します。プログラム開始時にスロットごとに1回呼び出します。</p>]]></Description>
+        <Block Mode="Setup_Green" DisplayName="緑を設定">
+          <Description><![CDATA[<p>緑の基準 RGB を保存します（デフォルト: R=0, G=255, B=0）。プログラム開始時に1回呼び出してください。</p>]]></Description>
         </Block>
-        <Block Mode="Setup_C3" DisplayName="色 3 を設定">
-          <Description><![CDATA[<p>指定した R, G, B を色スロット 3 の基準値として保存します。プログラム開始時にスロットごとに1回呼び出します。</p>]]></Description>
+        <Block Mode="Setup_Blue" DisplayName="青を設定">
+          <Description><![CDATA[<p>青の基準 RGB を保存します（デフォルト: R=0, G=0, B=255）。プログラム開始時に1回呼び出してください。</p>]]></Description>
         </Block>
-        <Block Mode="Setup_C4" DisplayName="色 4 を設定">
-          <Description><![CDATA[<p>指定した R, G, B を色スロット 4 の基準値として保存します。プログラム開始時にスロットごとに1回呼び出します。</p>]]></Description>
+        <Block Mode="Setup_Yellow" DisplayName="黄を設定">
+          <Description><![CDATA[<p>黄の基準 RGB を保存します（デフォルト: R=255, G=255, B=0）。プログラム開始時に1回呼び出してください。</p>]]></Description>
         </Block>
-        <Block Mode="Setup_C5" DisplayName="色 5 を設定">
-          <Description><![CDATA[<p>指定した R, G, B を色スロット 5 の基準値として保存します。プログラム開始時にスロットごとに1回呼び出します。</p>]]></Description>
+        <Block Mode="Setup_White" DisplayName="白を設定">
+          <Description><![CDATA[<p>白の基準 RGB を保存します（デフォルト: R=255, G=255, B=255）。プログラム開始時に1回呼び出してください。</p>]]></Description>
         </Block>
-        <Block Mode="Setup_C6" DisplayName="色 6 を設定">
-          <Description><![CDATA[<p>指定した R, G, B を色スロット 6 の基準値として保存します。プログラム開始時にスロットごとに1回呼び出します。</p>]]></Description>
+        <Block Mode="Setup_Black" DisplayName="黒を設定">
+          <Description><![CDATA[<p>黒の基準 RGB を保存します（デフォルト: R=0, G=0, B=0）。プログラム開始時に1回呼び出してください。</p>]]></Description>
         </Block>
-        <Block Mode="Setup_C7" DisplayName="色 7 を設定">
-          <Description><![CDATA[<p>指定した R, G, B を色スロット 7 の基準値として保存します。プログラム開始時にスロットごとに1回呼び出します。</p>]]></Description>
+        <Block Mode="Setup_Brown" DisplayName="茶を設定">
+          <Description><![CDATA[<p>茶の基準 RGB を保存します（デフォルト: R=128, G=64, B=0）。プログラム開始時に1回呼び出してください。</p>]]></Description>
         </Block>
-        <Block Mode="Setup_C8" DisplayName="色 8 を設定">
-          <Description><![CDATA[<p>指定した R, G, B を色スロット 8 の基準値として保存します。プログラム開始時にスロットごとに1回呼び出します。</p>]]></Description>
+        <Block Mode="Setup_Pink" DisplayName="ピンクを設定">
+          <Description><![CDATA[<p>ピンクの基準 RGB を保存します（デフォルト: R=200, G=50, B=150）。プログラム開始時に1回呼び出してください。</p>]]></Description>
         </Block>
       </Category>
       <Block Mode="Distance" DisplayName="距離">

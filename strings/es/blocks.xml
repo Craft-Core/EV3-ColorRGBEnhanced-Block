@@ -86,81 +86,81 @@
       <Parameter Name="BestDistance" DisplayName="Mejor distancia">
         <Description><![CDATA[<p>Distancia al color más cercano</p>]]></Description>
       </Parameter>
-      <Parameter Name="D1" DisplayName="Color 1">
-        <Description><![CDATA[<p>Distancia al cuadrado del RGB al color predefinido 1</p>]]></Description>
+      <Parameter Name="D_Red" DisplayName="Rojo">
+        <Description><![CDATA[<p>Squared distance from input RGB to Rojo reference</p>]]></Description>
       </Parameter>
-      <Parameter Name="D2" DisplayName="Color 2">
-        <Description><![CDATA[<p>Distancia al cuadrado del RGB al color predefinido 2</p>]]></Description>
+      <Parameter Name="D_Green" DisplayName="Verde">
+        <Description><![CDATA[<p>Squared distance from input RGB to Verde reference</p>]]></Description>
       </Parameter>
-      <Parameter Name="D3" DisplayName="Color 3">
-        <Description><![CDATA[<p>Distancia al cuadrado del RGB al color predefinido 3</p>]]></Description>
+      <Parameter Name="D_Blue" DisplayName="Azul">
+        <Description><![CDATA[<p>Squared distance from input RGB to Azul reference</p>]]></Description>
       </Parameter>
-      <Parameter Name="D4" DisplayName="Color 4">
-        <Description><![CDATA[<p>Distancia al cuadrado del RGB al color predefinido 4</p>]]></Description>
+      <Parameter Name="D_Yellow" DisplayName="Amarillo">
+        <Description><![CDATA[<p>Squared distance from input RGB to Amarillo reference</p>]]></Description>
       </Parameter>
-      <Parameter Name="D5" DisplayName="Color 5">
-        <Description><![CDATA[<p>Distancia al cuadrado del RGB al color predefinido 5</p>]]></Description>
+      <Parameter Name="D_White" DisplayName="Blanco">
+        <Description><![CDATA[<p>Squared distance from input RGB to Blanco reference</p>]]></Description>
       </Parameter>
-      <Parameter Name="D6" DisplayName="Color 6">
-        <Description><![CDATA[<p>Distancia al cuadrado del RGB al color predefinido 6</p>]]></Description>
+      <Parameter Name="D_Black" DisplayName="Negro">
+        <Description><![CDATA[<p>Squared distance from input RGB to Negro reference</p>]]></Description>
       </Parameter>
-      <Parameter Name="D7" DisplayName="Color 7">
-        <Description><![CDATA[<p>Distancia al cuadrado del RGB al color predefinido 7</p>]]></Description>
+      <Parameter Name="D_Brown" DisplayName="Marrón">
+        <Description><![CDATA[<p>Squared distance from input RGB to Marrón reference</p>]]></Description>
       </Parameter>
-      <Parameter Name="D8" DisplayName="Color 8">
-        <Description><![CDATA[<p>Distancia al cuadrado del RGB al color predefinido 8</p>]]></Description>
+      <Parameter Name="D_Pink" DisplayName="Rosa">
+        <Description><![CDATA[<p>Squared distance from input RGB to Rosa reference</p>]]></Description>
       </Parameter>
-      <Parameter Name="D1_in" DisplayName="Color 1">
-        <Description><![CDATA[<p>Distancia al color 1 (conectar desde el modo Distancia)</p>]]></Description>
+      <Parameter Name="D_Red_in" DisplayName="Rojo">
+        <Description><![CDATA[<p>Distance to Rojo (from Distance mode)</p>]]></Description>
       </Parameter>
-      <Parameter Name="D2_in" DisplayName="Color 2">
-        <Description><![CDATA[<p>Distancia al color 2 (conectar desde el modo Distancia)</p>]]></Description>
+      <Parameter Name="D_Green_in" DisplayName="Verde">
+        <Description><![CDATA[<p>Distance to Verde (from Distance mode)</p>]]></Description>
       </Parameter>
-      <Parameter Name="D3_in" DisplayName="Color 3">
-        <Description><![CDATA[<p>Distancia al color 3 (conectar desde el modo Distancia)</p>]]></Description>
+      <Parameter Name="D_Blue_in" DisplayName="Azul">
+        <Description><![CDATA[<p>Distance to Azul (from Distance mode)</p>]]></Description>
       </Parameter>
-      <Parameter Name="D4_in" DisplayName="Color 4">
-        <Description><![CDATA[<p>Distancia al color 4 (conectar desde el modo Distancia)</p>]]></Description>
+      <Parameter Name="D_Yellow_in" DisplayName="Amarillo">
+        <Description><![CDATA[<p>Distance to Amarillo (from Distance mode)</p>]]></Description>
       </Parameter>
-      <Parameter Name="D5_in" DisplayName="Color 5">
-        <Description><![CDATA[<p>Distancia al color 5 (conectar desde el modo Distancia)</p>]]></Description>
+      <Parameter Name="D_White_in" DisplayName="Blanco">
+        <Description><![CDATA[<p>Distance to Blanco (from Distance mode)</p>]]></Description>
       </Parameter>
-      <Parameter Name="D6_in" DisplayName="Color 6">
-        <Description><![CDATA[<p>Distancia al color 6 (conectar desde el modo Distancia)</p>]]></Description>
+      <Parameter Name="D_Black_in" DisplayName="Negro">
+        <Description><![CDATA[<p>Distance to Negro (from Distance mode)</p>]]></Description>
       </Parameter>
-      <Parameter Name="D7_in" DisplayName="Color 7">
-        <Description><![CDATA[<p>Distancia al color 7 (conectar desde el modo Distancia)</p>]]></Description>
+      <Parameter Name="D_Brown_in" DisplayName="Marrón">
+        <Description><![CDATA[<p>Distance to Marrón (from Distance mode)</p>]]></Description>
       </Parameter>
-      <Parameter Name="D8_in" DisplayName="Color 8">
-        <Description><![CDATA[<p>Distancia al color 8 (conectar desde el modo Distancia)</p>]]></Description>
+      <Parameter Name="D_Pink_in" DisplayName="Rosa">
+        <Description><![CDATA[<p>Distance to Rosa (from Distance mode)</p>]]></Description>
       </Parameter>
       <Block Mode="Normalize" DisplayName="Normalizar – RGB">
         <Description><![CDATA[<p>Convierte R, G, B brutos en proporciones (cada canal dividido por la suma, × 100). Elimina la influencia del brillo y mantiene solo el color.</p>]]></Description>
       </Block>
       <Category Name="Setup" DisplayName="Configurar">
-        <Block Mode="Setup_C1" DisplayName="Configurar color 1">
-          <Description><![CDATA[<p>Guarda los R, G, B dados como referencia para la ranura 1. Llamar una vez por ranura al inicio del programa.</p>]]></Description>
+        <Block Mode="Setup_Red" DisplayName="Configurar Rojo">
+          <Description><![CDATA[<p>Guardar el RGB de referencia para Rojo (predeterminado: R=255, G=0, B=0). Llamar una vez al inicio.</p>]]></Description>
         </Block>
-        <Block Mode="Setup_C2" DisplayName="Configurar color 2">
-          <Description><![CDATA[<p>Guarda los R, G, B dados como referencia para la ranura 2. Llamar una vez por ranura al inicio del programa.</p>]]></Description>
+        <Block Mode="Setup_Green" DisplayName="Configurar Verde">
+          <Description><![CDATA[<p>Guardar el RGB de referencia para Verde (predeterminado: R=0, G=255, B=0). Llamar una vez al inicio.</p>]]></Description>
         </Block>
-        <Block Mode="Setup_C3" DisplayName="Configurar color 3">
-          <Description><![CDATA[<p>Guarda los R, G, B dados como referencia para la ranura 3. Llamar una vez por ranura al inicio del programa.</p>]]></Description>
+        <Block Mode="Setup_Blue" DisplayName="Configurar Azul">
+          <Description><![CDATA[<p>Guardar el RGB de referencia para Azul (predeterminado: R=0, G=0, B=255). Llamar una vez al inicio.</p>]]></Description>
         </Block>
-        <Block Mode="Setup_C4" DisplayName="Configurar color 4">
-          <Description><![CDATA[<p>Guarda los R, G, B dados como referencia para la ranura 4. Llamar una vez por ranura al inicio del programa.</p>]]></Description>
+        <Block Mode="Setup_Yellow" DisplayName="Configurar Amarillo">
+          <Description><![CDATA[<p>Guardar el RGB de referencia para Amarillo (predeterminado: R=255, G=255, B=0). Llamar una vez al inicio.</p>]]></Description>
         </Block>
-        <Block Mode="Setup_C5" DisplayName="Configurar color 5">
-          <Description><![CDATA[<p>Guarda los R, G, B dados como referencia para la ranura 5. Llamar una vez por ranura al inicio del programa.</p>]]></Description>
+        <Block Mode="Setup_White" DisplayName="Configurar Blanco">
+          <Description><![CDATA[<p>Guardar el RGB de referencia para Blanco (predeterminado: R=255, G=255, B=255). Llamar una vez al inicio.</p>]]></Description>
         </Block>
-        <Block Mode="Setup_C6" DisplayName="Configurar color 6">
-          <Description><![CDATA[<p>Guarda los R, G, B dados como referencia para la ranura 6. Llamar una vez por ranura al inicio del programa.</p>]]></Description>
+        <Block Mode="Setup_Black" DisplayName="Configurar Negro">
+          <Description><![CDATA[<p>Guardar el RGB de referencia para Negro (predeterminado: R=0, G=0, B=0). Llamar una vez al inicio.</p>]]></Description>
         </Block>
-        <Block Mode="Setup_C7" DisplayName="Configurar color 7">
-          <Description><![CDATA[<p>Guarda los R, G, B dados como referencia para la ranura 7. Llamar una vez por ranura al inicio del programa.</p>]]></Description>
+        <Block Mode="Setup_Brown" DisplayName="Configurar Marrón">
+          <Description><![CDATA[<p>Guardar el RGB de referencia para Marrón (predeterminado: R=128, G=64, B=0). Llamar una vez al inicio.</p>]]></Description>
         </Block>
-        <Block Mode="Setup_C8" DisplayName="Configurar color 8">
-          <Description><![CDATA[<p>Guarda los R, G, B dados como referencia para la ranura 8. Llamar una vez por ranura al inicio del programa.</p>]]></Description>
+        <Block Mode="Setup_Pink" DisplayName="Configurar Rosa">
+          <Description><![CDATA[<p>Guardar el RGB de referencia para Rosa (predeterminado: R=200, G=50, B=150). Llamar una vez al inicio.</p>]]></Description>
         </Block>
       </Category>
       <Block Mode="Distance" DisplayName="Distancia">

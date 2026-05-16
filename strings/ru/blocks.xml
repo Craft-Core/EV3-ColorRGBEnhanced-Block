@@ -86,81 +86,81 @@
       <Parameter Name="BestDistance" DisplayName="Лучшее расстояние">
         <Description><![CDATA[<p>Расстояние до ближайшего цвета</p>]]></Description>
       </Parameter>
-      <Parameter Name="D1" DisplayName="Цвет 1">
-        <Description><![CDATA[<p>Квадрат расстояния от RGB до цвета 1</p>]]></Description>
+      <Parameter Name="D_Red" DisplayName="Красный">
+        <Description><![CDATA[<p>Squared distance from input RGB to Красный reference</p>]]></Description>
       </Parameter>
-      <Parameter Name="D2" DisplayName="Цвет 2">
-        <Description><![CDATA[<p>Квадрат расстояния от RGB до цвета 2</p>]]></Description>
+      <Parameter Name="D_Green" DisplayName="Зелёный">
+        <Description><![CDATA[<p>Squared distance from input RGB to Зелёный reference</p>]]></Description>
       </Parameter>
-      <Parameter Name="D3" DisplayName="Цвет 3">
-        <Description><![CDATA[<p>Квадрат расстояния от RGB до цвета 3</p>]]></Description>
+      <Parameter Name="D_Blue" DisplayName="Синий">
+        <Description><![CDATA[<p>Squared distance from input RGB to Синий reference</p>]]></Description>
       </Parameter>
-      <Parameter Name="D4" DisplayName="Цвет 4">
-        <Description><![CDATA[<p>Квадрат расстояния от RGB до цвета 4</p>]]></Description>
+      <Parameter Name="D_Yellow" DisplayName="Жёлтый">
+        <Description><![CDATA[<p>Squared distance from input RGB to Жёлтый reference</p>]]></Description>
       </Parameter>
-      <Parameter Name="D5" DisplayName="Цвет 5">
-        <Description><![CDATA[<p>Квадрат расстояния от RGB до цвета 5</p>]]></Description>
+      <Parameter Name="D_White" DisplayName="Белый">
+        <Description><![CDATA[<p>Squared distance from input RGB to Белый reference</p>]]></Description>
       </Parameter>
-      <Parameter Name="D6" DisplayName="Цвет 6">
-        <Description><![CDATA[<p>Квадрат расстояния от RGB до цвета 6</p>]]></Description>
+      <Parameter Name="D_Black" DisplayName="Чёрный">
+        <Description><![CDATA[<p>Squared distance from input RGB to Чёрный reference</p>]]></Description>
       </Parameter>
-      <Parameter Name="D7" DisplayName="Цвет 7">
-        <Description><![CDATA[<p>Квадрат расстояния от RGB до цвета 7</p>]]></Description>
+      <Parameter Name="D_Brown" DisplayName="Коричневый">
+        <Description><![CDATA[<p>Squared distance from input RGB to Коричневый reference</p>]]></Description>
       </Parameter>
-      <Parameter Name="D8" DisplayName="Цвет 8">
-        <Description><![CDATA[<p>Квадрат расстояния от RGB до цвета 8</p>]]></Description>
+      <Parameter Name="D_Pink" DisplayName="Розовый">
+        <Description><![CDATA[<p>Squared distance from input RGB to Розовый reference</p>]]></Description>
       </Parameter>
-      <Parameter Name="D1_in" DisplayName="Цвет 1">
-        <Description><![CDATA[<p>Расстояние до цвета 1 (из режима Distance)</p>]]></Description>
+      <Parameter Name="D_Red_in" DisplayName="Красный">
+        <Description><![CDATA[<p>Distance to Красный (from Distance mode)</p>]]></Description>
       </Parameter>
-      <Parameter Name="D2_in" DisplayName="Цвет 2">
-        <Description><![CDATA[<p>Расстояние до цвета 2 (из режима Distance)</p>]]></Description>
+      <Parameter Name="D_Green_in" DisplayName="Зелёный">
+        <Description><![CDATA[<p>Distance to Зелёный (from Distance mode)</p>]]></Description>
       </Parameter>
-      <Parameter Name="D3_in" DisplayName="Цвет 3">
-        <Description><![CDATA[<p>Расстояние до цвета 3 (из режима Distance)</p>]]></Description>
+      <Parameter Name="D_Blue_in" DisplayName="Синий">
+        <Description><![CDATA[<p>Distance to Синий (from Distance mode)</p>]]></Description>
       </Parameter>
-      <Parameter Name="D4_in" DisplayName="Цвет 4">
-        <Description><![CDATA[<p>Расстояние до цвета 4 (из режима Distance)</p>]]></Description>
+      <Parameter Name="D_Yellow_in" DisplayName="Жёлтый">
+        <Description><![CDATA[<p>Distance to Жёлтый (from Distance mode)</p>]]></Description>
       </Parameter>
-      <Parameter Name="D5_in" DisplayName="Цвет 5">
-        <Description><![CDATA[<p>Расстояние до цвета 5 (из режима Distance)</p>]]></Description>
+      <Parameter Name="D_White_in" DisplayName="Белый">
+        <Description><![CDATA[<p>Distance to Белый (from Distance mode)</p>]]></Description>
       </Parameter>
-      <Parameter Name="D6_in" DisplayName="Цвет 6">
-        <Description><![CDATA[<p>Расстояние до цвета 6 (из режима Distance)</p>]]></Description>
+      <Parameter Name="D_Black_in" DisplayName="Чёрный">
+        <Description><![CDATA[<p>Distance to Чёрный (from Distance mode)</p>]]></Description>
       </Parameter>
-      <Parameter Name="D7_in" DisplayName="Цвет 7">
-        <Description><![CDATA[<p>Расстояние до цвета 7 (из режима Distance)</p>]]></Description>
+      <Parameter Name="D_Brown_in" DisplayName="Коричневый">
+        <Description><![CDATA[<p>Distance to Коричневый (from Distance mode)</p>]]></Description>
       </Parameter>
-      <Parameter Name="D8_in" DisplayName="Цвет 8">
-        <Description><![CDATA[<p>Расстояние до цвета 8 (из режима Distance)</p>]]></Description>
+      <Parameter Name="D_Pink_in" DisplayName="Розовый">
+        <Description><![CDATA[<p>Distance to Розовый (from Distance mode)</p>]]></Description>
       </Parameter>
       <Block Mode="Normalize" DisplayName="Нормализация – RGB">
         <Description><![CDATA[<p>Преобразует сырые R, G, B в доли (канал/сумма, ×100). Убирает влияние яркости.</p>]]></Description>
       </Block>
       <Category Name="Setup" DisplayName="Настройка">
-        <Block Mode="Setup_C1" DisplayName="Настроить цвет 1">
-          <Description><![CDATA[<p>Сохраняет R, G, B как эталон для слота 1. Вызвать один раз в начале программы.</p>]]></Description>
+        <Block Mode="Setup_Red" DisplayName="Настроить Красный">
+          <Description><![CDATA[<p>Сохранить эталонный RGB для Красный (по умолчанию: R=255, G=0, B=0). Вызвать один раз в начале программы.</p>]]></Description>
         </Block>
-        <Block Mode="Setup_C2" DisplayName="Настроить цвет 2">
-          <Description><![CDATA[<p>Сохраняет R, G, B как эталон для слота 2. Вызвать один раз в начале программы.</p>]]></Description>
+        <Block Mode="Setup_Green" DisplayName="Настроить Зелёный">
+          <Description><![CDATA[<p>Сохранить эталонный RGB для Зелёный (по умолчанию: R=0, G=255, B=0). Вызвать один раз в начале программы.</p>]]></Description>
         </Block>
-        <Block Mode="Setup_C3" DisplayName="Настроить цвет 3">
-          <Description><![CDATA[<p>Сохраняет R, G, B как эталон для слота 3. Вызвать один раз в начале программы.</p>]]></Description>
+        <Block Mode="Setup_Blue" DisplayName="Настроить Синий">
+          <Description><![CDATA[<p>Сохранить эталонный RGB для Синий (по умолчанию: R=0, G=0, B=255). Вызвать один раз в начале программы.</p>]]></Description>
         </Block>
-        <Block Mode="Setup_C4" DisplayName="Настроить цвет 4">
-          <Description><![CDATA[<p>Сохраняет R, G, B как эталон для слота 4. Вызвать один раз в начале программы.</p>]]></Description>
+        <Block Mode="Setup_Yellow" DisplayName="Настроить Жёлтый">
+          <Description><![CDATA[<p>Сохранить эталонный RGB для Жёлтый (по умолчанию: R=255, G=255, B=0). Вызвать один раз в начале программы.</p>]]></Description>
         </Block>
-        <Block Mode="Setup_C5" DisplayName="Настроить цвет 5">
-          <Description><![CDATA[<p>Сохраняет R, G, B как эталон для слота 5. Вызвать один раз в начале программы.</p>]]></Description>
+        <Block Mode="Setup_White" DisplayName="Настроить Белый">
+          <Description><![CDATA[<p>Сохранить эталонный RGB для Белый (по умолчанию: R=255, G=255, B=255). Вызвать один раз в начале программы.</p>]]></Description>
         </Block>
-        <Block Mode="Setup_C6" DisplayName="Настроить цвет 6">
-          <Description><![CDATA[<p>Сохраняет R, G, B как эталон для слота 6. Вызвать один раз в начале программы.</p>]]></Description>
+        <Block Mode="Setup_Black" DisplayName="Настроить Чёрный">
+          <Description><![CDATA[<p>Сохранить эталонный RGB для Чёрный (по умолчанию: R=0, G=0, B=0). Вызвать один раз в начале программы.</p>]]></Description>
         </Block>
-        <Block Mode="Setup_C7" DisplayName="Настроить цвет 7">
-          <Description><![CDATA[<p>Сохраняет R, G, B как эталон для слота 7. Вызвать один раз в начале программы.</p>]]></Description>
+        <Block Mode="Setup_Brown" DisplayName="Настроить Коричневый">
+          <Description><![CDATA[<p>Сохранить эталонный RGB для Коричневый (по умолчанию: R=128, G=64, B=0). Вызвать один раз в начале программы.</p>]]></Description>
         </Block>
-        <Block Mode="Setup_C8" DisplayName="Настроить цвет 8">
-          <Description><![CDATA[<p>Сохраняет R, G, B как эталон для слота 8. Вызвать один раз в начале программы.</p>]]></Description>
+        <Block Mode="Setup_Pink" DisplayName="Настроить Розовый">
+          <Description><![CDATA[<p>Сохранить эталонный RGB для Розовый (по умолчанию: R=200, G=50, B=150). Вызвать один раз в начале программы.</p>]]></Description>
         </Block>
       </Category>
       <Block Mode="Distance" DisplayName="Расстояние">

@@ -86,81 +86,81 @@
       <Parameter Name="BestDistance" DisplayName="最佳距离">
         <Description><![CDATA[<p>到最接近颜色的距离</p>]]></Description>
       </Parameter>
-      <Parameter Name="D1" DisplayName="颜色 1">
-        <Description><![CDATA[<p>输入 RGB 到预设颜色 1 的平方距离</p>]]></Description>
+      <Parameter Name="D_Red" DisplayName="红">
+        <Description><![CDATA[<p>Squared distance from input RGB to 红 reference</p>]]></Description>
       </Parameter>
-      <Parameter Name="D2" DisplayName="颜色 2">
-        <Description><![CDATA[<p>输入 RGB 到预设颜色 2 的平方距离</p>]]></Description>
+      <Parameter Name="D_Green" DisplayName="绿">
+        <Description><![CDATA[<p>Squared distance from input RGB to 绿 reference</p>]]></Description>
       </Parameter>
-      <Parameter Name="D3" DisplayName="颜色 3">
-        <Description><![CDATA[<p>输入 RGB 到预设颜色 3 的平方距离</p>]]></Description>
+      <Parameter Name="D_Blue" DisplayName="蓝">
+        <Description><![CDATA[<p>Squared distance from input RGB to 蓝 reference</p>]]></Description>
       </Parameter>
-      <Parameter Name="D4" DisplayName="颜色 4">
-        <Description><![CDATA[<p>输入 RGB 到预设颜色 4 的平方距离</p>]]></Description>
+      <Parameter Name="D_Yellow" DisplayName="黄">
+        <Description><![CDATA[<p>Squared distance from input RGB to 黄 reference</p>]]></Description>
       </Parameter>
-      <Parameter Name="D5" DisplayName="颜色 5">
-        <Description><![CDATA[<p>输入 RGB 到预设颜色 5 的平方距离</p>]]></Description>
+      <Parameter Name="D_White" DisplayName="白">
+        <Description><![CDATA[<p>Squared distance from input RGB to 白 reference</p>]]></Description>
       </Parameter>
-      <Parameter Name="D6" DisplayName="颜色 6">
-        <Description><![CDATA[<p>输入 RGB 到预设颜色 6 的平方距离</p>]]></Description>
+      <Parameter Name="D_Black" DisplayName="黑">
+        <Description><![CDATA[<p>Squared distance from input RGB to 黑 reference</p>]]></Description>
       </Parameter>
-      <Parameter Name="D7" DisplayName="颜色 7">
-        <Description><![CDATA[<p>输入 RGB 到预设颜色 7 的平方距离</p>]]></Description>
+      <Parameter Name="D_Brown" DisplayName="棕">
+        <Description><![CDATA[<p>Squared distance from input RGB to 棕 reference</p>]]></Description>
       </Parameter>
-      <Parameter Name="D8" DisplayName="颜色 8">
-        <Description><![CDATA[<p>输入 RGB 到预设颜色 8 的平方距离</p>]]></Description>
+      <Parameter Name="D_Pink" DisplayName="粉">
+        <Description><![CDATA[<p>Squared distance from input RGB to 粉 reference</p>]]></Description>
       </Parameter>
-      <Parameter Name="D1_in" DisplayName="颜色 1">
-        <Description><![CDATA[<p>到颜色 1 的距离（从 Distance 模式连线）</p>]]></Description>
+      <Parameter Name="D_Red_in" DisplayName="红">
+        <Description><![CDATA[<p>Distance to 红 (from Distance mode)</p>]]></Description>
       </Parameter>
-      <Parameter Name="D2_in" DisplayName="颜色 2">
-        <Description><![CDATA[<p>到颜色 2 的距离（从 Distance 模式连线）</p>]]></Description>
+      <Parameter Name="D_Green_in" DisplayName="绿">
+        <Description><![CDATA[<p>Distance to 绿 (from Distance mode)</p>]]></Description>
       </Parameter>
-      <Parameter Name="D3_in" DisplayName="颜色 3">
-        <Description><![CDATA[<p>到颜色 3 的距离（从 Distance 模式连线）</p>]]></Description>
+      <Parameter Name="D_Blue_in" DisplayName="蓝">
+        <Description><![CDATA[<p>Distance to 蓝 (from Distance mode)</p>]]></Description>
       </Parameter>
-      <Parameter Name="D4_in" DisplayName="颜色 4">
-        <Description><![CDATA[<p>到颜色 4 的距离（从 Distance 模式连线）</p>]]></Description>
+      <Parameter Name="D_Yellow_in" DisplayName="黄">
+        <Description><![CDATA[<p>Distance to 黄 (from Distance mode)</p>]]></Description>
       </Parameter>
-      <Parameter Name="D5_in" DisplayName="颜色 5">
-        <Description><![CDATA[<p>到颜色 5 的距离（从 Distance 模式连线）</p>]]></Description>
+      <Parameter Name="D_White_in" DisplayName="白">
+        <Description><![CDATA[<p>Distance to 白 (from Distance mode)</p>]]></Description>
       </Parameter>
-      <Parameter Name="D6_in" DisplayName="颜色 6">
-        <Description><![CDATA[<p>到颜色 6 的距离（从 Distance 模式连线）</p>]]></Description>
+      <Parameter Name="D_Black_in" DisplayName="黑">
+        <Description><![CDATA[<p>Distance to 黑 (from Distance mode)</p>]]></Description>
       </Parameter>
-      <Parameter Name="D7_in" DisplayName="颜色 7">
-        <Description><![CDATA[<p>到颜色 7 的距离（从 Distance 模式连线）</p>]]></Description>
+      <Parameter Name="D_Brown_in" DisplayName="棕">
+        <Description><![CDATA[<p>Distance to 棕 (from Distance mode)</p>]]></Description>
       </Parameter>
-      <Parameter Name="D8_in" DisplayName="颜色 8">
-        <Description><![CDATA[<p>到颜色 8 的距离（从 Distance 模式连线）</p>]]></Description>
+      <Parameter Name="D_Pink_in" DisplayName="粉">
+        <Description><![CDATA[<p>Distance to 粉 (from Distance mode)</p>]]></Description>
       </Parameter>
       <Block Mode="Normalize" DisplayName="归一化 – RGB">
         <Description><![CDATA[<p>将原始 R、G、B 转换为比例（每个通道除以总和，乘 100）。消除亮度影响，只保留颜色信息。</p>]]></Description>
       </Block>
       <Category Name="Setup" DisplayName="设置">
-        <Block Mode="Setup_C1" DisplayName="设置颜色 1">
-          <Description><![CDATA[<p>将给定的 R、G、B 作为颜色插槽 1 的参考值保存。在程序开始时每个插槽调用一次。</p>]]></Description>
+        <Block Mode="Setup_Red" DisplayName="设置红">
+          <Description><![CDATA[<p>保存红的参考 RGB（默认：R=255，G=0，B=0）。在程序开始时调用一次。</p>]]></Description>
         </Block>
-        <Block Mode="Setup_C2" DisplayName="设置颜色 2">
-          <Description><![CDATA[<p>将给定的 R、G、B 作为颜色插槽 2 的参考值保存。在程序开始时每个插槽调用一次。</p>]]></Description>
+        <Block Mode="Setup_Green" DisplayName="设置绿">
+          <Description><![CDATA[<p>保存绿的参考 RGB（默认：R=0，G=255，B=0）。在程序开始时调用一次。</p>]]></Description>
         </Block>
-        <Block Mode="Setup_C3" DisplayName="设置颜色 3">
-          <Description><![CDATA[<p>将给定的 R、G、B 作为颜色插槽 3 的参考值保存。在程序开始时每个插槽调用一次。</p>]]></Description>
+        <Block Mode="Setup_Blue" DisplayName="设置蓝">
+          <Description><![CDATA[<p>保存蓝的参考 RGB（默认：R=0，G=0，B=255）。在程序开始时调用一次。</p>]]></Description>
         </Block>
-        <Block Mode="Setup_C4" DisplayName="设置颜色 4">
-          <Description><![CDATA[<p>将给定的 R、G、B 作为颜色插槽 4 的参考值保存。在程序开始时每个插槽调用一次。</p>]]></Description>
+        <Block Mode="Setup_Yellow" DisplayName="设置黄">
+          <Description><![CDATA[<p>保存黄的参考 RGB（默认：R=255，G=255，B=0）。在程序开始时调用一次。</p>]]></Description>
         </Block>
-        <Block Mode="Setup_C5" DisplayName="设置颜色 5">
-          <Description><![CDATA[<p>将给定的 R、G、B 作为颜色插槽 5 的参考值保存。在程序开始时每个插槽调用一次。</p>]]></Description>
+        <Block Mode="Setup_White" DisplayName="设置白">
+          <Description><![CDATA[<p>保存白的参考 RGB（默认：R=255，G=255，B=255）。在程序开始时调用一次。</p>]]></Description>
         </Block>
-        <Block Mode="Setup_C6" DisplayName="设置颜色 6">
-          <Description><![CDATA[<p>将给定的 R、G、B 作为颜色插槽 6 的参考值保存。在程序开始时每个插槽调用一次。</p>]]></Description>
+        <Block Mode="Setup_Black" DisplayName="设置黑">
+          <Description><![CDATA[<p>保存黑的参考 RGB（默认：R=0，G=0，B=0）。在程序开始时调用一次。</p>]]></Description>
         </Block>
-        <Block Mode="Setup_C7" DisplayName="设置颜色 7">
-          <Description><![CDATA[<p>将给定的 R、G、B 作为颜色插槽 7 的参考值保存。在程序开始时每个插槽调用一次。</p>]]></Description>
+        <Block Mode="Setup_Brown" DisplayName="设置棕">
+          <Description><![CDATA[<p>保存棕的参考 RGB（默认：R=128，G=64，B=0）。在程序开始时调用一次。</p>]]></Description>
         </Block>
-        <Block Mode="Setup_C8" DisplayName="设置颜色 8">
-          <Description><![CDATA[<p>将给定的 R、G、B 作为颜色插槽 8 的参考值保存。在程序开始时每个插槽调用一次。</p>]]></Description>
+        <Block Mode="Setup_Pink" DisplayName="设置粉">
+          <Description><![CDATA[<p>保存粉的参考 RGB（默认：R=200，G=50，B=150）。在程序开始时调用一次。</p>]]></Description>
         </Block>
       </Category>
       <Block Mode="Distance" DisplayName="距离">

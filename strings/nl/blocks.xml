@@ -86,81 +86,81 @@
       <Parameter Name="BestDistance" DisplayName="Beste afstand">
         <Description><![CDATA[<p>Afstand tot de dichtstbijzijnde voorkeurskleur</p>]]></Description>
       </Parameter>
-      <Parameter Name="D1" DisplayName="Kleur 1">
-        <Description><![CDATA[<p>Kwadratische afstand van invoer-RGB tot voorkeurskleur 1</p>]]></Description>
+      <Parameter Name="D_Red" DisplayName="Rood">
+        <Description><![CDATA[<p>Squared distance from input RGB to Rood reference</p>]]></Description>
       </Parameter>
-      <Parameter Name="D2" DisplayName="Kleur 2">
-        <Description><![CDATA[<p>Kwadratische afstand van invoer-RGB tot voorkeurskleur 2</p>]]></Description>
+      <Parameter Name="D_Green" DisplayName="Groen">
+        <Description><![CDATA[<p>Squared distance from input RGB to Groen reference</p>]]></Description>
       </Parameter>
-      <Parameter Name="D3" DisplayName="Kleur 3">
-        <Description><![CDATA[<p>Kwadratische afstand van invoer-RGB tot voorkeurskleur 3</p>]]></Description>
+      <Parameter Name="D_Blue" DisplayName="Blauw">
+        <Description><![CDATA[<p>Squared distance from input RGB to Blauw reference</p>]]></Description>
       </Parameter>
-      <Parameter Name="D4" DisplayName="Kleur 4">
-        <Description><![CDATA[<p>Kwadratische afstand van invoer-RGB tot voorkeurskleur 4</p>]]></Description>
+      <Parameter Name="D_Yellow" DisplayName="Geel">
+        <Description><![CDATA[<p>Squared distance from input RGB to Geel reference</p>]]></Description>
       </Parameter>
-      <Parameter Name="D5" DisplayName="Kleur 5">
-        <Description><![CDATA[<p>Kwadratische afstand van invoer-RGB tot voorkeurskleur 5</p>]]></Description>
+      <Parameter Name="D_White" DisplayName="Wit">
+        <Description><![CDATA[<p>Squared distance from input RGB to Wit reference</p>]]></Description>
       </Parameter>
-      <Parameter Name="D6" DisplayName="Kleur 6">
-        <Description><![CDATA[<p>Kwadratische afstand van invoer-RGB tot voorkeurskleur 6</p>]]></Description>
+      <Parameter Name="D_Black" DisplayName="Zwart">
+        <Description><![CDATA[<p>Squared distance from input RGB to Zwart reference</p>]]></Description>
       </Parameter>
-      <Parameter Name="D7" DisplayName="Kleur 7">
-        <Description><![CDATA[<p>Kwadratische afstand van invoer-RGB tot voorkeurskleur 7</p>]]></Description>
+      <Parameter Name="D_Brown" DisplayName="Bruin">
+        <Description><![CDATA[<p>Squared distance from input RGB to Bruin reference</p>]]></Description>
       </Parameter>
-      <Parameter Name="D8" DisplayName="Kleur 8">
-        <Description><![CDATA[<p>Kwadratische afstand van invoer-RGB tot voorkeurskleur 8</p>]]></Description>
+      <Parameter Name="D_Pink" DisplayName="Roze">
+        <Description><![CDATA[<p>Squared distance from input RGB to Roze reference</p>]]></Description>
       </Parameter>
-      <Parameter Name="D1_in" DisplayName="Kleur 1">
-        <Description><![CDATA[<p>Afstand tot kleur 1 (bedraad vanaf Distance-modus)</p>]]></Description>
+      <Parameter Name="D_Red_in" DisplayName="Rood">
+        <Description><![CDATA[<p>Distance to Rood (from Distance mode)</p>]]></Description>
       </Parameter>
-      <Parameter Name="D2_in" DisplayName="Kleur 2">
-        <Description><![CDATA[<p>Afstand tot kleur 2 (bedraad vanaf Distance-modus)</p>]]></Description>
+      <Parameter Name="D_Green_in" DisplayName="Groen">
+        <Description><![CDATA[<p>Distance to Groen (from Distance mode)</p>]]></Description>
       </Parameter>
-      <Parameter Name="D3_in" DisplayName="Kleur 3">
-        <Description><![CDATA[<p>Afstand tot kleur 3 (bedraad vanaf Distance-modus)</p>]]></Description>
+      <Parameter Name="D_Blue_in" DisplayName="Blauw">
+        <Description><![CDATA[<p>Distance to Blauw (from Distance mode)</p>]]></Description>
       </Parameter>
-      <Parameter Name="D4_in" DisplayName="Kleur 4">
-        <Description><![CDATA[<p>Afstand tot kleur 4 (bedraad vanaf Distance-modus)</p>]]></Description>
+      <Parameter Name="D_Yellow_in" DisplayName="Geel">
+        <Description><![CDATA[<p>Distance to Geel (from Distance mode)</p>]]></Description>
       </Parameter>
-      <Parameter Name="D5_in" DisplayName="Kleur 5">
-        <Description><![CDATA[<p>Afstand tot kleur 5 (bedraad vanaf Distance-modus)</p>]]></Description>
+      <Parameter Name="D_White_in" DisplayName="Wit">
+        <Description><![CDATA[<p>Distance to Wit (from Distance mode)</p>]]></Description>
       </Parameter>
-      <Parameter Name="D6_in" DisplayName="Kleur 6">
-        <Description><![CDATA[<p>Afstand tot kleur 6 (bedraad vanaf Distance-modus)</p>]]></Description>
+      <Parameter Name="D_Black_in" DisplayName="Zwart">
+        <Description><![CDATA[<p>Distance to Zwart (from Distance mode)</p>]]></Description>
       </Parameter>
-      <Parameter Name="D7_in" DisplayName="Kleur 7">
-        <Description><![CDATA[<p>Afstand tot kleur 7 (bedraad vanaf Distance-modus)</p>]]></Description>
+      <Parameter Name="D_Brown_in" DisplayName="Bruin">
+        <Description><![CDATA[<p>Distance to Bruin (from Distance mode)</p>]]></Description>
       </Parameter>
-      <Parameter Name="D8_in" DisplayName="Kleur 8">
-        <Description><![CDATA[<p>Afstand tot kleur 8 (bedraad vanaf Distance-modus)</p>]]></Description>
+      <Parameter Name="D_Pink_in" DisplayName="Roze">
+        <Description><![CDATA[<p>Distance to Roze (from Distance mode)</p>]]></Description>
       </Parameter>
       <Block Mode="Normalize" DisplayName="Normaliseren – RGB">
         <Description><![CDATA[<p>Converteert ruwe R, G, B naar verhoudingen (elk kanaal gedeeld door de som, × 100). Verwijdert helderheidsinvloed.</p>]]></Description>
       </Block>
       <Category Name="Setup" DisplayName="Instellen">
-        <Block Mode="Setup_C1" DisplayName="Kleur 1 instellen">
-          <Description><![CDATA[<p>Slaat de opgegeven R, G, B op als referentie voor slot 1. Roep eenmaal per slot aan bij programmastart.</p>]]></Description>
+        <Block Mode="Setup_Red" DisplayName="Rood instellen">
+          <Description><![CDATA[<p>Referentie-RGB opslaan voor Rood (standaard: R=255, G=0, B=0). Eén keer aanroepen bij programmastart.</p>]]></Description>
         </Block>
-        <Block Mode="Setup_C2" DisplayName="Kleur 2 instellen">
-          <Description><![CDATA[<p>Slaat de opgegeven R, G, B op als referentie voor slot 2. Roep eenmaal per slot aan bij programmastart.</p>]]></Description>
+        <Block Mode="Setup_Green" DisplayName="Groen instellen">
+          <Description><![CDATA[<p>Referentie-RGB opslaan voor Groen (standaard: R=0, G=255, B=0). Eén keer aanroepen bij programmastart.</p>]]></Description>
         </Block>
-        <Block Mode="Setup_C3" DisplayName="Kleur 3 instellen">
-          <Description><![CDATA[<p>Slaat de opgegeven R, G, B op als referentie voor slot 3. Roep eenmaal per slot aan bij programmastart.</p>]]></Description>
+        <Block Mode="Setup_Blue" DisplayName="Blauw instellen">
+          <Description><![CDATA[<p>Referentie-RGB opslaan voor Blauw (standaard: R=0, G=0, B=255). Eén keer aanroepen bij programmastart.</p>]]></Description>
         </Block>
-        <Block Mode="Setup_C4" DisplayName="Kleur 4 instellen">
-          <Description><![CDATA[<p>Slaat de opgegeven R, G, B op als referentie voor slot 4. Roep eenmaal per slot aan bij programmastart.</p>]]></Description>
+        <Block Mode="Setup_Yellow" DisplayName="Geel instellen">
+          <Description><![CDATA[<p>Referentie-RGB opslaan voor Geel (standaard: R=255, G=255, B=0). Eén keer aanroepen bij programmastart.</p>]]></Description>
         </Block>
-        <Block Mode="Setup_C5" DisplayName="Kleur 5 instellen">
-          <Description><![CDATA[<p>Slaat de opgegeven R, G, B op als referentie voor slot 5. Roep eenmaal per slot aan bij programmastart.</p>]]></Description>
+        <Block Mode="Setup_White" DisplayName="Wit instellen">
+          <Description><![CDATA[<p>Referentie-RGB opslaan voor Wit (standaard: R=255, G=255, B=255). Eén keer aanroepen bij programmastart.</p>]]></Description>
         </Block>
-        <Block Mode="Setup_C6" DisplayName="Kleur 6 instellen">
-          <Description><![CDATA[<p>Slaat de opgegeven R, G, B op als referentie voor slot 6. Roep eenmaal per slot aan bij programmastart.</p>]]></Description>
+        <Block Mode="Setup_Black" DisplayName="Zwart instellen">
+          <Description><![CDATA[<p>Referentie-RGB opslaan voor Zwart (standaard: R=0, G=0, B=0). Eén keer aanroepen bij programmastart.</p>]]></Description>
         </Block>
-        <Block Mode="Setup_C7" DisplayName="Kleur 7 instellen">
-          <Description><![CDATA[<p>Slaat de opgegeven R, G, B op als referentie voor slot 7. Roep eenmaal per slot aan bij programmastart.</p>]]></Description>
+        <Block Mode="Setup_Brown" DisplayName="Bruin instellen">
+          <Description><![CDATA[<p>Referentie-RGB opslaan voor Bruin (standaard: R=128, G=64, B=0). Eén keer aanroepen bij programmastart.</p>]]></Description>
         </Block>
-        <Block Mode="Setup_C8" DisplayName="Kleur 8 instellen">
-          <Description><![CDATA[<p>Slaat de opgegeven R, G, B op als referentie voor slot 8. Roep eenmaal per slot aan bij programmastart.</p>]]></Description>
+        <Block Mode="Setup_Pink" DisplayName="Roze instellen">
+          <Description><![CDATA[<p>Referentie-RGB opslaan voor Roze (standaard: R=200, G=50, B=150). Eén keer aanroepen bij programmastart.</p>]]></Description>
         </Block>
       </Category>
       <Block Mode="Distance" DisplayName="Afstand">

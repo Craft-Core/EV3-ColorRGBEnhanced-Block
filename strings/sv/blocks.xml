@@ -86,81 +86,81 @@
       <Parameter Name="BestDistance" DisplayName="Bästa avstånd">
         <Description><![CDATA[<p>Avstånd till närmaste förinställda färg</p>]]></Description>
       </Parameter>
-      <Parameter Name="D1" DisplayName="Färg 1">
-        <Description><![CDATA[<p>Kvadrerat avstånd från indata-RGB till förinställd färg 1</p>]]></Description>
+      <Parameter Name="D_Red" DisplayName="Röd">
+        <Description><![CDATA[<p>Squared distance from input RGB to Röd reference</p>]]></Description>
       </Parameter>
-      <Parameter Name="D2" DisplayName="Färg 2">
-        <Description><![CDATA[<p>Kvadrerat avstånd från indata-RGB till förinställd färg 2</p>]]></Description>
+      <Parameter Name="D_Green" DisplayName="Grön">
+        <Description><![CDATA[<p>Squared distance from input RGB to Grön reference</p>]]></Description>
       </Parameter>
-      <Parameter Name="D3" DisplayName="Färg 3">
-        <Description><![CDATA[<p>Kvadrerat avstånd från indata-RGB till förinställd färg 3</p>]]></Description>
+      <Parameter Name="D_Blue" DisplayName="Blå">
+        <Description><![CDATA[<p>Squared distance from input RGB to Blå reference</p>]]></Description>
       </Parameter>
-      <Parameter Name="D4" DisplayName="Färg 4">
-        <Description><![CDATA[<p>Kvadrerat avstånd från indata-RGB till förinställd färg 4</p>]]></Description>
+      <Parameter Name="D_Yellow" DisplayName="Gul">
+        <Description><![CDATA[<p>Squared distance from input RGB to Gul reference</p>]]></Description>
       </Parameter>
-      <Parameter Name="D5" DisplayName="Färg 5">
-        <Description><![CDATA[<p>Kvadrerat avstånd från indata-RGB till förinställd färg 5</p>]]></Description>
+      <Parameter Name="D_White" DisplayName="Vit">
+        <Description><![CDATA[<p>Squared distance from input RGB to Vit reference</p>]]></Description>
       </Parameter>
-      <Parameter Name="D6" DisplayName="Färg 6">
-        <Description><![CDATA[<p>Kvadrerat avstånd från indata-RGB till förinställd färg 6</p>]]></Description>
+      <Parameter Name="D_Black" DisplayName="Svart">
+        <Description><![CDATA[<p>Squared distance from input RGB to Svart reference</p>]]></Description>
       </Parameter>
-      <Parameter Name="D7" DisplayName="Färg 7">
-        <Description><![CDATA[<p>Kvadrerat avstånd från indata-RGB till förinställd färg 7</p>]]></Description>
+      <Parameter Name="D_Brown" DisplayName="Brun">
+        <Description><![CDATA[<p>Squared distance from input RGB to Brun reference</p>]]></Description>
       </Parameter>
-      <Parameter Name="D8" DisplayName="Färg 8">
-        <Description><![CDATA[<p>Kvadrerat avstånd från indata-RGB till förinställd färg 8</p>]]></Description>
+      <Parameter Name="D_Pink" DisplayName="Rosa">
+        <Description><![CDATA[<p>Squared distance from input RGB to Rosa reference</p>]]></Description>
       </Parameter>
-      <Parameter Name="D1_in" DisplayName="Färg 1">
-        <Description><![CDATA[<p>Avstånd till färg 1 (anslut från Distance-läge)</p>]]></Description>
+      <Parameter Name="D_Red_in" DisplayName="Röd">
+        <Description><![CDATA[<p>Distance to Röd (from Distance mode)</p>]]></Description>
       </Parameter>
-      <Parameter Name="D2_in" DisplayName="Färg 2">
-        <Description><![CDATA[<p>Avstånd till färg 2 (anslut från Distance-läge)</p>]]></Description>
+      <Parameter Name="D_Green_in" DisplayName="Grön">
+        <Description><![CDATA[<p>Distance to Grön (from Distance mode)</p>]]></Description>
       </Parameter>
-      <Parameter Name="D3_in" DisplayName="Färg 3">
-        <Description><![CDATA[<p>Avstånd till färg 3 (anslut från Distance-läge)</p>]]></Description>
+      <Parameter Name="D_Blue_in" DisplayName="Blå">
+        <Description><![CDATA[<p>Distance to Blå (from Distance mode)</p>]]></Description>
       </Parameter>
-      <Parameter Name="D4_in" DisplayName="Färg 4">
-        <Description><![CDATA[<p>Avstånd till färg 4 (anslut från Distance-läge)</p>]]></Description>
+      <Parameter Name="D_Yellow_in" DisplayName="Gul">
+        <Description><![CDATA[<p>Distance to Gul (from Distance mode)</p>]]></Description>
       </Parameter>
-      <Parameter Name="D5_in" DisplayName="Färg 5">
-        <Description><![CDATA[<p>Avstånd till färg 5 (anslut från Distance-läge)</p>]]></Description>
+      <Parameter Name="D_White_in" DisplayName="Vit">
+        <Description><![CDATA[<p>Distance to Vit (from Distance mode)</p>]]></Description>
       </Parameter>
-      <Parameter Name="D6_in" DisplayName="Färg 6">
-        <Description><![CDATA[<p>Avstånd till färg 6 (anslut från Distance-läge)</p>]]></Description>
+      <Parameter Name="D_Black_in" DisplayName="Svart">
+        <Description><![CDATA[<p>Distance to Svart (from Distance mode)</p>]]></Description>
       </Parameter>
-      <Parameter Name="D7_in" DisplayName="Färg 7">
-        <Description><![CDATA[<p>Avstånd till färg 7 (anslut från Distance-läge)</p>]]></Description>
+      <Parameter Name="D_Brown_in" DisplayName="Brun">
+        <Description><![CDATA[<p>Distance to Brun (from Distance mode)</p>]]></Description>
       </Parameter>
-      <Parameter Name="D8_in" DisplayName="Färg 8">
-        <Description><![CDATA[<p>Avstånd till färg 8 (anslut från Distance-läge)</p>]]></Description>
+      <Parameter Name="D_Pink_in" DisplayName="Rosa">
+        <Description><![CDATA[<p>Distance to Rosa (from Distance mode)</p>]]></Description>
       </Parameter>
       <Block Mode="Normalize" DisplayName="Normalisera – RGB">
         <Description><![CDATA[<p>Konverterar råa R, G, B till förhållanden (varje kanal delad med summan, × 100). Tar bort ljusstyrkans påverkan.</p>]]></Description>
       </Block>
       <Category Name="Setup" DisplayName="Konfigurera">
-        <Block Mode="Setup_C1" DisplayName="Konfigurera färg 1">
-          <Description><![CDATA[<p>Lagrar de angivna R, G, B som referens för färgplats 1. Anropa en gång per plats vid programstart.</p>]]></Description>
+        <Block Mode="Setup_Red" DisplayName="Konfigurera Röd">
+          <Description><![CDATA[<p>Spara referens-RGB för Röd (standard: R=255, G=0, B=0). Anropa en gång vid programstart.</p>]]></Description>
         </Block>
-        <Block Mode="Setup_C2" DisplayName="Konfigurera färg 2">
-          <Description><![CDATA[<p>Lagrar de angivna R, G, B som referens för färgplats 2. Anropa en gång per plats vid programstart.</p>]]></Description>
+        <Block Mode="Setup_Green" DisplayName="Konfigurera Grön">
+          <Description><![CDATA[<p>Spara referens-RGB för Grön (standard: R=0, G=255, B=0). Anropa en gång vid programstart.</p>]]></Description>
         </Block>
-        <Block Mode="Setup_C3" DisplayName="Konfigurera färg 3">
-          <Description><![CDATA[<p>Lagrar de angivna R, G, B som referens för färgplats 3. Anropa en gång per plats vid programstart.</p>]]></Description>
+        <Block Mode="Setup_Blue" DisplayName="Konfigurera Blå">
+          <Description><![CDATA[<p>Spara referens-RGB för Blå (standard: R=0, G=0, B=255). Anropa en gång vid programstart.</p>]]></Description>
         </Block>
-        <Block Mode="Setup_C4" DisplayName="Konfigurera färg 4">
-          <Description><![CDATA[<p>Lagrar de angivna R, G, B som referens för färgplats 4. Anropa en gång per plats vid programstart.</p>]]></Description>
+        <Block Mode="Setup_Yellow" DisplayName="Konfigurera Gul">
+          <Description><![CDATA[<p>Spara referens-RGB för Gul (standard: R=255, G=255, B=0). Anropa en gång vid programstart.</p>]]></Description>
         </Block>
-        <Block Mode="Setup_C5" DisplayName="Konfigurera färg 5">
-          <Description><![CDATA[<p>Lagrar de angivna R, G, B som referens för färgplats 5. Anropa en gång per plats vid programstart.</p>]]></Description>
+        <Block Mode="Setup_White" DisplayName="Konfigurera Vit">
+          <Description><![CDATA[<p>Spara referens-RGB för Vit (standard: R=255, G=255, B=255). Anropa en gång vid programstart.</p>]]></Description>
         </Block>
-        <Block Mode="Setup_C6" DisplayName="Konfigurera färg 6">
-          <Description><![CDATA[<p>Lagrar de angivna R, G, B som referens för färgplats 6. Anropa en gång per plats vid programstart.</p>]]></Description>
+        <Block Mode="Setup_Black" DisplayName="Konfigurera Svart">
+          <Description><![CDATA[<p>Spara referens-RGB för Svart (standard: R=0, G=0, B=0). Anropa en gång vid programstart.</p>]]></Description>
         </Block>
-        <Block Mode="Setup_C7" DisplayName="Konfigurera färg 7">
-          <Description><![CDATA[<p>Lagrar de angivna R, G, B som referens för färgplats 7. Anropa en gång per plats vid programstart.</p>]]></Description>
+        <Block Mode="Setup_Brown" DisplayName="Konfigurera Brun">
+          <Description><![CDATA[<p>Spara referens-RGB för Brun (standard: R=128, G=64, B=0). Anropa en gång vid programstart.</p>]]></Description>
         </Block>
-        <Block Mode="Setup_C8" DisplayName="Konfigurera färg 8">
-          <Description><![CDATA[<p>Lagrar de angivna R, G, B som referens för färgplats 8. Anropa en gång per plats vid programstart.</p>]]></Description>
+        <Block Mode="Setup_Pink" DisplayName="Konfigurera Rosa">
+          <Description><![CDATA[<p>Spara referens-RGB för Rosa (standard: R=200, G=50, B=150). Anropa en gång vid programstart.</p>]]></Description>
         </Block>
       </Category>
       <Block Mode="Distance" DisplayName="Avstånd">
