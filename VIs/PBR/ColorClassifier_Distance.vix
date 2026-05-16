@@ -20,9 +20,6 @@
             </FrontPanel>
             <BlockDiagram Name="__RootDiagram__">
                 <DataAccessor DataItem="SequenceIn" Id="nSeqIn" Bounds="100 100 98 14"><Terminal Id="Value" Direction="Output" Wire="wSeq_0" Hotspot="1 0.5" Bounds="0 0 98 14" /></DataAccessor>
-                <DataAccessor DataItem="R_in" Id="nRin" Bounds="100 200 70 14"><Terminal Id="Numeric" Direction="Output" Wire="wRin" Hotspot="1 0.5" Bounds="0 0 70 14" /></DataAccessor>
-                <DataAccessor DataItem="G_in" Id="nGin" Bounds="100 250 70 14"><Terminal Id="Numeric" Direction="Output" Wire="wGin" Hotspot="1 0.5" Bounds="0 0 70 14" /></DataAccessor>
-                <DataAccessor DataItem="B_in" Id="nBin" Bounds="100 300 70 14"><Terminal Id="Numeric" Direction="Output" Wire="wBin" Hotspot="1 0.5" Bounds="0 0 70 14" /></DataAccessor>
                 <ConfigurableMethodCall Id="nGetC1R" Bounds="300 400 101 91" Target="X3\.Lib:GlobalGetSingle">
                     <ConfigurableMethodTerminal><Terminal Id="valueOut" Direction="Output" Wire="wRef_1_R" DataType="Single" Hotspot="0.5 1" Bounds="54 56 30 27" /></ConfigurableMethodTerminal>
                     <ConfigurableMethodTerminal ConfiguredValue="OFDLCC_C1_R"><Terminal Id="name" Direction="Input" DataType="String" Hotspot="0.5 1" Bounds="0 0 0 0" /></ConfigurableMethodTerminal>
@@ -41,10 +38,13 @@
                     <Terminal Id="SequenceIn" Direction="Input" Wire="wSeq_2" DataType="NationalInstruments:SourceModel:DataTypes:X3SequenceWireDataType" Hotspot="0 0.5" Bounds="0 33 18 18" />
                     <Terminal Id="SequenceOut" Direction="Output" Wire="wSeq_3" DataType="NationalInstruments:SourceModel:DataTypes:X3SequenceWireDataType" Hotspot="1 0.5" Bounds="83 33 18 18" />
                 </ConfigurableMethodCall>
+                <DataAccessor DataItem="R_in" Id="nRin_1" Bounds="100 410 70 14"><Terminal Id="Numeric" Direction="Output" Wire="wRin_1" Hotspot="1 0.5" Bounds="0 0 70 14" /></DataAccessor>
+                <DataAccessor DataItem="G_in" Id="nGin_1" Bounds="100 440 70 14"><Terminal Id="Numeric" Direction="Output" Wire="wGin_1" Hotspot="1 0.5" Bounds="0 0 70 14" /></DataAccessor>
+                <DataAccessor DataItem="B_in" Id="nBin_1" Bounds="100 470 70 14"><Terminal Id="Numeric" Direction="Output" Wire="wBin_1" Hotspot="1 0.5" Bounds="0 0 70 14" /></DataAccessor>
                 <ConfigurableMethodCall Id="nM1_C1" Bounds="800 400 225 91" Target="X3Placeholder_2A058539\-ED76\-4476\-93FE\-CCE8AA559C5A_MathEquation\.vix">
-                    <ConfigurableMethodTerminal ConfiguredValue="0"><Terminal Id="X" Direction="Input" Wire="wRin" DataType="Single" Hotspot="0.5 1" Bounds="54 56 30 27" /></ConfigurableMethodTerminal>
+                    <ConfigurableMethodTerminal ConfiguredValue="0"><Terminal Id="X" Direction="Input" Wire="wRin_1" DataType="Single" Hotspot="0.5 1" Bounds="54 56 30 27" /></ConfigurableMethodTerminal>
                     <ConfigurableMethodTerminal ConfiguredValue="0"><Terminal Id="Y" Direction="Input" Wire="wRef_1_R" DataType="Single" Hotspot="0.5 1" Bounds="85 56 30 27" /></ConfigurableMethodTerminal>
-                    <ConfigurableMethodTerminal ConfiguredValue="0"><Terminal Id="C" Direction="Input" Wire="wGin" DataType="Single" Hotspot="0.5 1" Bounds="116 56 30 27" /></ConfigurableMethodTerminal>
+                    <ConfigurableMethodTerminal ConfiguredValue="0"><Terminal Id="C" Direction="Input" Wire="wGin_1" DataType="Single" Hotspot="0.5 1" Bounds="116 56 30 27" /></ConfigurableMethodTerminal>
                     <ConfigurableMethodTerminal ConfiguredValue="0"><Terminal Id="D" Direction="Input" Wire="wRef_1_G" DataType="Single" Hotspot="0.5 1" Bounds="147 56 30 27" /></ConfigurableMethodTerminal>
                     <ConfigurableMethodTerminal ConfiguredValue="(a-b)*(a-b)+(c-d)*(c-d)"><Terminal Id="Equation" Direction="Input" DataType="String" Hotspot="0.5 1" Bounds="0 0 0 0" /></ConfigurableMethodTerminal>
                     <ConfigurableMethodTerminal><Terminal Id="Result" Direction="Output" Wire="wPart_1" DataType="Single" Hotspot="0.5 1" Bounds="178 56 30 27" /></ConfigurableMethodTerminal>
@@ -52,7 +52,7 @@
                     <Terminal Id="SequenceOut" Direction="Output" Wire="wSeq_4" DataType="NationalInstruments:SourceModel:DataTypes:X3SequenceWireDataType" Hotspot="1 0.5" Bounds="207 33 18 18" />
                 </ConfigurableMethodCall>
                 <ConfigurableMethodCall Id="nM2_C1" Bounds="1100 400 225 91" Target="X3Placeholder_2A058539\-ED76\-4476\-93FE\-CCE8AA559C5A_MathEquation\.vix">
-                    <ConfigurableMethodTerminal ConfiguredValue="0"><Terminal Id="X" Direction="Input" Wire="wBin" DataType="Single" Hotspot="0.5 1" Bounds="54 56 30 27" /></ConfigurableMethodTerminal>
+                    <ConfigurableMethodTerminal ConfiguredValue="0"><Terminal Id="X" Direction="Input" Wire="wBin_1" DataType="Single" Hotspot="0.5 1" Bounds="54 56 30 27" /></ConfigurableMethodTerminal>
                     <ConfigurableMethodTerminal ConfiguredValue="0"><Terminal Id="Y" Direction="Input" Wire="wRef_1_B" DataType="Single" Hotspot="0.5 1" Bounds="85 56 30 27" /></ConfigurableMethodTerminal>
                     <ConfigurableMethodTerminal ConfiguredValue="0"><Terminal Id="C" Direction="Input" Wire="wPart_1" DataType="Single" Hotspot="0.5 1" Bounds="116 56 30 27" /></ConfigurableMethodTerminal>
                     <ConfigurableMethodTerminal ConfiguredValue="0"><Terminal Id="D" Direction="Input" DataType="Single" Hotspot="0.5 1" Bounds="147 56 30 27" /></ConfigurableMethodTerminal>
@@ -80,10 +80,13 @@
                     <Terminal Id="SequenceIn" Direction="Input" Wire="wSeq_7" DataType="NationalInstruments:SourceModel:DataTypes:X3SequenceWireDataType" Hotspot="0 0.5" Bounds="0 33 18 18" />
                     <Terminal Id="SequenceOut" Direction="Output" Wire="wSeq_8" DataType="NationalInstruments:SourceModel:DataTypes:X3SequenceWireDataType" Hotspot="1 0.5" Bounds="83 33 18 18" />
                 </ConfigurableMethodCall>
+                <DataAccessor DataItem="R_in" Id="nRin_2" Bounds="100 760 70 14"><Terminal Id="Numeric" Direction="Output" Wire="wRin_2" Hotspot="1 0.5" Bounds="0 0 70 14" /></DataAccessor>
+                <DataAccessor DataItem="G_in" Id="nGin_2" Bounds="100 790 70 14"><Terminal Id="Numeric" Direction="Output" Wire="wGin_2" Hotspot="1 0.5" Bounds="0 0 70 14" /></DataAccessor>
+                <DataAccessor DataItem="B_in" Id="nBin_2" Bounds="100 820 70 14"><Terminal Id="Numeric" Direction="Output" Wire="wBin_2" Hotspot="1 0.5" Bounds="0 0 70 14" /></DataAccessor>
                 <ConfigurableMethodCall Id="nM1_C2" Bounds="800 750 225 91" Target="X3Placeholder_2A058539\-ED76\-4476\-93FE\-CCE8AA559C5A_MathEquation\.vix">
-                    <ConfigurableMethodTerminal ConfiguredValue="0"><Terminal Id="X" Direction="Input" Wire="wRin" DataType="Single" Hotspot="0.5 1" Bounds="54 56 30 27" /></ConfigurableMethodTerminal>
+                    <ConfigurableMethodTerminal ConfiguredValue="0"><Terminal Id="X" Direction="Input" Wire="wRin_2" DataType="Single" Hotspot="0.5 1" Bounds="54 56 30 27" /></ConfigurableMethodTerminal>
                     <ConfigurableMethodTerminal ConfiguredValue="0"><Terminal Id="Y" Direction="Input" Wire="wRef_2_R" DataType="Single" Hotspot="0.5 1" Bounds="85 56 30 27" /></ConfigurableMethodTerminal>
-                    <ConfigurableMethodTerminal ConfiguredValue="0"><Terminal Id="C" Direction="Input" Wire="wGin" DataType="Single" Hotspot="0.5 1" Bounds="116 56 30 27" /></ConfigurableMethodTerminal>
+                    <ConfigurableMethodTerminal ConfiguredValue="0"><Terminal Id="C" Direction="Input" Wire="wGin_2" DataType="Single" Hotspot="0.5 1" Bounds="116 56 30 27" /></ConfigurableMethodTerminal>
                     <ConfigurableMethodTerminal ConfiguredValue="0"><Terminal Id="D" Direction="Input" Wire="wRef_2_G" DataType="Single" Hotspot="0.5 1" Bounds="147 56 30 27" /></ConfigurableMethodTerminal>
                     <ConfigurableMethodTerminal ConfiguredValue="(a-b)*(a-b)+(c-d)*(c-d)"><Terminal Id="Equation" Direction="Input" DataType="String" Hotspot="0.5 1" Bounds="0 0 0 0" /></ConfigurableMethodTerminal>
                     <ConfigurableMethodTerminal><Terminal Id="Result" Direction="Output" Wire="wPart_2" DataType="Single" Hotspot="0.5 1" Bounds="178 56 30 27" /></ConfigurableMethodTerminal>
@@ -91,7 +94,7 @@
                     <Terminal Id="SequenceOut" Direction="Output" Wire="wSeq_9" DataType="NationalInstruments:SourceModel:DataTypes:X3SequenceWireDataType" Hotspot="1 0.5" Bounds="207 33 18 18" />
                 </ConfigurableMethodCall>
                 <ConfigurableMethodCall Id="nM2_C2" Bounds="1100 750 225 91" Target="X3Placeholder_2A058539\-ED76\-4476\-93FE\-CCE8AA559C5A_MathEquation\.vix">
-                    <ConfigurableMethodTerminal ConfiguredValue="0"><Terminal Id="X" Direction="Input" Wire="wBin" DataType="Single" Hotspot="0.5 1" Bounds="54 56 30 27" /></ConfigurableMethodTerminal>
+                    <ConfigurableMethodTerminal ConfiguredValue="0"><Terminal Id="X" Direction="Input" Wire="wBin_2" DataType="Single" Hotspot="0.5 1" Bounds="54 56 30 27" /></ConfigurableMethodTerminal>
                     <ConfigurableMethodTerminal ConfiguredValue="0"><Terminal Id="Y" Direction="Input" Wire="wRef_2_B" DataType="Single" Hotspot="0.5 1" Bounds="85 56 30 27" /></ConfigurableMethodTerminal>
                     <ConfigurableMethodTerminal ConfiguredValue="0"><Terminal Id="C" Direction="Input" Wire="wPart_2" DataType="Single" Hotspot="0.5 1" Bounds="116 56 30 27" /></ConfigurableMethodTerminal>
                     <ConfigurableMethodTerminal ConfiguredValue="0"><Terminal Id="D" Direction="Input" DataType="Single" Hotspot="0.5 1" Bounds="147 56 30 27" /></ConfigurableMethodTerminal>
@@ -119,10 +122,13 @@
                     <Terminal Id="SequenceIn" Direction="Input" Wire="wSeq_12" DataType="NationalInstruments:SourceModel:DataTypes:X3SequenceWireDataType" Hotspot="0 0.5" Bounds="0 33 18 18" />
                     <Terminal Id="SequenceOut" Direction="Output" Wire="wSeq_13" DataType="NationalInstruments:SourceModel:DataTypes:X3SequenceWireDataType" Hotspot="1 0.5" Bounds="83 33 18 18" />
                 </ConfigurableMethodCall>
+                <DataAccessor DataItem="R_in" Id="nRin_3" Bounds="100 1110 70 14"><Terminal Id="Numeric" Direction="Output" Wire="wRin_3" Hotspot="1 0.5" Bounds="0 0 70 14" /></DataAccessor>
+                <DataAccessor DataItem="G_in" Id="nGin_3" Bounds="100 1140 70 14"><Terminal Id="Numeric" Direction="Output" Wire="wGin_3" Hotspot="1 0.5" Bounds="0 0 70 14" /></DataAccessor>
+                <DataAccessor DataItem="B_in" Id="nBin_3" Bounds="100 1170 70 14"><Terminal Id="Numeric" Direction="Output" Wire="wBin_3" Hotspot="1 0.5" Bounds="0 0 70 14" /></DataAccessor>
                 <ConfigurableMethodCall Id="nM1_C3" Bounds="800 1100 225 91" Target="X3Placeholder_2A058539\-ED76\-4476\-93FE\-CCE8AA559C5A_MathEquation\.vix">
-                    <ConfigurableMethodTerminal ConfiguredValue="0"><Terminal Id="X" Direction="Input" Wire="wRin" DataType="Single" Hotspot="0.5 1" Bounds="54 56 30 27" /></ConfigurableMethodTerminal>
+                    <ConfigurableMethodTerminal ConfiguredValue="0"><Terminal Id="X" Direction="Input" Wire="wRin_3" DataType="Single" Hotspot="0.5 1" Bounds="54 56 30 27" /></ConfigurableMethodTerminal>
                     <ConfigurableMethodTerminal ConfiguredValue="0"><Terminal Id="Y" Direction="Input" Wire="wRef_3_R" DataType="Single" Hotspot="0.5 1" Bounds="85 56 30 27" /></ConfigurableMethodTerminal>
-                    <ConfigurableMethodTerminal ConfiguredValue="0"><Terminal Id="C" Direction="Input" Wire="wGin" DataType="Single" Hotspot="0.5 1" Bounds="116 56 30 27" /></ConfigurableMethodTerminal>
+                    <ConfigurableMethodTerminal ConfiguredValue="0"><Terminal Id="C" Direction="Input" Wire="wGin_3" DataType="Single" Hotspot="0.5 1" Bounds="116 56 30 27" /></ConfigurableMethodTerminal>
                     <ConfigurableMethodTerminal ConfiguredValue="0"><Terminal Id="D" Direction="Input" Wire="wRef_3_G" DataType="Single" Hotspot="0.5 1" Bounds="147 56 30 27" /></ConfigurableMethodTerminal>
                     <ConfigurableMethodTerminal ConfiguredValue="(a-b)*(a-b)+(c-d)*(c-d)"><Terminal Id="Equation" Direction="Input" DataType="String" Hotspot="0.5 1" Bounds="0 0 0 0" /></ConfigurableMethodTerminal>
                     <ConfigurableMethodTerminal><Terminal Id="Result" Direction="Output" Wire="wPart_3" DataType="Single" Hotspot="0.5 1" Bounds="178 56 30 27" /></ConfigurableMethodTerminal>
@@ -130,7 +136,7 @@
                     <Terminal Id="SequenceOut" Direction="Output" Wire="wSeq_14" DataType="NationalInstruments:SourceModel:DataTypes:X3SequenceWireDataType" Hotspot="1 0.5" Bounds="207 33 18 18" />
                 </ConfigurableMethodCall>
                 <ConfigurableMethodCall Id="nM2_C3" Bounds="1100 1100 225 91" Target="X3Placeholder_2A058539\-ED76\-4476\-93FE\-CCE8AA559C5A_MathEquation\.vix">
-                    <ConfigurableMethodTerminal ConfiguredValue="0"><Terminal Id="X" Direction="Input" Wire="wBin" DataType="Single" Hotspot="0.5 1" Bounds="54 56 30 27" /></ConfigurableMethodTerminal>
+                    <ConfigurableMethodTerminal ConfiguredValue="0"><Terminal Id="X" Direction="Input" Wire="wBin_3" DataType="Single" Hotspot="0.5 1" Bounds="54 56 30 27" /></ConfigurableMethodTerminal>
                     <ConfigurableMethodTerminal ConfiguredValue="0"><Terminal Id="Y" Direction="Input" Wire="wRef_3_B" DataType="Single" Hotspot="0.5 1" Bounds="85 56 30 27" /></ConfigurableMethodTerminal>
                     <ConfigurableMethodTerminal ConfiguredValue="0"><Terminal Id="C" Direction="Input" Wire="wPart_3" DataType="Single" Hotspot="0.5 1" Bounds="116 56 30 27" /></ConfigurableMethodTerminal>
                     <ConfigurableMethodTerminal ConfiguredValue="0"><Terminal Id="D" Direction="Input" DataType="Single" Hotspot="0.5 1" Bounds="147 56 30 27" /></ConfigurableMethodTerminal>
@@ -158,10 +164,13 @@
                     <Terminal Id="SequenceIn" Direction="Input" Wire="wSeq_17" DataType="NationalInstruments:SourceModel:DataTypes:X3SequenceWireDataType" Hotspot="0 0.5" Bounds="0 33 18 18" />
                     <Terminal Id="SequenceOut" Direction="Output" Wire="wSeq_18" DataType="NationalInstruments:SourceModel:DataTypes:X3SequenceWireDataType" Hotspot="1 0.5" Bounds="83 33 18 18" />
                 </ConfigurableMethodCall>
+                <DataAccessor DataItem="R_in" Id="nRin_4" Bounds="100 1460 70 14"><Terminal Id="Numeric" Direction="Output" Wire="wRin_4" Hotspot="1 0.5" Bounds="0 0 70 14" /></DataAccessor>
+                <DataAccessor DataItem="G_in" Id="nGin_4" Bounds="100 1490 70 14"><Terminal Id="Numeric" Direction="Output" Wire="wGin_4" Hotspot="1 0.5" Bounds="0 0 70 14" /></DataAccessor>
+                <DataAccessor DataItem="B_in" Id="nBin_4" Bounds="100 1520 70 14"><Terminal Id="Numeric" Direction="Output" Wire="wBin_4" Hotspot="1 0.5" Bounds="0 0 70 14" /></DataAccessor>
                 <ConfigurableMethodCall Id="nM1_C4" Bounds="800 1450 225 91" Target="X3Placeholder_2A058539\-ED76\-4476\-93FE\-CCE8AA559C5A_MathEquation\.vix">
-                    <ConfigurableMethodTerminal ConfiguredValue="0"><Terminal Id="X" Direction="Input" Wire="wRin" DataType="Single" Hotspot="0.5 1" Bounds="54 56 30 27" /></ConfigurableMethodTerminal>
+                    <ConfigurableMethodTerminal ConfiguredValue="0"><Terminal Id="X" Direction="Input" Wire="wRin_4" DataType="Single" Hotspot="0.5 1" Bounds="54 56 30 27" /></ConfigurableMethodTerminal>
                     <ConfigurableMethodTerminal ConfiguredValue="0"><Terminal Id="Y" Direction="Input" Wire="wRef_4_R" DataType="Single" Hotspot="0.5 1" Bounds="85 56 30 27" /></ConfigurableMethodTerminal>
-                    <ConfigurableMethodTerminal ConfiguredValue="0"><Terminal Id="C" Direction="Input" Wire="wGin" DataType="Single" Hotspot="0.5 1" Bounds="116 56 30 27" /></ConfigurableMethodTerminal>
+                    <ConfigurableMethodTerminal ConfiguredValue="0"><Terminal Id="C" Direction="Input" Wire="wGin_4" DataType="Single" Hotspot="0.5 1" Bounds="116 56 30 27" /></ConfigurableMethodTerminal>
                     <ConfigurableMethodTerminal ConfiguredValue="0"><Terminal Id="D" Direction="Input" Wire="wRef_4_G" DataType="Single" Hotspot="0.5 1" Bounds="147 56 30 27" /></ConfigurableMethodTerminal>
                     <ConfigurableMethodTerminal ConfiguredValue="(a-b)*(a-b)+(c-d)*(c-d)"><Terminal Id="Equation" Direction="Input" DataType="String" Hotspot="0.5 1" Bounds="0 0 0 0" /></ConfigurableMethodTerminal>
                     <ConfigurableMethodTerminal><Terminal Id="Result" Direction="Output" Wire="wPart_4" DataType="Single" Hotspot="0.5 1" Bounds="178 56 30 27" /></ConfigurableMethodTerminal>
@@ -169,7 +178,7 @@
                     <Terminal Id="SequenceOut" Direction="Output" Wire="wSeq_19" DataType="NationalInstruments:SourceModel:DataTypes:X3SequenceWireDataType" Hotspot="1 0.5" Bounds="207 33 18 18" />
                 </ConfigurableMethodCall>
                 <ConfigurableMethodCall Id="nM2_C4" Bounds="1100 1450 225 91" Target="X3Placeholder_2A058539\-ED76\-4476\-93FE\-CCE8AA559C5A_MathEquation\.vix">
-                    <ConfigurableMethodTerminal ConfiguredValue="0"><Terminal Id="X" Direction="Input" Wire="wBin" DataType="Single" Hotspot="0.5 1" Bounds="54 56 30 27" /></ConfigurableMethodTerminal>
+                    <ConfigurableMethodTerminal ConfiguredValue="0"><Terminal Id="X" Direction="Input" Wire="wBin_4" DataType="Single" Hotspot="0.5 1" Bounds="54 56 30 27" /></ConfigurableMethodTerminal>
                     <ConfigurableMethodTerminal ConfiguredValue="0"><Terminal Id="Y" Direction="Input" Wire="wRef_4_B" DataType="Single" Hotspot="0.5 1" Bounds="85 56 30 27" /></ConfigurableMethodTerminal>
                     <ConfigurableMethodTerminal ConfiguredValue="0"><Terminal Id="C" Direction="Input" Wire="wPart_4" DataType="Single" Hotspot="0.5 1" Bounds="116 56 30 27" /></ConfigurableMethodTerminal>
                     <ConfigurableMethodTerminal ConfiguredValue="0"><Terminal Id="D" Direction="Input" DataType="Single" Hotspot="0.5 1" Bounds="147 56 30 27" /></ConfigurableMethodTerminal>
@@ -197,10 +206,13 @@
                     <Terminal Id="SequenceIn" Direction="Input" Wire="wSeq_22" DataType="NationalInstruments:SourceModel:DataTypes:X3SequenceWireDataType" Hotspot="0 0.5" Bounds="0 33 18 18" />
                     <Terminal Id="SequenceOut" Direction="Output" Wire="wSeq_23" DataType="NationalInstruments:SourceModel:DataTypes:X3SequenceWireDataType" Hotspot="1 0.5" Bounds="83 33 18 18" />
                 </ConfigurableMethodCall>
+                <DataAccessor DataItem="R_in" Id="nRin_5" Bounds="100 1810 70 14"><Terminal Id="Numeric" Direction="Output" Wire="wRin_5" Hotspot="1 0.5" Bounds="0 0 70 14" /></DataAccessor>
+                <DataAccessor DataItem="G_in" Id="nGin_5" Bounds="100 1840 70 14"><Terminal Id="Numeric" Direction="Output" Wire="wGin_5" Hotspot="1 0.5" Bounds="0 0 70 14" /></DataAccessor>
+                <DataAccessor DataItem="B_in" Id="nBin_5" Bounds="100 1870 70 14"><Terminal Id="Numeric" Direction="Output" Wire="wBin_5" Hotspot="1 0.5" Bounds="0 0 70 14" /></DataAccessor>
                 <ConfigurableMethodCall Id="nM1_C5" Bounds="800 1800 225 91" Target="X3Placeholder_2A058539\-ED76\-4476\-93FE\-CCE8AA559C5A_MathEquation\.vix">
-                    <ConfigurableMethodTerminal ConfiguredValue="0"><Terminal Id="X" Direction="Input" Wire="wRin" DataType="Single" Hotspot="0.5 1" Bounds="54 56 30 27" /></ConfigurableMethodTerminal>
+                    <ConfigurableMethodTerminal ConfiguredValue="0"><Terminal Id="X" Direction="Input" Wire="wRin_5" DataType="Single" Hotspot="0.5 1" Bounds="54 56 30 27" /></ConfigurableMethodTerminal>
                     <ConfigurableMethodTerminal ConfiguredValue="0"><Terminal Id="Y" Direction="Input" Wire="wRef_5_R" DataType="Single" Hotspot="0.5 1" Bounds="85 56 30 27" /></ConfigurableMethodTerminal>
-                    <ConfigurableMethodTerminal ConfiguredValue="0"><Terminal Id="C" Direction="Input" Wire="wGin" DataType="Single" Hotspot="0.5 1" Bounds="116 56 30 27" /></ConfigurableMethodTerminal>
+                    <ConfigurableMethodTerminal ConfiguredValue="0"><Terminal Id="C" Direction="Input" Wire="wGin_5" DataType="Single" Hotspot="0.5 1" Bounds="116 56 30 27" /></ConfigurableMethodTerminal>
                     <ConfigurableMethodTerminal ConfiguredValue="0"><Terminal Id="D" Direction="Input" Wire="wRef_5_G" DataType="Single" Hotspot="0.5 1" Bounds="147 56 30 27" /></ConfigurableMethodTerminal>
                     <ConfigurableMethodTerminal ConfiguredValue="(a-b)*(a-b)+(c-d)*(c-d)"><Terminal Id="Equation" Direction="Input" DataType="String" Hotspot="0.5 1" Bounds="0 0 0 0" /></ConfigurableMethodTerminal>
                     <ConfigurableMethodTerminal><Terminal Id="Result" Direction="Output" Wire="wPart_5" DataType="Single" Hotspot="0.5 1" Bounds="178 56 30 27" /></ConfigurableMethodTerminal>
@@ -208,7 +220,7 @@
                     <Terminal Id="SequenceOut" Direction="Output" Wire="wSeq_24" DataType="NationalInstruments:SourceModel:DataTypes:X3SequenceWireDataType" Hotspot="1 0.5" Bounds="207 33 18 18" />
                 </ConfigurableMethodCall>
                 <ConfigurableMethodCall Id="nM2_C5" Bounds="1100 1800 225 91" Target="X3Placeholder_2A058539\-ED76\-4476\-93FE\-CCE8AA559C5A_MathEquation\.vix">
-                    <ConfigurableMethodTerminal ConfiguredValue="0"><Terminal Id="X" Direction="Input" Wire="wBin" DataType="Single" Hotspot="0.5 1" Bounds="54 56 30 27" /></ConfigurableMethodTerminal>
+                    <ConfigurableMethodTerminal ConfiguredValue="0"><Terminal Id="X" Direction="Input" Wire="wBin_5" DataType="Single" Hotspot="0.5 1" Bounds="54 56 30 27" /></ConfigurableMethodTerminal>
                     <ConfigurableMethodTerminal ConfiguredValue="0"><Terminal Id="Y" Direction="Input" Wire="wRef_5_B" DataType="Single" Hotspot="0.5 1" Bounds="85 56 30 27" /></ConfigurableMethodTerminal>
                     <ConfigurableMethodTerminal ConfiguredValue="0"><Terminal Id="C" Direction="Input" Wire="wPart_5" DataType="Single" Hotspot="0.5 1" Bounds="116 56 30 27" /></ConfigurableMethodTerminal>
                     <ConfigurableMethodTerminal ConfiguredValue="0"><Terminal Id="D" Direction="Input" DataType="Single" Hotspot="0.5 1" Bounds="147 56 30 27" /></ConfigurableMethodTerminal>
@@ -236,10 +248,13 @@
                     <Terminal Id="SequenceIn" Direction="Input" Wire="wSeq_27" DataType="NationalInstruments:SourceModel:DataTypes:X3SequenceWireDataType" Hotspot="0 0.5" Bounds="0 33 18 18" />
                     <Terminal Id="SequenceOut" Direction="Output" Wire="wSeq_28" DataType="NationalInstruments:SourceModel:DataTypes:X3SequenceWireDataType" Hotspot="1 0.5" Bounds="83 33 18 18" />
                 </ConfigurableMethodCall>
+                <DataAccessor DataItem="R_in" Id="nRin_6" Bounds="100 2160 70 14"><Terminal Id="Numeric" Direction="Output" Wire="wRin_6" Hotspot="1 0.5" Bounds="0 0 70 14" /></DataAccessor>
+                <DataAccessor DataItem="G_in" Id="nGin_6" Bounds="100 2190 70 14"><Terminal Id="Numeric" Direction="Output" Wire="wGin_6" Hotspot="1 0.5" Bounds="0 0 70 14" /></DataAccessor>
+                <DataAccessor DataItem="B_in" Id="nBin_6" Bounds="100 2220 70 14"><Terminal Id="Numeric" Direction="Output" Wire="wBin_6" Hotspot="1 0.5" Bounds="0 0 70 14" /></DataAccessor>
                 <ConfigurableMethodCall Id="nM1_C6" Bounds="800 2150 225 91" Target="X3Placeholder_2A058539\-ED76\-4476\-93FE\-CCE8AA559C5A_MathEquation\.vix">
-                    <ConfigurableMethodTerminal ConfiguredValue="0"><Terminal Id="X" Direction="Input" Wire="wRin" DataType="Single" Hotspot="0.5 1" Bounds="54 56 30 27" /></ConfigurableMethodTerminal>
+                    <ConfigurableMethodTerminal ConfiguredValue="0"><Terminal Id="X" Direction="Input" Wire="wRin_6" DataType="Single" Hotspot="0.5 1" Bounds="54 56 30 27" /></ConfigurableMethodTerminal>
                     <ConfigurableMethodTerminal ConfiguredValue="0"><Terminal Id="Y" Direction="Input" Wire="wRef_6_R" DataType="Single" Hotspot="0.5 1" Bounds="85 56 30 27" /></ConfigurableMethodTerminal>
-                    <ConfigurableMethodTerminal ConfiguredValue="0"><Terminal Id="C" Direction="Input" Wire="wGin" DataType="Single" Hotspot="0.5 1" Bounds="116 56 30 27" /></ConfigurableMethodTerminal>
+                    <ConfigurableMethodTerminal ConfiguredValue="0"><Terminal Id="C" Direction="Input" Wire="wGin_6" DataType="Single" Hotspot="0.5 1" Bounds="116 56 30 27" /></ConfigurableMethodTerminal>
                     <ConfigurableMethodTerminal ConfiguredValue="0"><Terminal Id="D" Direction="Input" Wire="wRef_6_G" DataType="Single" Hotspot="0.5 1" Bounds="147 56 30 27" /></ConfigurableMethodTerminal>
                     <ConfigurableMethodTerminal ConfiguredValue="(a-b)*(a-b)+(c-d)*(c-d)"><Terminal Id="Equation" Direction="Input" DataType="String" Hotspot="0.5 1" Bounds="0 0 0 0" /></ConfigurableMethodTerminal>
                     <ConfigurableMethodTerminal><Terminal Id="Result" Direction="Output" Wire="wPart_6" DataType="Single" Hotspot="0.5 1" Bounds="178 56 30 27" /></ConfigurableMethodTerminal>
@@ -247,7 +262,7 @@
                     <Terminal Id="SequenceOut" Direction="Output" Wire="wSeq_29" DataType="NationalInstruments:SourceModel:DataTypes:X3SequenceWireDataType" Hotspot="1 0.5" Bounds="207 33 18 18" />
                 </ConfigurableMethodCall>
                 <ConfigurableMethodCall Id="nM2_C6" Bounds="1100 2150 225 91" Target="X3Placeholder_2A058539\-ED76\-4476\-93FE\-CCE8AA559C5A_MathEquation\.vix">
-                    <ConfigurableMethodTerminal ConfiguredValue="0"><Terminal Id="X" Direction="Input" Wire="wBin" DataType="Single" Hotspot="0.5 1" Bounds="54 56 30 27" /></ConfigurableMethodTerminal>
+                    <ConfigurableMethodTerminal ConfiguredValue="0"><Terminal Id="X" Direction="Input" Wire="wBin_6" DataType="Single" Hotspot="0.5 1" Bounds="54 56 30 27" /></ConfigurableMethodTerminal>
                     <ConfigurableMethodTerminal ConfiguredValue="0"><Terminal Id="Y" Direction="Input" Wire="wRef_6_B" DataType="Single" Hotspot="0.5 1" Bounds="85 56 30 27" /></ConfigurableMethodTerminal>
                     <ConfigurableMethodTerminal ConfiguredValue="0"><Terminal Id="C" Direction="Input" Wire="wPart_6" DataType="Single" Hotspot="0.5 1" Bounds="116 56 30 27" /></ConfigurableMethodTerminal>
                     <ConfigurableMethodTerminal ConfiguredValue="0"><Terminal Id="D" Direction="Input" DataType="Single" Hotspot="0.5 1" Bounds="147 56 30 27" /></ConfigurableMethodTerminal>
@@ -275,10 +290,13 @@
                     <Terminal Id="SequenceIn" Direction="Input" Wire="wSeq_32" DataType="NationalInstruments:SourceModel:DataTypes:X3SequenceWireDataType" Hotspot="0 0.5" Bounds="0 33 18 18" />
                     <Terminal Id="SequenceOut" Direction="Output" Wire="wSeq_33" DataType="NationalInstruments:SourceModel:DataTypes:X3SequenceWireDataType" Hotspot="1 0.5" Bounds="83 33 18 18" />
                 </ConfigurableMethodCall>
+                <DataAccessor DataItem="R_in" Id="nRin_7" Bounds="100 2510 70 14"><Terminal Id="Numeric" Direction="Output" Wire="wRin_7" Hotspot="1 0.5" Bounds="0 0 70 14" /></DataAccessor>
+                <DataAccessor DataItem="G_in" Id="nGin_7" Bounds="100 2540 70 14"><Terminal Id="Numeric" Direction="Output" Wire="wGin_7" Hotspot="1 0.5" Bounds="0 0 70 14" /></DataAccessor>
+                <DataAccessor DataItem="B_in" Id="nBin_7" Bounds="100 2570 70 14"><Terminal Id="Numeric" Direction="Output" Wire="wBin_7" Hotspot="1 0.5" Bounds="0 0 70 14" /></DataAccessor>
                 <ConfigurableMethodCall Id="nM1_C7" Bounds="800 2500 225 91" Target="X3Placeholder_2A058539\-ED76\-4476\-93FE\-CCE8AA559C5A_MathEquation\.vix">
-                    <ConfigurableMethodTerminal ConfiguredValue="0"><Terminal Id="X" Direction="Input" Wire="wRin" DataType="Single" Hotspot="0.5 1" Bounds="54 56 30 27" /></ConfigurableMethodTerminal>
+                    <ConfigurableMethodTerminal ConfiguredValue="0"><Terminal Id="X" Direction="Input" Wire="wRin_7" DataType="Single" Hotspot="0.5 1" Bounds="54 56 30 27" /></ConfigurableMethodTerminal>
                     <ConfigurableMethodTerminal ConfiguredValue="0"><Terminal Id="Y" Direction="Input" Wire="wRef_7_R" DataType="Single" Hotspot="0.5 1" Bounds="85 56 30 27" /></ConfigurableMethodTerminal>
-                    <ConfigurableMethodTerminal ConfiguredValue="0"><Terminal Id="C" Direction="Input" Wire="wGin" DataType="Single" Hotspot="0.5 1" Bounds="116 56 30 27" /></ConfigurableMethodTerminal>
+                    <ConfigurableMethodTerminal ConfiguredValue="0"><Terminal Id="C" Direction="Input" Wire="wGin_7" DataType="Single" Hotspot="0.5 1" Bounds="116 56 30 27" /></ConfigurableMethodTerminal>
                     <ConfigurableMethodTerminal ConfiguredValue="0"><Terminal Id="D" Direction="Input" Wire="wRef_7_G" DataType="Single" Hotspot="0.5 1" Bounds="147 56 30 27" /></ConfigurableMethodTerminal>
                     <ConfigurableMethodTerminal ConfiguredValue="(a-b)*(a-b)+(c-d)*(c-d)"><Terminal Id="Equation" Direction="Input" DataType="String" Hotspot="0.5 1" Bounds="0 0 0 0" /></ConfigurableMethodTerminal>
                     <ConfigurableMethodTerminal><Terminal Id="Result" Direction="Output" Wire="wPart_7" DataType="Single" Hotspot="0.5 1" Bounds="178 56 30 27" /></ConfigurableMethodTerminal>
@@ -286,7 +304,7 @@
                     <Terminal Id="SequenceOut" Direction="Output" Wire="wSeq_34" DataType="NationalInstruments:SourceModel:DataTypes:X3SequenceWireDataType" Hotspot="1 0.5" Bounds="207 33 18 18" />
                 </ConfigurableMethodCall>
                 <ConfigurableMethodCall Id="nM2_C7" Bounds="1100 2500 225 91" Target="X3Placeholder_2A058539\-ED76\-4476\-93FE\-CCE8AA559C5A_MathEquation\.vix">
-                    <ConfigurableMethodTerminal ConfiguredValue="0"><Terminal Id="X" Direction="Input" Wire="wBin" DataType="Single" Hotspot="0.5 1" Bounds="54 56 30 27" /></ConfigurableMethodTerminal>
+                    <ConfigurableMethodTerminal ConfiguredValue="0"><Terminal Id="X" Direction="Input" Wire="wBin_7" DataType="Single" Hotspot="0.5 1" Bounds="54 56 30 27" /></ConfigurableMethodTerminal>
                     <ConfigurableMethodTerminal ConfiguredValue="0"><Terminal Id="Y" Direction="Input" Wire="wRef_7_B" DataType="Single" Hotspot="0.5 1" Bounds="85 56 30 27" /></ConfigurableMethodTerminal>
                     <ConfigurableMethodTerminal ConfiguredValue="0"><Terminal Id="C" Direction="Input" Wire="wPart_7" DataType="Single" Hotspot="0.5 1" Bounds="116 56 30 27" /></ConfigurableMethodTerminal>
                     <ConfigurableMethodTerminal ConfiguredValue="0"><Terminal Id="D" Direction="Input" DataType="Single" Hotspot="0.5 1" Bounds="147 56 30 27" /></ConfigurableMethodTerminal>
@@ -314,10 +332,13 @@
                     <Terminal Id="SequenceIn" Direction="Input" Wire="wSeq_37" DataType="NationalInstruments:SourceModel:DataTypes:X3SequenceWireDataType" Hotspot="0 0.5" Bounds="0 33 18 18" />
                     <Terminal Id="SequenceOut" Direction="Output" Wire="wSeq_38" DataType="NationalInstruments:SourceModel:DataTypes:X3SequenceWireDataType" Hotspot="1 0.5" Bounds="83 33 18 18" />
                 </ConfigurableMethodCall>
+                <DataAccessor DataItem="R_in" Id="nRin_8" Bounds="100 2860 70 14"><Terminal Id="Numeric" Direction="Output" Wire="wRin_8" Hotspot="1 0.5" Bounds="0 0 70 14" /></DataAccessor>
+                <DataAccessor DataItem="G_in" Id="nGin_8" Bounds="100 2890 70 14"><Terminal Id="Numeric" Direction="Output" Wire="wGin_8" Hotspot="1 0.5" Bounds="0 0 70 14" /></DataAccessor>
+                <DataAccessor DataItem="B_in" Id="nBin_8" Bounds="100 2920 70 14"><Terminal Id="Numeric" Direction="Output" Wire="wBin_8" Hotspot="1 0.5" Bounds="0 0 70 14" /></DataAccessor>
                 <ConfigurableMethodCall Id="nM1_C8" Bounds="800 2850 225 91" Target="X3Placeholder_2A058539\-ED76\-4476\-93FE\-CCE8AA559C5A_MathEquation\.vix">
-                    <ConfigurableMethodTerminal ConfiguredValue="0"><Terminal Id="X" Direction="Input" Wire="wRin" DataType="Single" Hotspot="0.5 1" Bounds="54 56 30 27" /></ConfigurableMethodTerminal>
+                    <ConfigurableMethodTerminal ConfiguredValue="0"><Terminal Id="X" Direction="Input" Wire="wRin_8" DataType="Single" Hotspot="0.5 1" Bounds="54 56 30 27" /></ConfigurableMethodTerminal>
                     <ConfigurableMethodTerminal ConfiguredValue="0"><Terminal Id="Y" Direction="Input" Wire="wRef_8_R" DataType="Single" Hotspot="0.5 1" Bounds="85 56 30 27" /></ConfigurableMethodTerminal>
-                    <ConfigurableMethodTerminal ConfiguredValue="0"><Terminal Id="C" Direction="Input" Wire="wGin" DataType="Single" Hotspot="0.5 1" Bounds="116 56 30 27" /></ConfigurableMethodTerminal>
+                    <ConfigurableMethodTerminal ConfiguredValue="0"><Terminal Id="C" Direction="Input" Wire="wGin_8" DataType="Single" Hotspot="0.5 1" Bounds="116 56 30 27" /></ConfigurableMethodTerminal>
                     <ConfigurableMethodTerminal ConfiguredValue="0"><Terminal Id="D" Direction="Input" Wire="wRef_8_G" DataType="Single" Hotspot="0.5 1" Bounds="147 56 30 27" /></ConfigurableMethodTerminal>
                     <ConfigurableMethodTerminal ConfiguredValue="(a-b)*(a-b)+(c-d)*(c-d)"><Terminal Id="Equation" Direction="Input" DataType="String" Hotspot="0.5 1" Bounds="0 0 0 0" /></ConfigurableMethodTerminal>
                     <ConfigurableMethodTerminal><Terminal Id="Result" Direction="Output" Wire="wPart_8" DataType="Single" Hotspot="0.5 1" Bounds="178 56 30 27" /></ConfigurableMethodTerminal>
@@ -325,7 +346,7 @@
                     <Terminal Id="SequenceOut" Direction="Output" Wire="wSeq_39" DataType="NationalInstruments:SourceModel:DataTypes:X3SequenceWireDataType" Hotspot="1 0.5" Bounds="207 33 18 18" />
                 </ConfigurableMethodCall>
                 <ConfigurableMethodCall Id="nM2_C8" Bounds="1100 2850 225 91" Target="X3Placeholder_2A058539\-ED76\-4476\-93FE\-CCE8AA559C5A_MathEquation\.vix">
-                    <ConfigurableMethodTerminal ConfiguredValue="0"><Terminal Id="X" Direction="Input" Wire="wBin" DataType="Single" Hotspot="0.5 1" Bounds="54 56 30 27" /></ConfigurableMethodTerminal>
+                    <ConfigurableMethodTerminal ConfiguredValue="0"><Terminal Id="X" Direction="Input" Wire="wBin_8" DataType="Single" Hotspot="0.5 1" Bounds="54 56 30 27" /></ConfigurableMethodTerminal>
                     <ConfigurableMethodTerminal ConfiguredValue="0"><Terminal Id="Y" Direction="Input" Wire="wRef_8_B" DataType="Single" Hotspot="0.5 1" Bounds="85 56 30 27" /></ConfigurableMethodTerminal>
                     <ConfigurableMethodTerminal ConfiguredValue="0"><Terminal Id="C" Direction="Input" Wire="wPart_8" DataType="Single" Hotspot="0.5 1" Bounds="116 56 30 27" /></ConfigurableMethodTerminal>
                     <ConfigurableMethodTerminal ConfiguredValue="0"><Terminal Id="D" Direction="Input" DataType="Single" Hotspot="0.5 1" Bounds="147 56 30 27" /></ConfigurableMethodTerminal>
@@ -377,9 +398,30 @@
                 <Wire Id="wSeq_38" Joints="N(nGetC8B:SequenceOut) N(nM1_C8:SequenceIn)" />
                 <Wire Id="wSeq_39" Joints="N(nM1_C8:SequenceOut) N(nM2_C8:SequenceIn)" />
                 <Wire Id="wSeq_40" Joints="N(nM2_C8:SequenceOut) N(nSeqOut:Value)" />
-                <Wire Id="wRin" Joints="N(nRin:Numeric) N(nM1_C1:X)" />
-                <Wire Id="wGin" Joints="N(nGin:Numeric) N(nM1_C1:C)" />
-                <Wire Id="wBin" Joints="N(nBin:Numeric) N(nM2_C1:X)" />
+                <Wire Id="wRin_1" Joints="N(nRin_1:Numeric) N(nM1_C1:X)" />
+                <Wire Id="wGin_1" Joints="N(nGin_1:Numeric) N(nM1_C1:C)" />
+                <Wire Id="wBin_1" Joints="N(nBin_1:Numeric) N(nM2_C1:X)" />
+                <Wire Id="wRin_2" Joints="N(nRin_2:Numeric) N(nM1_C2:X)" />
+                <Wire Id="wGin_2" Joints="N(nGin_2:Numeric) N(nM1_C2:C)" />
+                <Wire Id="wBin_2" Joints="N(nBin_2:Numeric) N(nM2_C2:X)" />
+                <Wire Id="wRin_3" Joints="N(nRin_3:Numeric) N(nM1_C3:X)" />
+                <Wire Id="wGin_3" Joints="N(nGin_3:Numeric) N(nM1_C3:C)" />
+                <Wire Id="wBin_3" Joints="N(nBin_3:Numeric) N(nM2_C3:X)" />
+                <Wire Id="wRin_4" Joints="N(nRin_4:Numeric) N(nM1_C4:X)" />
+                <Wire Id="wGin_4" Joints="N(nGin_4:Numeric) N(nM1_C4:C)" />
+                <Wire Id="wBin_4" Joints="N(nBin_4:Numeric) N(nM2_C4:X)" />
+                <Wire Id="wRin_5" Joints="N(nRin_5:Numeric) N(nM1_C5:X)" />
+                <Wire Id="wGin_5" Joints="N(nGin_5:Numeric) N(nM1_C5:C)" />
+                <Wire Id="wBin_5" Joints="N(nBin_5:Numeric) N(nM2_C5:X)" />
+                <Wire Id="wRin_6" Joints="N(nRin_6:Numeric) N(nM1_C6:X)" />
+                <Wire Id="wGin_6" Joints="N(nGin_6:Numeric) N(nM1_C6:C)" />
+                <Wire Id="wBin_6" Joints="N(nBin_6:Numeric) N(nM2_C6:X)" />
+                <Wire Id="wRin_7" Joints="N(nRin_7:Numeric) N(nM1_C7:X)" />
+                <Wire Id="wGin_7" Joints="N(nGin_7:Numeric) N(nM1_C7:C)" />
+                <Wire Id="wBin_7" Joints="N(nBin_7:Numeric) N(nM2_C7:X)" />
+                <Wire Id="wRin_8" Joints="N(nRin_8:Numeric) N(nM1_C8:X)" />
+                <Wire Id="wGin_8" Joints="N(nGin_8:Numeric) N(nM1_C8:C)" />
+                <Wire Id="wBin_8" Joints="N(nBin_8:Numeric) N(nM2_C8:X)" />
                 <Wire Id="wRef_1_R" Joints="N(nGetC1R:valueOut) N(nM1_C1:Y)" />
                 <Wire Id="wRef_1_G" Joints="N(nGetC1G:valueOut) N(nM1_C1:D)" />
                 <Wire Id="wRef_1_B" Joints="N(nGetC1B:valueOut) N(nM2_C1:Y)" />
