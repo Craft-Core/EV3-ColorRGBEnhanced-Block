@@ -86,52 +86,52 @@
       <Parameter Name="BestDistance" DisplayName="Bästa avstånd">
         <Description><![CDATA[<p>Avstånd till närmaste förinställda färg</p>]]></Description>
       </Parameter>
-      <Parameter Name="D1" DisplayName="Avstånd 1">
+      <Parameter Name="D1" DisplayName="Färg 1">
         <Description><![CDATA[<p>Kvadrerat avstånd från indata-RGB till förinställd färg 1</p>]]></Description>
       </Parameter>
-      <Parameter Name="D2" DisplayName="Avstånd 2">
+      <Parameter Name="D2" DisplayName="Färg 2">
         <Description><![CDATA[<p>Kvadrerat avstånd från indata-RGB till förinställd färg 2</p>]]></Description>
       </Parameter>
-      <Parameter Name="D3" DisplayName="Avstånd 3">
+      <Parameter Name="D3" DisplayName="Färg 3">
         <Description><![CDATA[<p>Kvadrerat avstånd från indata-RGB till förinställd färg 3</p>]]></Description>
       </Parameter>
-      <Parameter Name="D4" DisplayName="Avstånd 4">
+      <Parameter Name="D4" DisplayName="Färg 4">
         <Description><![CDATA[<p>Kvadrerat avstånd från indata-RGB till förinställd färg 4</p>]]></Description>
       </Parameter>
-      <Parameter Name="D5" DisplayName="Avstånd 5">
+      <Parameter Name="D5" DisplayName="Färg 5">
         <Description><![CDATA[<p>Kvadrerat avstånd från indata-RGB till förinställd färg 5</p>]]></Description>
       </Parameter>
-      <Parameter Name="D6" DisplayName="Avstånd 6">
+      <Parameter Name="D6" DisplayName="Färg 6">
         <Description><![CDATA[<p>Kvadrerat avstånd från indata-RGB till förinställd färg 6</p>]]></Description>
       </Parameter>
-      <Parameter Name="D7" DisplayName="Avstånd 7">
+      <Parameter Name="D7" DisplayName="Färg 7">
         <Description><![CDATA[<p>Kvadrerat avstånd från indata-RGB till förinställd färg 7</p>]]></Description>
       </Parameter>
-      <Parameter Name="D8" DisplayName="Avstånd 8">
+      <Parameter Name="D8" DisplayName="Färg 8">
         <Description><![CDATA[<p>Kvadrerat avstånd från indata-RGB till förinställd färg 8</p>]]></Description>
       </Parameter>
-      <Parameter Name="D1_in" DisplayName="Avstånd 1">
+      <Parameter Name="D1_in" DisplayName="Färg 1">
         <Description><![CDATA[<p>Avstånd till färg 1 (anslut från Distance-läge)</p>]]></Description>
       </Parameter>
-      <Parameter Name="D2_in" DisplayName="Avstånd 2">
+      <Parameter Name="D2_in" DisplayName="Färg 2">
         <Description><![CDATA[<p>Avstånd till färg 2 (anslut från Distance-läge)</p>]]></Description>
       </Parameter>
-      <Parameter Name="D3_in" DisplayName="Avstånd 3">
+      <Parameter Name="D3_in" DisplayName="Färg 3">
         <Description><![CDATA[<p>Avstånd till färg 3 (anslut från Distance-läge)</p>]]></Description>
       </Parameter>
-      <Parameter Name="D4_in" DisplayName="Avstånd 4">
+      <Parameter Name="D4_in" DisplayName="Färg 4">
         <Description><![CDATA[<p>Avstånd till färg 4 (anslut från Distance-läge)</p>]]></Description>
       </Parameter>
-      <Parameter Name="D5_in" DisplayName="Avstånd 5">
+      <Parameter Name="D5_in" DisplayName="Färg 5">
         <Description><![CDATA[<p>Avstånd till färg 5 (anslut från Distance-läge)</p>]]></Description>
       </Parameter>
-      <Parameter Name="D6_in" DisplayName="Avstånd 6">
+      <Parameter Name="D6_in" DisplayName="Färg 6">
         <Description><![CDATA[<p>Avstånd till färg 6 (anslut från Distance-läge)</p>]]></Description>
       </Parameter>
-      <Parameter Name="D7_in" DisplayName="Avstånd 7">
+      <Parameter Name="D7_in" DisplayName="Färg 7">
         <Description><![CDATA[<p>Avstånd till färg 7 (anslut från Distance-läge)</p>]]></Description>
       </Parameter>
-      <Parameter Name="D8_in" DisplayName="Avstånd 8">
+      <Parameter Name="D8_in" DisplayName="Färg 8">
         <Description><![CDATA[<p>Avstånd till färg 8 (anslut från Distance-läge)</p>]]></Description>
       </Parameter>
       <Block Mode="Normalize" DisplayName="Normalisera – RGB">

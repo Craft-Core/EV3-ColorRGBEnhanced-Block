@@ -17,24 +17,26 @@
                 <DataAccessor DataItem="SequenceIn" Id="nSeqIn" Bounds="100 100 98 14">
                     <Terminal Id="Value" Direction="Output" Wire="wSeq0" Hotspot="1 0.5" Bounds="0 0 98 14" />
                 </DataAccessor>
-                <DataAccessor DataItem="R_in" Id="nRin" Bounds="100 200 70 14">
-                    <Terminal Id="Numeric" Direction="Output" Wire="wRin" Hotspot="1 0.5" Bounds="0 0 70 14" />
+                <!-- Separate DataAccessors for R_in, one per MathEquation node -->
+                <DataAccessor DataItem="R_in" Id="nRinR" Bounds="100 175 70 14">
+                    <Terminal Id="Numeric" Direction="Output" Wire="wRinR" Hotspot="1 0.5" Bounds="0 0 70 14" />
                 </DataAccessor>
-                <DataAccessor DataItem="G_in" Id="nGin" Bounds="100 250 70 14">
-                    <Terminal Id="Numeric" Direction="Output" Wire="wGin" Hotspot="1 0.5" Bounds="0 0 70 14" />
+                <DataAccessor DataItem="G_in" Id="nGinR" Bounds="100 225 70 14">
+                    <Terminal Id="Numeric" Direction="Output" Wire="wGinR" Hotspot="1 0.5" Bounds="0 0 70 14" />
                 </DataAccessor>
-                <DataAccessor DataItem="B_in" Id="nBin" Bounds="100 300 70 14">
-                    <Terminal Id="Numeric" Direction="Output" Wire="wBin" Hotspot="1 0.5" Bounds="0 0 70 14" />
+                <DataAccessor DataItem="B_in" Id="nBinR" Bounds="100 275 70 14">
+                    <Terminal Id="Numeric" Direction="Output" Wire="wBinR" Hotspot="1 0.5" Bounds="0 0 70 14" />
                 </DataAccessor>
+                <!-- Normalize Red: a/(a+b+c+0.0001)*100 -->
                 <ConfigurableMethodCall Id="nNormR" Bounds="300 150 225 91" Target="X3Placeholder_2A058539\-ED76\-4476\-93FE\-CCE8AA559C5A_MathEquation\.vix">
                     <ConfigurableMethodTerminal ConfiguredValue="0">
-                        <Terminal Id="X" Direction="Input" Wire="wRin" DataType="Single" Hotspot="0.5 1" Bounds="54 56 30 27" />
+                        <Terminal Id="X" Direction="Input" Wire="wRinR" DataType="Single" Hotspot="0.5 1" Bounds="54 56 30 27" />
                     </ConfigurableMethodTerminal>
                     <ConfigurableMethodTerminal ConfiguredValue="0">
-                        <Terminal Id="Y" Direction="Input" Wire="wGin" DataType="Single" Hotspot="0.5 1" Bounds="85 56 30 27" />
+                        <Terminal Id="Y" Direction="Input" Wire="wGinR" DataType="Single" Hotspot="0.5 1" Bounds="85 56 30 27" />
                     </ConfigurableMethodTerminal>
                     <ConfigurableMethodTerminal ConfiguredValue="0">
-                        <Terminal Id="C" Direction="Input" Wire="wBin" DataType="Single" Hotspot="0.5 1" Bounds="116 56 30 27" />
+                        <Terminal Id="C" Direction="Input" Wire="wBinR" DataType="Single" Hotspot="0.5 1" Bounds="116 56 30 27" />
                     </ConfigurableMethodTerminal>
                     <ConfigurableMethodTerminal ConfiguredValue="0">
                         <Terminal Id="D" Direction="Input" DataType="Single" Hotspot="0.5 1" Bounds="147 56 30 27" />
@@ -48,15 +50,26 @@
                     <Terminal Id="SequenceIn" Direction="Input" Wire="wSeq0" DataType="NationalInstruments:SourceModel:DataTypes:X3SequenceWireDataType" Hotspot="0 0.5" Bounds="0 33 18 18" />
                     <Terminal Id="SequenceOut" Direction="Output" Wire="wSeq1" DataType="NationalInstruments:SourceModel:DataTypes:X3SequenceWireDataType" Hotspot="1 0.5" Bounds="207 33 18 18" />
                 </ConfigurableMethodCall>
+                <!-- Separate DataAccessors for G input -->
+                <DataAccessor DataItem="R_in" Id="nRinG" Bounds="100 305 70 14">
+                    <Terminal Id="Numeric" Direction="Output" Wire="wRinG" Hotspot="1 0.5" Bounds="0 0 70 14" />
+                </DataAccessor>
+                <DataAccessor DataItem="G_in" Id="nGinG" Bounds="100 355 70 14">
+                    <Terminal Id="Numeric" Direction="Output" Wire="wGinG" Hotspot="1 0.5" Bounds="0 0 70 14" />
+                </DataAccessor>
+                <DataAccessor DataItem="B_in" Id="nBinG" Bounds="100 405 70 14">
+                    <Terminal Id="Numeric" Direction="Output" Wire="wBinG" Hotspot="1 0.5" Bounds="0 0 70 14" />
+                </DataAccessor>
+                <!-- Normalize Green: b/(a+b+c+0.0001)*100 -->
                 <ConfigurableMethodCall Id="nNormG" Bounds="300 280 225 91" Target="X3Placeholder_2A058539\-ED76\-4476\-93FE\-CCE8AA559C5A_MathEquation\.vix">
                     <ConfigurableMethodTerminal ConfiguredValue="0">
-                        <Terminal Id="X" Direction="Input" Wire="wRin" DataType="Single" Hotspot="0.5 1" Bounds="54 56 30 27" />
+                        <Terminal Id="X" Direction="Input" Wire="wRinG" DataType="Single" Hotspot="0.5 1" Bounds="54 56 30 27" />
                     </ConfigurableMethodTerminal>
                     <ConfigurableMethodTerminal ConfiguredValue="0">
-                        <Terminal Id="Y" Direction="Input" Wire="wGin" DataType="Single" Hotspot="0.5 1" Bounds="85 56 30 27" />
+                        <Terminal Id="Y" Direction="Input" Wire="wGinG" DataType="Single" Hotspot="0.5 1" Bounds="85 56 30 27" />
                     </ConfigurableMethodTerminal>
                     <ConfigurableMethodTerminal ConfiguredValue="0">
-                        <Terminal Id="C" Direction="Input" Wire="wBin" DataType="Single" Hotspot="0.5 1" Bounds="116 56 30 27" />
+                        <Terminal Id="C" Direction="Input" Wire="wBinG" DataType="Single" Hotspot="0.5 1" Bounds="116 56 30 27" />
                     </ConfigurableMethodTerminal>
                     <ConfigurableMethodTerminal ConfiguredValue="0">
                         <Terminal Id="D" Direction="Input" DataType="Single" Hotspot="0.5 1" Bounds="147 56 30 27" />
@@ -70,15 +83,26 @@
                     <Terminal Id="SequenceIn" Direction="Input" Wire="wSeq1" DataType="NationalInstruments:SourceModel:DataTypes:X3SequenceWireDataType" Hotspot="0 0.5" Bounds="0 33 18 18" />
                     <Terminal Id="SequenceOut" Direction="Output" Wire="wSeq2" DataType="NationalInstruments:SourceModel:DataTypes:X3SequenceWireDataType" Hotspot="1 0.5" Bounds="207 33 18 18" />
                 </ConfigurableMethodCall>
+                <!-- Separate DataAccessors for B input -->
+                <DataAccessor DataItem="R_in" Id="nRinB" Bounds="100 435 70 14">
+                    <Terminal Id="Numeric" Direction="Output" Wire="wRinB" Hotspot="1 0.5" Bounds="0 0 70 14" />
+                </DataAccessor>
+                <DataAccessor DataItem="G_in" Id="nGinB" Bounds="100 485 70 14">
+                    <Terminal Id="Numeric" Direction="Output" Wire="wGinB" Hotspot="1 0.5" Bounds="0 0 70 14" />
+                </DataAccessor>
+                <DataAccessor DataItem="B_in" Id="nBinB" Bounds="100 535 70 14">
+                    <Terminal Id="Numeric" Direction="Output" Wire="wBinB" Hotspot="1 0.5" Bounds="0 0 70 14" />
+                </DataAccessor>
+                <!-- Normalize Blue: c/(a+b+c+0.0001)*100 -->
                 <ConfigurableMethodCall Id="nNormB" Bounds="300 410 225 91" Target="X3Placeholder_2A058539\-ED76\-4476\-93FE\-CCE8AA559C5A_MathEquation\.vix">
                     <ConfigurableMethodTerminal ConfiguredValue="0">
-                        <Terminal Id="X" Direction="Input" Wire="wRin" DataType="Single" Hotspot="0.5 1" Bounds="54 56 30 27" />
+                        <Terminal Id="X" Direction="Input" Wire="wRinB" DataType="Single" Hotspot="0.5 1" Bounds="54 56 30 27" />
                     </ConfigurableMethodTerminal>
                     <ConfigurableMethodTerminal ConfiguredValue="0">
-                        <Terminal Id="Y" Direction="Input" Wire="wGin" DataType="Single" Hotspot="0.5 1" Bounds="85 56 30 27" />
+                        <Terminal Id="Y" Direction="Input" Wire="wGinB" DataType="Single" Hotspot="0.5 1" Bounds="85 56 30 27" />
                     </ConfigurableMethodTerminal>
                     <ConfigurableMethodTerminal ConfiguredValue="0">
-                        <Terminal Id="C" Direction="Input" Wire="wBin" DataType="Single" Hotspot="0.5 1" Bounds="116 56 30 27" />
+                        <Terminal Id="C" Direction="Input" Wire="wBinB" DataType="Single" Hotspot="0.5 1" Bounds="116 56 30 27" />
                     </ConfigurableMethodTerminal>
                     <ConfigurableMethodTerminal ConfiguredValue="0">
                         <Terminal Id="D" Direction="Input" DataType="Single" Hotspot="0.5 1" Bounds="147 56 30 27" />
@@ -104,9 +128,15 @@
                 <DataAccessor DataItem="SequenceOut" Id="nSeqOut" Bounds="800 500 105 14">
                     <Terminal Id="Value" Direction="Input" Wire="wSeq3" Hotspot="0 0.5" Bounds="0 0 105 14" />
                 </DataAccessor>
-                <Wire Id="wRin" Joints="N(nRin:Numeric) N(nNormR:X)" />
-                <Wire Id="wGin" Joints="N(nGin:Numeric) N(nNormR:Y)" />
-                <Wire Id="wBin" Joints="N(nBin:Numeric) N(nNormR:C)" />
+                <Wire Id="wRinR" Joints="N(nRinR:Numeric) N(nNormR:X)" />
+                <Wire Id="wGinR" Joints="N(nGinR:Numeric) N(nNormR:Y)" />
+                <Wire Id="wBinR" Joints="N(nBinR:Numeric) N(nNormR:C)" />
+                <Wire Id="wRinG" Joints="N(nRinG:Numeric) N(nNormG:X)" />
+                <Wire Id="wGinG" Joints="N(nGinG:Numeric) N(nNormG:Y)" />
+                <Wire Id="wBinG" Joints="N(nBinG:Numeric) N(nNormG:C)" />
+                <Wire Id="wRinB" Joints="N(nRinB:Numeric) N(nNormB:X)" />
+                <Wire Id="wGinB" Joints="N(nGinB:Numeric) N(nNormB:Y)" />
+                <Wire Id="wBinB" Joints="N(nBinB:Numeric) N(nNormB:C)" />
                 <Wire Id="wRn" Joints="N(nNormR:Result) N(nRn:Numeric)" />
                 <Wire Id="wGn" Joints="N(nNormG:Result) N(nGn:Numeric)" />
                 <Wire Id="wBn" Joints="N(nNormB:Result) N(nBn:Numeric)" />

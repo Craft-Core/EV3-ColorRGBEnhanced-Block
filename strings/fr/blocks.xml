@@ -86,52 +86,52 @@
       <Parameter Name="BestDistance" DisplayName="Meilleure distance">
         <Description><![CDATA[<p>Distance à la couleur la plus proche</p>]]></Description>
       </Parameter>
-      <Parameter Name="D1" DisplayName="Distance 1">
+      <Parameter Name="D1" DisplayName="Couleur 1">
         <Description><![CDATA[<p>Distance au carré du RGB à la couleur prédéfinie 1</p>]]></Description>
       </Parameter>
-      <Parameter Name="D2" DisplayName="Distance 2">
+      <Parameter Name="D2" DisplayName="Couleur 2">
         <Description><![CDATA[<p>Distance au carré du RGB à la couleur prédéfinie 2</p>]]></Description>
       </Parameter>
-      <Parameter Name="D3" DisplayName="Distance 3">
+      <Parameter Name="D3" DisplayName="Couleur 3">
         <Description><![CDATA[<p>Distance au carré du RGB à la couleur prédéfinie 3</p>]]></Description>
       </Parameter>
-      <Parameter Name="D4" DisplayName="Distance 4">
+      <Parameter Name="D4" DisplayName="Couleur 4">
         <Description><![CDATA[<p>Distance au carré du RGB à la couleur prédéfinie 4</p>]]></Description>
       </Parameter>
-      <Parameter Name="D5" DisplayName="Distance 5">
+      <Parameter Name="D5" DisplayName="Couleur 5">
         <Description><![CDATA[<p>Distance au carré du RGB à la couleur prédéfinie 5</p>]]></Description>
       </Parameter>
-      <Parameter Name="D6" DisplayName="Distance 6">
+      <Parameter Name="D6" DisplayName="Couleur 6">
         <Description><![CDATA[<p>Distance au carré du RGB à la couleur prédéfinie 6</p>]]></Description>
       </Parameter>
-      <Parameter Name="D7" DisplayName="Distance 7">
+      <Parameter Name="D7" DisplayName="Couleur 7">
         <Description><![CDATA[<p>Distance au carré du RGB à la couleur prédéfinie 7</p>]]></Description>
       </Parameter>
-      <Parameter Name="D8" DisplayName="Distance 8">
+      <Parameter Name="D8" DisplayName="Couleur 8">
         <Description><![CDATA[<p>Distance au carré du RGB à la couleur prédéfinie 8</p>]]></Description>
       </Parameter>
-      <Parameter Name="D1_in" DisplayName="Distance 1">
+      <Parameter Name="D1_in" DisplayName="Couleur 1">
         <Description><![CDATA[<p>Distance à la couleur 1 (relier depuis le mode Distance)</p>]]></Description>
       </Parameter>
-      <Parameter Name="D2_in" DisplayName="Distance 2">
+      <Parameter Name="D2_in" DisplayName="Couleur 2">
         <Description><![CDATA[<p>Distance à la couleur 2 (relier depuis le mode Distance)</p>]]></Description>
       </Parameter>
-      <Parameter Name="D3_in" DisplayName="Distance 3">
+      <Parameter Name="D3_in" DisplayName="Couleur 3">
         <Description><![CDATA[<p>Distance à la couleur 3 (relier depuis le mode Distance)</p>]]></Description>
       </Parameter>
-      <Parameter Name="D4_in" DisplayName="Distance 4">
+      <Parameter Name="D4_in" DisplayName="Couleur 4">
         <Description><![CDATA[<p>Distance à la couleur 4 (relier depuis le mode Distance)</p>]]></Description>
       </Parameter>
-      <Parameter Name="D5_in" DisplayName="Distance 5">
+      <Parameter Name="D5_in" DisplayName="Couleur 5">
         <Description><![CDATA[<p>Distance à la couleur 5 (relier depuis le mode Distance)</p>]]></Description>
       </Parameter>
-      <Parameter Name="D6_in" DisplayName="Distance 6">
+      <Parameter Name="D6_in" DisplayName="Couleur 6">
         <Description><![CDATA[<p>Distance à la couleur 6 (relier depuis le mode Distance)</p>]]></Description>
       </Parameter>
-      <Parameter Name="D7_in" DisplayName="Distance 7">
+      <Parameter Name="D7_in" DisplayName="Couleur 7">
         <Description><![CDATA[<p>Distance à la couleur 7 (relier depuis le mode Distance)</p>]]></Description>
       </Parameter>
-      <Parameter Name="D8_in" DisplayName="Distance 8">
+      <Parameter Name="D8_in" DisplayName="Couleur 8">
         <Description><![CDATA[<p>Distance à la couleur 8 (relier depuis le mode Distance)</p>]]></Description>
       </Parameter>
       <Block Mode="Normalize" DisplayName="Normaliser – RGB">

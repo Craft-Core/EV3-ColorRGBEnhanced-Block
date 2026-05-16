@@ -86,52 +86,52 @@
       <Parameter Name="BestDistance" DisplayName="最佳距离">
         <Description><![CDATA[<p>到最接近颜色的距离</p>]]></Description>
       </Parameter>
-      <Parameter Name="D1" DisplayName="距离 1">
+      <Parameter Name="D1" DisplayName="颜色 1">
         <Description><![CDATA[<p>输入 RGB 到预设颜色 1 的平方距离</p>]]></Description>
       </Parameter>
-      <Parameter Name="D2" DisplayName="距离 2">
+      <Parameter Name="D2" DisplayName="颜色 2">
         <Description><![CDATA[<p>输入 RGB 到预设颜色 2 的平方距离</p>]]></Description>
       </Parameter>
-      <Parameter Name="D3" DisplayName="距离 3">
+      <Parameter Name="D3" DisplayName="颜色 3">
         <Description><![CDATA[<p>输入 RGB 到预设颜色 3 的平方距离</p>]]></Description>
       </Parameter>
-      <Parameter Name="D4" DisplayName="距离 4">
+      <Parameter Name="D4" DisplayName="颜色 4">
         <Description><![CDATA[<p>输入 RGB 到预设颜色 4 的平方距离</p>]]></Description>
       </Parameter>
-      <Parameter Name="D5" DisplayName="距离 5">
+      <Parameter Name="D5" DisplayName="颜色 5">
         <Description><![CDATA[<p>输入 RGB 到预设颜色 5 的平方距离</p>]]></Description>
       </Parameter>
-      <Parameter Name="D6" DisplayName="距离 6">
+      <Parameter Name="D6" DisplayName="颜色 6">
         <Description><![CDATA[<p>输入 RGB 到预设颜色 6 的平方距离</p>]]></Description>
       </Parameter>
-      <Parameter Name="D7" DisplayName="距离 7">
+      <Parameter Name="D7" DisplayName="颜色 7">
         <Description><![CDATA[<p>输入 RGB 到预设颜色 7 的平方距离</p>]]></Description>
       </Parameter>
-      <Parameter Name="D8" DisplayName="距离 8">
+      <Parameter Name="D8" DisplayName="颜色 8">
         <Description><![CDATA[<p>输入 RGB 到预设颜色 8 的平方距离</p>]]></Description>
       </Parameter>
-      <Parameter Name="D1_in" DisplayName="距离 1">
+      <Parameter Name="D1_in" DisplayName="颜色 1">
         <Description><![CDATA[<p>到颜色 1 的距离（从 Distance 模式连线）</p>]]></Description>
       </Parameter>
-      <Parameter Name="D2_in" DisplayName="距离 2">
+      <Parameter Name="D2_in" DisplayName="颜色 2">
         <Description><![CDATA[<p>到颜色 2 的距离（从 Distance 模式连线）</p>]]></Description>
       </Parameter>
-      <Parameter Name="D3_in" DisplayName="距离 3">
+      <Parameter Name="D3_in" DisplayName="颜色 3">
         <Description><![CDATA[<p>到颜色 3 的距离（从 Distance 模式连线）</p>]]></Description>
       </Parameter>
-      <Parameter Name="D4_in" DisplayName="距离 4">
+      <Parameter Name="D4_in" DisplayName="颜色 4">
         <Description><![CDATA[<p>到颜色 4 的距离（从 Distance 模式连线）</p>]]></Description>
       </Parameter>
-      <Parameter Name="D5_in" DisplayName="距离 5">
+      <Parameter Name="D5_in" DisplayName="颜色 5">
         <Description><![CDATA[<p>到颜色 5 的距离（从 Distance 模式连线）</p>]]></Description>
       </Parameter>
-      <Parameter Name="D6_in" DisplayName="距离 6">
+      <Parameter Name="D6_in" DisplayName="颜色 6">
         <Description><![CDATA[<p>到颜色 6 的距离（从 Distance 模式连线）</p>]]></Description>
       </Parameter>
-      <Parameter Name="D7_in" DisplayName="距离 7">
+      <Parameter Name="D7_in" DisplayName="颜色 7">
         <Description><![CDATA[<p>到颜色 7 的距离（从 Distance 模式连线）</p>]]></Description>
       </Parameter>
-      <Parameter Name="D8_in" DisplayName="距离 8">
+      <Parameter Name="D8_in" DisplayName="颜色 8">
         <Description><![CDATA[<p>到颜色 8 的距离（从 Distance 模式连线）</p>]]></Description>
       </Parameter>
       <Block Mode="Normalize" DisplayName="归一化 – RGB">

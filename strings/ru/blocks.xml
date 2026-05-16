@@ -86,52 +86,52 @@
       <Parameter Name="BestDistance" DisplayName="Лучшее расстояние">
         <Description><![CDATA[<p>Расстояние до ближайшего цвета</p>]]></Description>
       </Parameter>
-      <Parameter Name="D1" DisplayName="Расстояние 1">
+      <Parameter Name="D1" DisplayName="Цвет 1">
         <Description><![CDATA[<p>Квадрат расстояния от RGB до цвета 1</p>]]></Description>
       </Parameter>
-      <Parameter Name="D2" DisplayName="Расстояние 2">
+      <Parameter Name="D2" DisplayName="Цвет 2">
         <Description><![CDATA[<p>Квадрат расстояния от RGB до цвета 2</p>]]></Description>
       </Parameter>
-      <Parameter Name="D3" DisplayName="Расстояние 3">
+      <Parameter Name="D3" DisplayName="Цвет 3">
         <Description><![CDATA[<p>Квадрат расстояния от RGB до цвета 3</p>]]></Description>
       </Parameter>
-      <Parameter Name="D4" DisplayName="Расстояние 4">
+      <Parameter Name="D4" DisplayName="Цвет 4">
         <Description><![CDATA[<p>Квадрат расстояния от RGB до цвета 4</p>]]></Description>
       </Parameter>
-      <Parameter Name="D5" DisplayName="Расстояние 5">
+      <Parameter Name="D5" DisplayName="Цвет 5">
         <Description><![CDATA[<p>Квадрат расстояния от RGB до цвета 5</p>]]></Description>
       </Parameter>
-      <Parameter Name="D6" DisplayName="Расстояние 6">
+      <Parameter Name="D6" DisplayName="Цвет 6">
         <Description><![CDATA[<p>Квадрат расстояния от RGB до цвета 6</p>]]></Description>
       </Parameter>
-      <Parameter Name="D7" DisplayName="Расстояние 7">
+      <Parameter Name="D7" DisplayName="Цвет 7">
         <Description><![CDATA[<p>Квадрат расстояния от RGB до цвета 7</p>]]></Description>
       </Parameter>
-      <Parameter Name="D8" DisplayName="Расстояние 8">
+      <Parameter Name="D8" DisplayName="Цвет 8">
         <Description><![CDATA[<p>Квадрат расстояния от RGB до цвета 8</p>]]></Description>
       </Parameter>
-      <Parameter Name="D1_in" DisplayName="Расстояние 1">
+      <Parameter Name="D1_in" DisplayName="Цвет 1">
         <Description><![CDATA[<p>Расстояние до цвета 1 (из режима Distance)</p>]]></Description>
       </Parameter>
-      <Parameter Name="D2_in" DisplayName="Расстояние 2">
+      <Parameter Name="D2_in" DisplayName="Цвет 2">
         <Description><![CDATA[<p>Расстояние до цвета 2 (из режима Distance)</p>]]></Description>
       </Parameter>
-      <Parameter Name="D3_in" DisplayName="Расстояние 3">
+      <Parameter Name="D3_in" DisplayName="Цвет 3">
         <Description><![CDATA[<p>Расстояние до цвета 3 (из режима Distance)</p>]]></Description>
       </Parameter>
-      <Parameter Name="D4_in" DisplayName="Расстояние 4">
+      <Parameter Name="D4_in" DisplayName="Цвет 4">
         <Description><![CDATA[<p>Расстояние до цвета 4 (из режима Distance)</p>]]></Description>
       </Parameter>
-      <Parameter Name="D5_in" DisplayName="Расстояние 5">
+      <Parameter Name="D5_in" DisplayName="Цвет 5">
         <Description><![CDATA[<p>Расстояние до цвета 5 (из режима Distance)</p>]]></Description>
       </Parameter>
-      <Parameter Name="D6_in" DisplayName="Расстояние 6">
+      <Parameter Name="D6_in" DisplayName="Цвет 6">
         <Description><![CDATA[<p>Расстояние до цвета 6 (из режима Distance)</p>]]></Description>
       </Parameter>
-      <Parameter Name="D7_in" DisplayName="Расстояние 7">
+      <Parameter Name="D7_in" DisplayName="Цвет 7">
         <Description><![CDATA[<p>Расстояние до цвета 7 (из режима Distance)</p>]]></Description>
       </Parameter>
-      <Parameter Name="D8_in" DisplayName="Расстояние 8">
+      <Parameter Name="D8_in" DisplayName="Цвет 8">
         <Description><![CDATA[<p>Расстояние до цвета 8 (из режима Distance)</p>]]></Description>
       </Parameter>
       <Block Mode="Normalize" DisplayName="Нормализация – RGB">

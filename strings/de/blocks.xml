@@ -86,52 +86,52 @@
       <Parameter Name="BestDistance" DisplayName="Beste Distanz">
         <Description><![CDATA[<p>Distanz zur nächstgelegenen Voreinstellungsfarbe</p>]]></Description>
       </Parameter>
-      <Parameter Name="D1" DisplayName="Distanz 1">
+      <Parameter Name="D1" DisplayName="Farbe 1">
         <Description><![CDATA[<p>Quadrierte Distanz vom Eingangs-RGB zur Voreinstellungsfarbe 1</p>]]></Description>
       </Parameter>
-      <Parameter Name="D2" DisplayName="Distanz 2">
+      <Parameter Name="D2" DisplayName="Farbe 2">
         <Description><![CDATA[<p>Quadrierte Distanz vom Eingangs-RGB zur Voreinstellungsfarbe 2</p>]]></Description>
       </Parameter>
-      <Parameter Name="D3" DisplayName="Distanz 3">
+      <Parameter Name="D3" DisplayName="Farbe 3">
         <Description><![CDATA[<p>Quadrierte Distanz vom Eingangs-RGB zur Voreinstellungsfarbe 3</p>]]></Description>
       </Parameter>
-      <Parameter Name="D4" DisplayName="Distanz 4">
+      <Parameter Name="D4" DisplayName="Farbe 4">
         <Description><![CDATA[<p>Quadrierte Distanz vom Eingangs-RGB zur Voreinstellungsfarbe 4</p>]]></Description>
       </Parameter>
-      <Parameter Name="D5" DisplayName="Distanz 5">
+      <Parameter Name="D5" DisplayName="Farbe 5">
         <Description><![CDATA[<p>Quadrierte Distanz vom Eingangs-RGB zur Voreinstellungsfarbe 5</p>]]></Description>
       </Parameter>
-      <Parameter Name="D6" DisplayName="Distanz 6">
+      <Parameter Name="D6" DisplayName="Farbe 6">
         <Description><![CDATA[<p>Quadrierte Distanz vom Eingangs-RGB zur Voreinstellungsfarbe 6</p>]]></Description>
       </Parameter>
-      <Parameter Name="D7" DisplayName="Distanz 7">
+      <Parameter Name="D7" DisplayName="Farbe 7">
         <Description><![CDATA[<p>Quadrierte Distanz vom Eingangs-RGB zur Voreinstellungsfarbe 7</p>]]></Description>
       </Parameter>
-      <Parameter Name="D8" DisplayName="Distanz 8">
+      <Parameter Name="D8" DisplayName="Farbe 8">
         <Description><![CDATA[<p>Quadrierte Distanz vom Eingangs-RGB zur Voreinstellungsfarbe 8</p>]]></Description>
       </Parameter>
-      <Parameter Name="D1_in" DisplayName="Distanz 1">
+      <Parameter Name="D1_in" DisplayName="Farbe 1">
         <Description><![CDATA[<p>Distanz zu Farbe 1 (vom Distance-Modus verdrahten)</p>]]></Description>
       </Parameter>
-      <Parameter Name="D2_in" DisplayName="Distanz 2">
+      <Parameter Name="D2_in" DisplayName="Farbe 2">
         <Description><![CDATA[<p>Distanz zu Farbe 2 (vom Distance-Modus verdrahten)</p>]]></Description>
       </Parameter>
-      <Parameter Name="D3_in" DisplayName="Distanz 3">
+      <Parameter Name="D3_in" DisplayName="Farbe 3">
         <Description><![CDATA[<p>Distanz zu Farbe 3 (vom Distance-Modus verdrahten)</p>]]></Description>
       </Parameter>
-      <Parameter Name="D4_in" DisplayName="Distanz 4">
+      <Parameter Name="D4_in" DisplayName="Farbe 4">
         <Description><![CDATA[<p>Distanz zu Farbe 4 (vom Distance-Modus verdrahten)</p>]]></Description>
       </Parameter>
-      <Parameter Name="D5_in" DisplayName="Distanz 5">
+      <Parameter Name="D5_in" DisplayName="Farbe 5">
         <Description><![CDATA[<p>Distanz zu Farbe 5 (vom Distance-Modus verdrahten)</p>]]></Description>
       </Parameter>
-      <Parameter Name="D6_in" DisplayName="Distanz 6">
+      <Parameter Name="D6_in" DisplayName="Farbe 6">
         <Description><![CDATA[<p>Distanz zu Farbe 6 (vom Distance-Modus verdrahten)</p>]]></Description>
       </Parameter>
-      <Parameter Name="D7_in" DisplayName="Distanz 7">
+      <Parameter Name="D7_in" DisplayName="Farbe 7">
         <Description><![CDATA[<p>Distanz zu Farbe 7 (vom Distance-Modus verdrahten)</p>]]></Description>
       </Parameter>
-      <Parameter Name="D8_in" DisplayName="Distanz 8">
+      <Parameter Name="D8_in" DisplayName="Farbe 8">
         <Description><![CDATA[<p>Distanz zu Farbe 8 (vom Distance-Modus verdrahten)</p>]]></Description>
       </Parameter>
       <Block Mode="Normalize" DisplayName="Normieren – RGB">

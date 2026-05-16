@@ -86,52 +86,52 @@
       <Parameter Name="BestDistance" DisplayName="最近距離">
         <Description><![CDATA[<p>最も近いプリセット色までの距離</p>]]></Description>
       </Parameter>
-      <Parameter Name="D1" DisplayName="距離 1">
+      <Parameter Name="D1" DisplayName="色 1">
         <Description><![CDATA[<p>入力 RGB からプリセット色 1 までの二乗距離</p>]]></Description>
       </Parameter>
-      <Parameter Name="D2" DisplayName="距離 2">
+      <Parameter Name="D2" DisplayName="色 2">
         <Description><![CDATA[<p>入力 RGB からプリセット色 2 までの二乗距離</p>]]></Description>
       </Parameter>
-      <Parameter Name="D3" DisplayName="距離 3">
+      <Parameter Name="D3" DisplayName="色 3">
         <Description><![CDATA[<p>入力 RGB からプリセット色 3 までの二乗距離</p>]]></Description>
       </Parameter>
-      <Parameter Name="D4" DisplayName="距離 4">
+      <Parameter Name="D4" DisplayName="色 4">
         <Description><![CDATA[<p>入力 RGB からプリセット色 4 までの二乗距離</p>]]></Description>
       </Parameter>
-      <Parameter Name="D5" DisplayName="距離 5">
+      <Parameter Name="D5" DisplayName="色 5">
         <Description><![CDATA[<p>入力 RGB からプリセット色 5 までの二乗距離</p>]]></Description>
       </Parameter>
-      <Parameter Name="D6" DisplayName="距離 6">
+      <Parameter Name="D6" DisplayName="色 6">
         <Description><![CDATA[<p>入力 RGB からプリセット色 6 までの二乗距離</p>]]></Description>
       </Parameter>
-      <Parameter Name="D7" DisplayName="距離 7">
+      <Parameter Name="D7" DisplayName="色 7">
         <Description><![CDATA[<p>入力 RGB からプリセット色 7 までの二乗距離</p>]]></Description>
       </Parameter>
-      <Parameter Name="D8" DisplayName="距離 8">
+      <Parameter Name="D8" DisplayName="色 8">
         <Description><![CDATA[<p>入力 RGB からプリセット色 8 までの二乗距離</p>]]></Description>
       </Parameter>
-      <Parameter Name="D1_in" DisplayName="距離 1">
+      <Parameter Name="D1_in" DisplayName="色 1">
         <Description><![CDATA[<p>色 1 までの距離 (Distance モードから配線)</p>]]></Description>
       </Parameter>
-      <Parameter Name="D2_in" DisplayName="距離 2">
+      <Parameter Name="D2_in" DisplayName="色 2">
         <Description><![CDATA[<p>色 2 までの距離 (Distance モードから配線)</p>]]></Description>
       </Parameter>
-      <Parameter Name="D3_in" DisplayName="距離 3">
+      <Parameter Name="D3_in" DisplayName="色 3">
         <Description><![CDATA[<p>色 3 までの距離 (Distance モードから配線)</p>]]></Description>
       </Parameter>
-      <Parameter Name="D4_in" DisplayName="距離 4">
+      <Parameter Name="D4_in" DisplayName="色 4">
         <Description><![CDATA[<p>色 4 までの距離 (Distance モードから配線)</p>]]></Description>
       </Parameter>
-      <Parameter Name="D5_in" DisplayName="距離 5">
+      <Parameter Name="D5_in" DisplayName="色 5">
         <Description><![CDATA[<p>色 5 までの距離 (Distance モードから配線)</p>]]></Description>
       </Parameter>
-      <Parameter Name="D6_in" DisplayName="距離 6">
+      <Parameter Name="D6_in" DisplayName="色 6">
         <Description><![CDATA[<p>色 6 までの距離 (Distance モードから配線)</p>]]></Description>
       </Parameter>
-      <Parameter Name="D7_in" DisplayName="距離 7">
+      <Parameter Name="D7_in" DisplayName="色 7">
         <Description><![CDATA[<p>色 7 までの距離 (Distance モードから配線)</p>]]></Description>
       </Parameter>
-      <Parameter Name="D8_in" DisplayName="距離 8">
+      <Parameter Name="D8_in" DisplayName="色 8">
         <Description><![CDATA[<p>色 8 までの距離 (Distance モードから配線)</p>]]></Description>
       </Parameter>
       <Block Mode="Normalize" DisplayName="正規化 – RGB">

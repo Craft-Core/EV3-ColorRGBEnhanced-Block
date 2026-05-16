@@ -86,52 +86,52 @@
       <Parameter Name="BestDistance" DisplayName="최근접 거리">
         <Description><![CDATA[<p>가장 가까운 컬러까지의 거리</p>]]></Description>
       </Parameter>
-      <Parameter Name="D1" DisplayName="거리 1">
+      <Parameter Name="D1" DisplayName="컬러 1">
         <Description><![CDATA[<p>입력 RGB에서 프리셋 컬러 1까지의 제곱 거리</p>]]></Description>
       </Parameter>
-      <Parameter Name="D2" DisplayName="거리 2">
+      <Parameter Name="D2" DisplayName="컬러 2">
         <Description><![CDATA[<p>입력 RGB에서 프리셋 컬러 2까지의 제곱 거리</p>]]></Description>
       </Parameter>
-      <Parameter Name="D3" DisplayName="거리 3">
+      <Parameter Name="D3" DisplayName="컬러 3">
         <Description><![CDATA[<p>입력 RGB에서 프리셋 컬러 3까지의 제곱 거리</p>]]></Description>
       </Parameter>
-      <Parameter Name="D4" DisplayName="거리 4">
+      <Parameter Name="D4" DisplayName="컬러 4">
         <Description><![CDATA[<p>입력 RGB에서 프리셋 컬러 4까지의 제곱 거리</p>]]></Description>
       </Parameter>
-      <Parameter Name="D5" DisplayName="거리 5">
+      <Parameter Name="D5" DisplayName="컬러 5">
         <Description><![CDATA[<p>입력 RGB에서 프리셋 컬러 5까지의 제곱 거리</p>]]></Description>
       </Parameter>
-      <Parameter Name="D6" DisplayName="거리 6">
+      <Parameter Name="D6" DisplayName="컬러 6">
         <Description><![CDATA[<p>입력 RGB에서 프리셋 컬러 6까지의 제곱 거리</p>]]></Description>
       </Parameter>
-      <Parameter Name="D7" DisplayName="거리 7">
+      <Parameter Name="D7" DisplayName="컬러 7">
         <Description><![CDATA[<p>입력 RGB에서 프리셋 컬러 7까지의 제곱 거리</p>]]></Description>
       </Parameter>
-      <Parameter Name="D8" DisplayName="거리 8">
+      <Parameter Name="D8" DisplayName="컬러 8">
         <Description><![CDATA[<p>입력 RGB에서 프리셋 컬러 8까지의 제곱 거리</p>]]></Description>
       </Parameter>
-      <Parameter Name="D1_in" DisplayName="거리 1">
+      <Parameter Name="D1_in" DisplayName="컬러 1">
         <Description><![CDATA[<p>컬러 1까지의 거리 (Distance 모드에서 연결)</p>]]></Description>
       </Parameter>
-      <Parameter Name="D2_in" DisplayName="거리 2">
+      <Parameter Name="D2_in" DisplayName="컬러 2">
         <Description><![CDATA[<p>컬러 2까지의 거리 (Distance 모드에서 연결)</p>]]></Description>
       </Parameter>
-      <Parameter Name="D3_in" DisplayName="거리 3">
+      <Parameter Name="D3_in" DisplayName="컬러 3">
         <Description><![CDATA[<p>컬러 3까지의 거리 (Distance 모드에서 연결)</p>]]></Description>
       </Parameter>
-      <Parameter Name="D4_in" DisplayName="거리 4">
+      <Parameter Name="D4_in" DisplayName="컬러 4">
         <Description><![CDATA[<p>컬러 4까지의 거리 (Distance 모드에서 연결)</p>]]></Description>
       </Parameter>
-      <Parameter Name="D5_in" DisplayName="거리 5">
+      <Parameter Name="D5_in" DisplayName="컬러 5">
         <Description><![CDATA[<p>컬러 5까지의 거리 (Distance 모드에서 연결)</p>]]></Description>
       </Parameter>
-      <Parameter Name="D6_in" DisplayName="거리 6">
+      <Parameter Name="D6_in" DisplayName="컬러 6">
         <Description><![CDATA[<p>컬러 6까지의 거리 (Distance 모드에서 연결)</p>]]></Description>
       </Parameter>
-      <Parameter Name="D7_in" DisplayName="거리 7">
+      <Parameter Name="D7_in" DisplayName="컬러 7">
         <Description><![CDATA[<p>컬러 7까지의 거리 (Distance 모드에서 연결)</p>]]></Description>
       </Parameter>
-      <Parameter Name="D8_in" DisplayName="거리 8">
+      <Parameter Name="D8_in" DisplayName="컬러 8">
         <Description><![CDATA[<p>컬러 8까지의 거리 (Distance 모드에서 연결)</p>]]></Description>
       </Parameter>
       <Block Mode="Normalize" DisplayName="정규화 – RGB">

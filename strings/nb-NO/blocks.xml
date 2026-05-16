@@ -86,52 +86,52 @@
       <Parameter Name="BestDistance" DisplayName="Beste avstand">
         <Description><![CDATA[<p>Avstand til nærmeste forhåndsdefinerte farge</p>]]></Description>
       </Parameter>
-      <Parameter Name="D1" DisplayName="Avstand 1">
+      <Parameter Name="D1" DisplayName="Farge 1">
         <Description><![CDATA[<p>Kvadrert avstand fra input-RGB til forhåndsdefinert farge 1</p>]]></Description>
       </Parameter>
-      <Parameter Name="D2" DisplayName="Avstand 2">
+      <Parameter Name="D2" DisplayName="Farge 2">
         <Description><![CDATA[<p>Kvadrert avstand fra input-RGB til forhåndsdefinert farge 2</p>]]></Description>
       </Parameter>
-      <Parameter Name="D3" DisplayName="Avstand 3">
+      <Parameter Name="D3" DisplayName="Farge 3">
         <Description><![CDATA[<p>Kvadrert avstand fra input-RGB til forhåndsdefinert farge 3</p>]]></Description>
       </Parameter>
-      <Parameter Name="D4" DisplayName="Avstand 4">
+      <Parameter Name="D4" DisplayName="Farge 4">
         <Description><![CDATA[<p>Kvadrert avstand fra input-RGB til forhåndsdefinert farge 4</p>]]></Description>
       </Parameter>
-      <Parameter Name="D5" DisplayName="Avstand 5">
+      <Parameter Name="D5" DisplayName="Farge 5">
         <Description><![CDATA[<p>Kvadrert avstand fra input-RGB til forhåndsdefinert farge 5</p>]]></Description>
       </Parameter>
-      <Parameter Name="D6" DisplayName="Avstand 6">
+      <Parameter Name="D6" DisplayName="Farge 6">
         <Description><![CDATA[<p>Kvadrert avstand fra input-RGB til forhåndsdefinert farge 6</p>]]></Description>
       </Parameter>
-      <Parameter Name="D7" DisplayName="Avstand 7">
+      <Parameter Name="D7" DisplayName="Farge 7">
         <Description><![CDATA[<p>Kvadrert avstand fra input-RGB til forhåndsdefinert farge 7</p>]]></Description>
       </Parameter>
-      <Parameter Name="D8" DisplayName="Avstand 8">
+      <Parameter Name="D8" DisplayName="Farge 8">
         <Description><![CDATA[<p>Kvadrert avstand fra input-RGB til forhåndsdefinert farge 8</p>]]></Description>
       </Parameter>
-      <Parameter Name="D1_in" DisplayName="Avstand 1">
+      <Parameter Name="D1_in" DisplayName="Farge 1">
         <Description><![CDATA[<p>Avstand til farge 1 (koble fra Distance-modus)</p>]]></Description>
       </Parameter>
-      <Parameter Name="D2_in" DisplayName="Avstand 2">
+      <Parameter Name="D2_in" DisplayName="Farge 2">
         <Description><![CDATA[<p>Avstand til farge 2 (koble fra Distance-modus)</p>]]></Description>
       </Parameter>
-      <Parameter Name="D3_in" DisplayName="Avstand 3">
+      <Parameter Name="D3_in" DisplayName="Farge 3">
         <Description><![CDATA[<p>Avstand til farge 3 (koble fra Distance-modus)</p>]]></Description>
       </Parameter>
-      <Parameter Name="D4_in" DisplayName="Avstand 4">
+      <Parameter Name="D4_in" DisplayName="Farge 4">
         <Description><![CDATA[<p>Avstand til farge 4 (koble fra Distance-modus)</p>]]></Description>
       </Parameter>
-      <Parameter Name="D5_in" DisplayName="Avstand 5">
+      <Parameter Name="D5_in" DisplayName="Farge 5">
         <Description><![CDATA[<p>Avstand til farge 5 (koble fra Distance-modus)</p>]]></Description>
       </Parameter>
-      <Parameter Name="D6_in" DisplayName="Avstand 6">
+      <Parameter Name="D6_in" DisplayName="Farge 6">
         <Description><![CDATA[<p>Avstand til farge 6 (koble fra Distance-modus)</p>]]></Description>
       </Parameter>
-      <Parameter Name="D7_in" DisplayName="Avstand 7">
+      <Parameter Name="D7_in" DisplayName="Farge 7">
         <Description><![CDATA[<p>Avstand til farge 7 (koble fra Distance-modus)</p>]]></Description>
       </Parameter>
-      <Parameter Name="D8_in" DisplayName="Avstand 8">
+      <Parameter Name="D8_in" DisplayName="Farge 8">
         <Description><![CDATA[<p>Avstand til farge 8 (koble fra Distance-modus)</p>]]></Description>
       </Parameter>
       <Block Mode="Normalize" DisplayName="Normaliser – RGB">
