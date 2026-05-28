@@ -2,95 +2,143 @@
 <SourceFile Version="1.0.2.10" xmlns="http://www.ni.com/SourceModel.xsd">
     <Namespace Name="Project">
         <VirtualInstrument IsTopLevel="false" IsReentrant="false" Version="1.0.2.0" xmlns="http://www.ni.com/VirtualInstrument.xsd">
-            <DataItem Name="SequenceIn" DataType="NationalInstruments:SourceModel:DataTypes:X3SequenceWireDataType" DefaultTerminalDirection="Output" CallUsage="None" CallDirection="Input" CallIndex="8" />
-            <DataItem Name="SequenceOut" DataType="NationalInstruments:SourceModel:DataTypes:X3SequenceWireDataType" DefaultTerminalDirection="Input" CallUsage="None" CallDirection="Output" CallIndex="8" />
-            <DataItem Name="En_Red" DataType="Single" DefaultTerminalDirection="Output" CallUsage="Optional" CallDirection="Input" CallIndex="0" DefaultValue="1" />
-            <DataItem Name="En_Green" DataType="Single" DefaultTerminalDirection="Output" CallUsage="Optional" CallDirection="Input" CallIndex="1" DefaultValue="1" />
-            <DataItem Name="En_Blue" DataType="Single" DefaultTerminalDirection="Output" CallUsage="Optional" CallDirection="Input" CallIndex="2" DefaultValue="1" />
-            <DataItem Name="En_Yellow" DataType="Single" DefaultTerminalDirection="Output" CallUsage="Optional" CallDirection="Input" CallIndex="3" DefaultValue="1" />
-            <DataItem Name="En_White" DataType="Single" DefaultTerminalDirection="Output" CallUsage="Optional" CallDirection="Input" CallIndex="4" DefaultValue="1" />
-            <DataItem Name="En_Black" DataType="Single" DefaultTerminalDirection="Output" CallUsage="Optional" CallDirection="Input" CallIndex="5" DefaultValue="1" />
-            <DataItem Name="En_Brown" DataType="Single" DefaultTerminalDirection="Output" CallUsage="Optional" CallDirection="Input" CallIndex="6" DefaultValue="1" />
-            <DataItem Name="En_Pink" DataType="Single" DefaultTerminalDirection="Output" CallUsage="Optional" CallDirection="Input" CallIndex="7" DefaultValue="1" />
+            <DataItem Name="SequenceIn"  DataType="NationalInstruments:SourceModel:DataTypes:X3SequenceWireDataType" DefaultTerminalDirection="Output" CallUsage="None" CallDirection="Input"  CallIndex="8" />
+            <DataItem Name="SequenceOut" DataType="NationalInstruments:SourceModel:DataTypes:X3SequenceWireDataType" DefaultTerminalDirection="Input"  CallUsage="None" CallDirection="Output" CallIndex="8" />
+            <DataItem Name="En_Red" DataType="Boolean" DefaultTerminalDirection="Output" CallUsage="None" CallDirection="Input" CallIndex="0" DefaultValue="true" AdaptToDiagramType="true" />
+            <DataItem Name="En_Green" DataType="Boolean" DefaultTerminalDirection="Output" CallUsage="None" CallDirection="Input" CallIndex="1" DefaultValue="true" AdaptToDiagramType="true" />
+            <DataItem Name="En_Blue" DataType="Boolean" DefaultTerminalDirection="Output" CallUsage="None" CallDirection="Input" CallIndex="2" DefaultValue="true" AdaptToDiagramType="true" />
+            <DataItem Name="En_Yellow" DataType="Boolean" DefaultTerminalDirection="Output" CallUsage="None" CallDirection="Input" CallIndex="3" DefaultValue="true" AdaptToDiagramType="true" />
+            <DataItem Name="En_White" DataType="Boolean" DefaultTerminalDirection="Output" CallUsage="None" CallDirection="Input" CallIndex="4" DefaultValue="true" AdaptToDiagramType="true" />
+            <DataItem Name="En_Black" DataType="Boolean" DefaultTerminalDirection="Output" CallUsage="None" CallDirection="Input" CallIndex="5" DefaultValue="true" AdaptToDiagramType="true" />
+            <DataItem Name="En_Brown" DataType="Boolean" DefaultTerminalDirection="Output" CallUsage="None" CallDirection="Input" CallIndex="6" DefaultValue="true" AdaptToDiagramType="true" />
+            <DataItem Name="En_Pink" DataType="Boolean" DefaultTerminalDirection="Output" CallUsage="None" CallDirection="Input" CallIndex="7" DefaultValue="true" AdaptToDiagramType="true" />
             <FrontPanel>
                 <fpruntime:FrontPanelCanvas xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:fpruntime="clr-namespace:NationalInstruments.LabVIEW.FrontPanelRuntime;assembly=NationalInstruments.LabVIEW.FrontPanelRuntime" xmlns:Model0="clr-namespace:NationalInstruments.SourceModel.Designer;assembly=NationalInstruments.SourceModel" x:Name="FrontPanel" Width="640" Height="480" />
             </FrontPanel>
             <BlockDiagram Name="__RootDiagram__">
-                <DataAccessor DataItem="SequenceIn" Id="nSeqIn" Bounds="100 100 98 14"><Terminal Id="Value" Direction="Output" Wire="wSeq0" Hotspot="1 0.5" Bounds="0 0 98 14" /></DataAccessor>
-                <DataAccessor DataItem="En_Red" Id="nEn_Red" Bounds="100 200 70 14"><Terminal Id="Numeric" Direction="Output" Wire="wEn_Red" Hotspot="1 0.5" Bounds="0 0 70 14" /></DataAccessor>
-                <DataAccessor DataItem="En_Green" Id="nEn_Green" Bounds="100 280 70 14"><Terminal Id="Numeric" Direction="Output" Wire="wEn_Green" Hotspot="1 0.5" Bounds="0 0 70 14" /></DataAccessor>
-                <DataAccessor DataItem="En_Blue" Id="nEn_Blue" Bounds="100 360 70 14"><Terminal Id="Numeric" Direction="Output" Wire="wEn_Blue" Hotspot="1 0.5" Bounds="0 0 70 14" /></DataAccessor>
-                <DataAccessor DataItem="En_Yellow" Id="nEn_Yellow" Bounds="100 440 70 14"><Terminal Id="Numeric" Direction="Output" Wire="wEn_Yellow" Hotspot="1 0.5" Bounds="0 0 70 14" /></DataAccessor>
-                <DataAccessor DataItem="En_White" Id="nEn_White" Bounds="100 520 70 14"><Terminal Id="Numeric" Direction="Output" Wire="wEn_White" Hotspot="1 0.5" Bounds="0 0 70 14" /></DataAccessor>
-                <DataAccessor DataItem="En_Black" Id="nEn_Black" Bounds="100 600 70 14"><Terminal Id="Numeric" Direction="Output" Wire="wEn_Black" Hotspot="1 0.5" Bounds="0 0 70 14" /></DataAccessor>
-                <DataAccessor DataItem="En_Brown" Id="nEn_Brown" Bounds="100 680 70 14"><Terminal Id="Numeric" Direction="Output" Wire="wEn_Brown" Hotspot="1 0.5" Bounds="0 0 70 14" /></DataAccessor>
-                <DataAccessor DataItem="En_Pink" Id="nEn_Pink" Bounds="100 760 70 14"><Terminal Id="Numeric" Direction="Output" Wire="wEn_Pink" Hotspot="1 0.5" Bounds="0 0 70 14" /></DataAccessor>
-                <ConfigurableMethodCall Id="nSetEn_Red" Bounds="350 200 101 91" Target="X3\.Lib:GlobalSetSingle">
-                    <ConfigurableMethodTerminal><Terminal Id="valueIn" Direction="Input" Wire="wEn_Red" DataType="Single" Hotspot="0.5 1" Bounds="54 56 30 27" /></ConfigurableMethodTerminal>
+                <DataAccessor DataItem="SequenceIn" Id="nSeqIn" Bounds="100 50 98 14"><Terminal Id="Value" Direction="Output" Wire="wSeq0" Hotspot="1 0.5" Bounds="0 0 98 14" /></DataAccessor>
+                <DataAccessor DataItem="En_Red" Id="nEn_Red" Bounds="100 200 70 14"><Terminal Id="Boolean" Direction="Output" Wire="wBool_Red" Hotspot="1 0.5" Bounds="0 0 70 14" /></DataAccessor>
+                <Literal Id="nLit1_Red" Terminals="Out=wLit1_Red" Bounds="220 186 28 14" Interpretation="Exact" DataType="Single">1</Literal>
+                <Literal Id="nLit0_Red" Terminals="Out=wLit0_Red" Bounds="220 214 28 14" Interpretation="Exact" DataType="Single">0</Literal>
+                <Select Id="nSel_Red" Terminals="s\?\ t\:f=wSelOut_Red, f=wLit0_Red, s=wBool_Red, t=wLit1_Red" TopLeft="310 193" />
+                <ConfigurableMethodCall Id="nSet_Red" Bounds="420 155 101 91" Target="X3\.Lib:GlobalSetSingle">
+                    <ConfigurableMethodTerminal><Terminal Id="valueIn" Direction="Input" Wire="wSelOut_Red" DataType="Single" Hotspot="0.5 1" Bounds="54 56 30 27" /></ConfigurableMethodTerminal>
                     <ConfigurableMethodTerminal ConfiguredValue="OFDLCC_En_Red"><Terminal Id="name" Direction="Input" DataType="String" Hotspot="0.5 1" Bounds="0 0 0 0" /></ConfigurableMethodTerminal>
-                    <Terminal Id="SequenceIn" Direction="Input" Wire="wSeq0" DataType="NationalInstruments:SourceModel:DataTypes:X3SequenceWireDataType" Hotspot="0 0.5" Bounds="0 33 18 18" />
+                    <Terminal Id="SequenceIn"  Direction="Input"  Wire="wSeq0"  DataType="NationalInstruments:SourceModel:DataTypes:X3SequenceWireDataType" Hotspot="0 0.5" Bounds="0 33 18 18" />
                     <Terminal Id="SequenceOut" Direction="Output" Wire="wSeq1" DataType="NationalInstruments:SourceModel:DataTypes:X3SequenceWireDataType" Hotspot="1 0.5" Bounds="83 33 18 18" />
                 </ConfigurableMethodCall>
-                <ConfigurableMethodCall Id="nSetEn_Green" Bounds="350 280 101 91" Target="X3\.Lib:GlobalSetSingle">
-                    <ConfigurableMethodTerminal><Terminal Id="valueIn" Direction="Input" Wire="wEn_Green" DataType="Single" Hotspot="0.5 1" Bounds="54 56 30 27" /></ConfigurableMethodTerminal>
+                <DataAccessor DataItem="En_Green" Id="nEn_Green" Bounds="100 280 70 14"><Terminal Id="Boolean" Direction="Output" Wire="wBool_Green" Hotspot="1 0.5" Bounds="0 0 70 14" /></DataAccessor>
+                <Literal Id="nLit1_Green" Terminals="Out=wLit1_Green" Bounds="220 266 28 14" Interpretation="Exact" DataType="Single">1</Literal>
+                <Literal Id="nLit0_Green" Terminals="Out=wLit0_Green" Bounds="220 294 28 14" Interpretation="Exact" DataType="Single">0</Literal>
+                <Select Id="nSel_Green" Terminals="s\?\ t\:f=wSelOut_Green, f=wLit0_Green, s=wBool_Green, t=wLit1_Green" TopLeft="310 273" />
+                <ConfigurableMethodCall Id="nSet_Green" Bounds="420 235 101 91" Target="X3\.Lib:GlobalSetSingle">
+                    <ConfigurableMethodTerminal><Terminal Id="valueIn" Direction="Input" Wire="wSelOut_Green" DataType="Single" Hotspot="0.5 1" Bounds="54 56 30 27" /></ConfigurableMethodTerminal>
                     <ConfigurableMethodTerminal ConfiguredValue="OFDLCC_En_Green"><Terminal Id="name" Direction="Input" DataType="String" Hotspot="0.5 1" Bounds="0 0 0 0" /></ConfigurableMethodTerminal>
-                    <Terminal Id="SequenceIn" Direction="Input" Wire="wSeq1" DataType="NationalInstruments:SourceModel:DataTypes:X3SequenceWireDataType" Hotspot="0 0.5" Bounds="0 33 18 18" />
+                    <Terminal Id="SequenceIn"  Direction="Input"  Wire="wSeq1"  DataType="NationalInstruments:SourceModel:DataTypes:X3SequenceWireDataType" Hotspot="0 0.5" Bounds="0 33 18 18" />
                     <Terminal Id="SequenceOut" Direction="Output" Wire="wSeq2" DataType="NationalInstruments:SourceModel:DataTypes:X3SequenceWireDataType" Hotspot="1 0.5" Bounds="83 33 18 18" />
                 </ConfigurableMethodCall>
-                <ConfigurableMethodCall Id="nSetEn_Blue" Bounds="350 360 101 91" Target="X3\.Lib:GlobalSetSingle">
-                    <ConfigurableMethodTerminal><Terminal Id="valueIn" Direction="Input" Wire="wEn_Blue" DataType="Single" Hotspot="0.5 1" Bounds="54 56 30 27" /></ConfigurableMethodTerminal>
+                <DataAccessor DataItem="En_Blue" Id="nEn_Blue" Bounds="100 360 70 14"><Terminal Id="Boolean" Direction="Output" Wire="wBool_Blue" Hotspot="1 0.5" Bounds="0 0 70 14" /></DataAccessor>
+                <Literal Id="nLit1_Blue" Terminals="Out=wLit1_Blue" Bounds="220 346 28 14" Interpretation="Exact" DataType="Single">1</Literal>
+                <Literal Id="nLit0_Blue" Terminals="Out=wLit0_Blue" Bounds="220 374 28 14" Interpretation="Exact" DataType="Single">0</Literal>
+                <Select Id="nSel_Blue" Terminals="s\?\ t\:f=wSelOut_Blue, f=wLit0_Blue, s=wBool_Blue, t=wLit1_Blue" TopLeft="310 353" />
+                <ConfigurableMethodCall Id="nSet_Blue" Bounds="420 315 101 91" Target="X3\.Lib:GlobalSetSingle">
+                    <ConfigurableMethodTerminal><Terminal Id="valueIn" Direction="Input" Wire="wSelOut_Blue" DataType="Single" Hotspot="0.5 1" Bounds="54 56 30 27" /></ConfigurableMethodTerminal>
                     <ConfigurableMethodTerminal ConfiguredValue="OFDLCC_En_Blue"><Terminal Id="name" Direction="Input" DataType="String" Hotspot="0.5 1" Bounds="0 0 0 0" /></ConfigurableMethodTerminal>
-                    <Terminal Id="SequenceIn" Direction="Input" Wire="wSeq2" DataType="NationalInstruments:SourceModel:DataTypes:X3SequenceWireDataType" Hotspot="0 0.5" Bounds="0 33 18 18" />
+                    <Terminal Id="SequenceIn"  Direction="Input"  Wire="wSeq2"  DataType="NationalInstruments:SourceModel:DataTypes:X3SequenceWireDataType" Hotspot="0 0.5" Bounds="0 33 18 18" />
                     <Terminal Id="SequenceOut" Direction="Output" Wire="wSeq3" DataType="NationalInstruments:SourceModel:DataTypes:X3SequenceWireDataType" Hotspot="1 0.5" Bounds="83 33 18 18" />
                 </ConfigurableMethodCall>
-                <ConfigurableMethodCall Id="nSetEn_Yellow" Bounds="350 440 101 91" Target="X3\.Lib:GlobalSetSingle">
-                    <ConfigurableMethodTerminal><Terminal Id="valueIn" Direction="Input" Wire="wEn_Yellow" DataType="Single" Hotspot="0.5 1" Bounds="54 56 30 27" /></ConfigurableMethodTerminal>
+                <DataAccessor DataItem="En_Yellow" Id="nEn_Yellow" Bounds="100 440 70 14"><Terminal Id="Boolean" Direction="Output" Wire="wBool_Yellow" Hotspot="1 0.5" Bounds="0 0 70 14" /></DataAccessor>
+                <Literal Id="nLit1_Yellow" Terminals="Out=wLit1_Yellow" Bounds="220 426 28 14" Interpretation="Exact" DataType="Single">1</Literal>
+                <Literal Id="nLit0_Yellow" Terminals="Out=wLit0_Yellow" Bounds="220 454 28 14" Interpretation="Exact" DataType="Single">0</Literal>
+                <Select Id="nSel_Yellow" Terminals="s\?\ t\:f=wSelOut_Yellow, f=wLit0_Yellow, s=wBool_Yellow, t=wLit1_Yellow" TopLeft="310 433" />
+                <ConfigurableMethodCall Id="nSet_Yellow" Bounds="420 395 101 91" Target="X3\.Lib:GlobalSetSingle">
+                    <ConfigurableMethodTerminal><Terminal Id="valueIn" Direction="Input" Wire="wSelOut_Yellow" DataType="Single" Hotspot="0.5 1" Bounds="54 56 30 27" /></ConfigurableMethodTerminal>
                     <ConfigurableMethodTerminal ConfiguredValue="OFDLCC_En_Yellow"><Terminal Id="name" Direction="Input" DataType="String" Hotspot="0.5 1" Bounds="0 0 0 0" /></ConfigurableMethodTerminal>
-                    <Terminal Id="SequenceIn" Direction="Input" Wire="wSeq3" DataType="NationalInstruments:SourceModel:DataTypes:X3SequenceWireDataType" Hotspot="0 0.5" Bounds="0 33 18 18" />
+                    <Terminal Id="SequenceIn"  Direction="Input"  Wire="wSeq3"  DataType="NationalInstruments:SourceModel:DataTypes:X3SequenceWireDataType" Hotspot="0 0.5" Bounds="0 33 18 18" />
                     <Terminal Id="SequenceOut" Direction="Output" Wire="wSeq4" DataType="NationalInstruments:SourceModel:DataTypes:X3SequenceWireDataType" Hotspot="1 0.5" Bounds="83 33 18 18" />
                 </ConfigurableMethodCall>
-                <ConfigurableMethodCall Id="nSetEn_White" Bounds="350 520 101 91" Target="X3\.Lib:GlobalSetSingle">
-                    <ConfigurableMethodTerminal><Terminal Id="valueIn" Direction="Input" Wire="wEn_White" DataType="Single" Hotspot="0.5 1" Bounds="54 56 30 27" /></ConfigurableMethodTerminal>
+                <DataAccessor DataItem="En_White" Id="nEn_White" Bounds="100 520 70 14"><Terminal Id="Boolean" Direction="Output" Wire="wBool_White" Hotspot="1 0.5" Bounds="0 0 70 14" /></DataAccessor>
+                <Literal Id="nLit1_White" Terminals="Out=wLit1_White" Bounds="220 506 28 14" Interpretation="Exact" DataType="Single">1</Literal>
+                <Literal Id="nLit0_White" Terminals="Out=wLit0_White" Bounds="220 534 28 14" Interpretation="Exact" DataType="Single">0</Literal>
+                <Select Id="nSel_White" Terminals="s\?\ t\:f=wSelOut_White, f=wLit0_White, s=wBool_White, t=wLit1_White" TopLeft="310 513" />
+                <ConfigurableMethodCall Id="nSet_White" Bounds="420 475 101 91" Target="X3\.Lib:GlobalSetSingle">
+                    <ConfigurableMethodTerminal><Terminal Id="valueIn" Direction="Input" Wire="wSelOut_White" DataType="Single" Hotspot="0.5 1" Bounds="54 56 30 27" /></ConfigurableMethodTerminal>
                     <ConfigurableMethodTerminal ConfiguredValue="OFDLCC_En_White"><Terminal Id="name" Direction="Input" DataType="String" Hotspot="0.5 1" Bounds="0 0 0 0" /></ConfigurableMethodTerminal>
-                    <Terminal Id="SequenceIn" Direction="Input" Wire="wSeq4" DataType="NationalInstruments:SourceModel:DataTypes:X3SequenceWireDataType" Hotspot="0 0.5" Bounds="0 33 18 18" />
+                    <Terminal Id="SequenceIn"  Direction="Input"  Wire="wSeq4"  DataType="NationalInstruments:SourceModel:DataTypes:X3SequenceWireDataType" Hotspot="0 0.5" Bounds="0 33 18 18" />
                     <Terminal Id="SequenceOut" Direction="Output" Wire="wSeq5" DataType="NationalInstruments:SourceModel:DataTypes:X3SequenceWireDataType" Hotspot="1 0.5" Bounds="83 33 18 18" />
                 </ConfigurableMethodCall>
-                <ConfigurableMethodCall Id="nSetEn_Black" Bounds="350 600 101 91" Target="X3\.Lib:GlobalSetSingle">
-                    <ConfigurableMethodTerminal><Terminal Id="valueIn" Direction="Input" Wire="wEn_Black" DataType="Single" Hotspot="0.5 1" Bounds="54 56 30 27" /></ConfigurableMethodTerminal>
+                <DataAccessor DataItem="En_Black" Id="nEn_Black" Bounds="100 600 70 14"><Terminal Id="Boolean" Direction="Output" Wire="wBool_Black" Hotspot="1 0.5" Bounds="0 0 70 14" /></DataAccessor>
+                <Literal Id="nLit1_Black" Terminals="Out=wLit1_Black" Bounds="220 586 28 14" Interpretation="Exact" DataType="Single">1</Literal>
+                <Literal Id="nLit0_Black" Terminals="Out=wLit0_Black" Bounds="220 614 28 14" Interpretation="Exact" DataType="Single">0</Literal>
+                <Select Id="nSel_Black" Terminals="s\?\ t\:f=wSelOut_Black, f=wLit0_Black, s=wBool_Black, t=wLit1_Black" TopLeft="310 593" />
+                <ConfigurableMethodCall Id="nSet_Black" Bounds="420 555 101 91" Target="X3\.Lib:GlobalSetSingle">
+                    <ConfigurableMethodTerminal><Terminal Id="valueIn" Direction="Input" Wire="wSelOut_Black" DataType="Single" Hotspot="0.5 1" Bounds="54 56 30 27" /></ConfigurableMethodTerminal>
                     <ConfigurableMethodTerminal ConfiguredValue="OFDLCC_En_Black"><Terminal Id="name" Direction="Input" DataType="String" Hotspot="0.5 1" Bounds="0 0 0 0" /></ConfigurableMethodTerminal>
-                    <Terminal Id="SequenceIn" Direction="Input" Wire="wSeq5" DataType="NationalInstruments:SourceModel:DataTypes:X3SequenceWireDataType" Hotspot="0 0.5" Bounds="0 33 18 18" />
+                    <Terminal Id="SequenceIn"  Direction="Input"  Wire="wSeq5"  DataType="NationalInstruments:SourceModel:DataTypes:X3SequenceWireDataType" Hotspot="0 0.5" Bounds="0 33 18 18" />
                     <Terminal Id="SequenceOut" Direction="Output" Wire="wSeq6" DataType="NationalInstruments:SourceModel:DataTypes:X3SequenceWireDataType" Hotspot="1 0.5" Bounds="83 33 18 18" />
                 </ConfigurableMethodCall>
-                <ConfigurableMethodCall Id="nSetEn_Brown" Bounds="350 680 101 91" Target="X3\.Lib:GlobalSetSingle">
-                    <ConfigurableMethodTerminal><Terminal Id="valueIn" Direction="Input" Wire="wEn_Brown" DataType="Single" Hotspot="0.5 1" Bounds="54 56 30 27" /></ConfigurableMethodTerminal>
+                <DataAccessor DataItem="En_Brown" Id="nEn_Brown" Bounds="100 680 70 14"><Terminal Id="Boolean" Direction="Output" Wire="wBool_Brown" Hotspot="1 0.5" Bounds="0 0 70 14" /></DataAccessor>
+                <Literal Id="nLit1_Brown" Terminals="Out=wLit1_Brown" Bounds="220 666 28 14" Interpretation="Exact" DataType="Single">1</Literal>
+                <Literal Id="nLit0_Brown" Terminals="Out=wLit0_Brown" Bounds="220 694 28 14" Interpretation="Exact" DataType="Single">0</Literal>
+                <Select Id="nSel_Brown" Terminals="s\?\ t\:f=wSelOut_Brown, f=wLit0_Brown, s=wBool_Brown, t=wLit1_Brown" TopLeft="310 673" />
+                <ConfigurableMethodCall Id="nSet_Brown" Bounds="420 635 101 91" Target="X3\.Lib:GlobalSetSingle">
+                    <ConfigurableMethodTerminal><Terminal Id="valueIn" Direction="Input" Wire="wSelOut_Brown" DataType="Single" Hotspot="0.5 1" Bounds="54 56 30 27" /></ConfigurableMethodTerminal>
                     <ConfigurableMethodTerminal ConfiguredValue="OFDLCC_En_Brown"><Terminal Id="name" Direction="Input" DataType="String" Hotspot="0.5 1" Bounds="0 0 0 0" /></ConfigurableMethodTerminal>
-                    <Terminal Id="SequenceIn" Direction="Input" Wire="wSeq6" DataType="NationalInstruments:SourceModel:DataTypes:X3SequenceWireDataType" Hotspot="0 0.5" Bounds="0 33 18 18" />
+                    <Terminal Id="SequenceIn"  Direction="Input"  Wire="wSeq6"  DataType="NationalInstruments:SourceModel:DataTypes:X3SequenceWireDataType" Hotspot="0 0.5" Bounds="0 33 18 18" />
                     <Terminal Id="SequenceOut" Direction="Output" Wire="wSeq7" DataType="NationalInstruments:SourceModel:DataTypes:X3SequenceWireDataType" Hotspot="1 0.5" Bounds="83 33 18 18" />
                 </ConfigurableMethodCall>
-                <ConfigurableMethodCall Id="nSetEn_Pink" Bounds="350 760 101 91" Target="X3\.Lib:GlobalSetSingle">
-                    <ConfigurableMethodTerminal><Terminal Id="valueIn" Direction="Input" Wire="wEn_Pink" DataType="Single" Hotspot="0.5 1" Bounds="54 56 30 27" /></ConfigurableMethodTerminal>
+                <DataAccessor DataItem="En_Pink" Id="nEn_Pink" Bounds="100 760 70 14"><Terminal Id="Boolean" Direction="Output" Wire="wBool_Pink" Hotspot="1 0.5" Bounds="0 0 70 14" /></DataAccessor>
+                <Literal Id="nLit1_Pink" Terminals="Out=wLit1_Pink" Bounds="220 746 28 14" Interpretation="Exact" DataType="Single">1</Literal>
+                <Literal Id="nLit0_Pink" Terminals="Out=wLit0_Pink" Bounds="220 774 28 14" Interpretation="Exact" DataType="Single">0</Literal>
+                <Select Id="nSel_Pink" Terminals="s\?\ t\:f=wSelOut_Pink, f=wLit0_Pink, s=wBool_Pink, t=wLit1_Pink" TopLeft="310 753" />
+                <ConfigurableMethodCall Id="nSet_Pink" Bounds="420 715 101 91" Target="X3\.Lib:GlobalSetSingle">
+                    <ConfigurableMethodTerminal><Terminal Id="valueIn" Direction="Input" Wire="wSelOut_Pink" DataType="Single" Hotspot="0.5 1" Bounds="54 56 30 27" /></ConfigurableMethodTerminal>
                     <ConfigurableMethodTerminal ConfiguredValue="OFDLCC_En_Pink"><Terminal Id="name" Direction="Input" DataType="String" Hotspot="0.5 1" Bounds="0 0 0 0" /></ConfigurableMethodTerminal>
-                    <Terminal Id="SequenceIn" Direction="Input" Wire="wSeq7" DataType="NationalInstruments:SourceModel:DataTypes:X3SequenceWireDataType" Hotspot="0 0.5" Bounds="0 33 18 18" />
+                    <Terminal Id="SequenceIn"  Direction="Input"  Wire="wSeq7"  DataType="NationalInstruments:SourceModel:DataTypes:X3SequenceWireDataType" Hotspot="0 0.5" Bounds="0 33 18 18" />
                     <Terminal Id="SequenceOut" Direction="Output" Wire="wSeq8" DataType="NationalInstruments:SourceModel:DataTypes:X3SequenceWireDataType" Hotspot="1 0.5" Bounds="83 33 18 18" />
                 </ConfigurableMethodCall>
-                <DataAccessor DataItem="SequenceOut" Id="nSeqOut" Bounds="600 100 105 14"><Terminal Id="Value" Direction="Input" Wire="wSeq8" Hotspot="0 0.5" Bounds="0 0 105 14" /></DataAccessor>
-                <Wire Id="wSeq0" Joints="N(nSeqIn:Value) N(nSetEn_Red:SequenceIn)" />
-                <Wire Id="wSeq1" Joints="N(nSetEn_Red:SequenceOut) N(nSetEn_Green:SequenceIn)" />
-                <Wire Id="wSeq2" Joints="N(nSetEn_Green:SequenceOut) N(nSetEn_Blue:SequenceIn)" />
-                <Wire Id="wSeq3" Joints="N(nSetEn_Blue:SequenceOut) N(nSetEn_Yellow:SequenceIn)" />
-                <Wire Id="wSeq4" Joints="N(nSetEn_Yellow:SequenceOut) N(nSetEn_White:SequenceIn)" />
-                <Wire Id="wSeq5" Joints="N(nSetEn_White:SequenceOut) N(nSetEn_Black:SequenceIn)" />
-                <Wire Id="wSeq6" Joints="N(nSetEn_Black:SequenceOut) N(nSetEn_Brown:SequenceIn)" />
-                <Wire Id="wSeq7" Joints="N(nSetEn_Brown:SequenceOut) N(nSetEn_Pink:SequenceIn)" />
-                <Wire Id="wSeq8" Joints="N(nSetEn_Pink:SequenceOut) N(nSeqOut:Value)" />
-                <Wire Id="wEn_Red" Joints="N(nEn_Red:Numeric) N(nSetEn_Red:valueIn)" />
-                <Wire Id="wEn_Green" Joints="N(nEn_Green:Numeric) N(nSetEn_Green:valueIn)" />
-                <Wire Id="wEn_Blue" Joints="N(nEn_Blue:Numeric) N(nSetEn_Blue:valueIn)" />
-                <Wire Id="wEn_Yellow" Joints="N(nEn_Yellow:Numeric) N(nSetEn_Yellow:valueIn)" />
-                <Wire Id="wEn_White" Joints="N(nEn_White:Numeric) N(nSetEn_White:valueIn)" />
-                <Wire Id="wEn_Black" Joints="N(nEn_Black:Numeric) N(nSetEn_Black:valueIn)" />
-                <Wire Id="wEn_Brown" Joints="N(nEn_Brown:Numeric) N(nSetEn_Brown:valueIn)" />
-                <Wire Id="wEn_Pink" Joints="N(nEn_Pink:Numeric) N(nSetEn_Pink:valueIn)" />
+                <DataAccessor DataItem="SequenceOut" Id="nSeqOut" Bounds="620 50 105 14"><Terminal Id="Value" Direction="Input" Wire="wSeq8" Hotspot="0 0.5" Bounds="0 0 105 14" /></DataAccessor>
+                <Wire Id="wBool_Red"    Joints="N(nEn_Red:Boolean) N(nSel_Red:s)" />
+                <Wire Id="wLit1_Red"   Joints="N(nLit1_Red:Out) N(nSel_Red:t)" />
+                <Wire Id="wLit0_Red"   Joints="N(nLit0_Red:Out) N(nSel_Red:f)" />
+                <Wire Id="wSelOut_Red" Joints="N(nSel_Red:s\?\ t\:f) N(nSet_Red:valueIn)" />
+                <Wire Id="wSeq0"    Joints="N(nSeqIn:Value) N(nSet_Red:SequenceIn)" />
+                <Wire Id="wBool_Green"    Joints="N(nEn_Green:Boolean) N(nSel_Green:s)" />
+                <Wire Id="wLit1_Green"   Joints="N(nLit1_Green:Out) N(nSel_Green:t)" />
+                <Wire Id="wLit0_Green"   Joints="N(nLit0_Green:Out) N(nSel_Green:f)" />
+                <Wire Id="wSelOut_Green" Joints="N(nSel_Green:s\?\ t\:f) N(nSet_Green:valueIn)" />
+                <Wire Id="wSeq1"    Joints="N(nSet_Red:SequenceOut) N(nSet_Green:SequenceIn)" />
+                <Wire Id="wBool_Blue"    Joints="N(nEn_Blue:Boolean) N(nSel_Blue:s)" />
+                <Wire Id="wLit1_Blue"   Joints="N(nLit1_Blue:Out) N(nSel_Blue:t)" />
+                <Wire Id="wLit0_Blue"   Joints="N(nLit0_Blue:Out) N(nSel_Blue:f)" />
+                <Wire Id="wSelOut_Blue" Joints="N(nSel_Blue:s\?\ t\:f) N(nSet_Blue:valueIn)" />
+                <Wire Id="wSeq2"    Joints="N(nSet_Green:SequenceOut) N(nSet_Blue:SequenceIn)" />
+                <Wire Id="wBool_Yellow"    Joints="N(nEn_Yellow:Boolean) N(nSel_Yellow:s)" />
+                <Wire Id="wLit1_Yellow"   Joints="N(nLit1_Yellow:Out) N(nSel_Yellow:t)" />
+                <Wire Id="wLit0_Yellow"   Joints="N(nLit0_Yellow:Out) N(nSel_Yellow:f)" />
+                <Wire Id="wSelOut_Yellow" Joints="N(nSel_Yellow:s\?\ t\:f) N(nSet_Yellow:valueIn)" />
+                <Wire Id="wSeq3"    Joints="N(nSet_Blue:SequenceOut) N(nSet_Yellow:SequenceIn)" />
+                <Wire Id="wBool_White"    Joints="N(nEn_White:Boolean) N(nSel_White:s)" />
+                <Wire Id="wLit1_White"   Joints="N(nLit1_White:Out) N(nSel_White:t)" />
+                <Wire Id="wLit0_White"   Joints="N(nLit0_White:Out) N(nSel_White:f)" />
+                <Wire Id="wSelOut_White" Joints="N(nSel_White:s\?\ t\:f) N(nSet_White:valueIn)" />
+                <Wire Id="wSeq4"    Joints="N(nSet_Yellow:SequenceOut) N(nSet_White:SequenceIn)" />
+                <Wire Id="wBool_Black"    Joints="N(nEn_Black:Boolean) N(nSel_Black:s)" />
+                <Wire Id="wLit1_Black"   Joints="N(nLit1_Black:Out) N(nSel_Black:t)" />
+                <Wire Id="wLit0_Black"   Joints="N(nLit0_Black:Out) N(nSel_Black:f)" />
+                <Wire Id="wSelOut_Black" Joints="N(nSel_Black:s\?\ t\:f) N(nSet_Black:valueIn)" />
+                <Wire Id="wSeq5"    Joints="N(nSet_White:SequenceOut) N(nSet_Black:SequenceIn)" />
+                <Wire Id="wBool_Brown"    Joints="N(nEn_Brown:Boolean) N(nSel_Brown:s)" />
+                <Wire Id="wLit1_Brown"   Joints="N(nLit1_Brown:Out) N(nSel_Brown:t)" />
+                <Wire Id="wLit0_Brown"   Joints="N(nLit0_Brown:Out) N(nSel_Brown:f)" />
+                <Wire Id="wSelOut_Brown" Joints="N(nSel_Brown:s\?\ t\:f) N(nSet_Brown:valueIn)" />
+                <Wire Id="wSeq6"    Joints="N(nSet_Black:SequenceOut) N(nSet_Brown:SequenceIn)" />
+                <Wire Id="wBool_Pink"    Joints="N(nEn_Pink:Boolean) N(nSel_Pink:s)" />
+                <Wire Id="wLit1_Pink"   Joints="N(nLit1_Pink:Out) N(nSel_Pink:t)" />
+                <Wire Id="wLit0_Pink"   Joints="N(nLit0_Pink:Out) N(nSel_Pink:f)" />
+                <Wire Id="wSelOut_Pink" Joints="N(nSel_Pink:s\?\ t\:f) N(nSet_Pink:valueIn)" />
+                <Wire Id="wSeq7"    Joints="N(nSet_Brown:SequenceOut) N(nSet_Pink:SequenceIn)" />
+                <Wire Id="wSeq8" Joints="N(nSet_Pink:SequenceOut) N(nSeqOut:Value)" />
             </BlockDiagram>
             <Icon>
                 <Model:IconPanel xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:Model="clr-namespace:NationalInstruments.LabVIEW.VI.Design;assembly=NationalInstruments.LabVIEW.VI.SourceModel" xmlns:fpruntime="clr-namespace:NationalInstruments.LabVIEW.FrontPanelRuntime;assembly=NationalInstruments.LabVIEW.FrontPanelRuntime" xmlns:ation="http://schemas.microsoft.com/winfx/2006/xaml/presentation" Height="98" Width="56">

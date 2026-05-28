@@ -4,17 +4,17 @@
         <VirtualInstrument IsTopLevel="false" IsReentrant="false" Version="1.0.2.0" xmlns="http://www.ni.com/VirtualInstrument.xsd">
             <DataItem Name="SequenceIn" DataType="NationalInstruments:SourceModel:DataTypes:X3SequenceWireDataType" DefaultTerminalDirection="Output" CallUsage="None" CallDirection="Input" CallIndex="3" />
             <DataItem Name="SequenceOut" DataType="NationalInstruments:SourceModel:DataTypes:X3SequenceWireDataType" DefaultTerminalDirection="Input" CallUsage="None" CallDirection="Output" CallIndex="3" />
-            <DataItem Name="Ref_R" DataType="Single" DefaultTerminalDirection="Output" CallUsage="Optional" CallDirection="Input" CallIndex="0" DefaultValue="255" />
-            <DataItem Name="Ref_G" DataType="Single" DefaultTerminalDirection="Output" CallUsage="Optional" CallDirection="Input" CallIndex="1" DefaultValue="0" />
-            <DataItem Name="Ref_B" DataType="Single" DefaultTerminalDirection="Output" CallUsage="Optional" CallDirection="Input" CallIndex="2" DefaultValue="0" />
+            <DataItem Name="Red_Ref_R" DataType="Single" DefaultTerminalDirection="Output" CallUsage="None" CallDirection="Input" CallIndex="0" DefaultValue="255" />
+            <DataItem Name="Red_Ref_G" DataType="Single" DefaultTerminalDirection="Output" CallUsage="None" CallDirection="Input" CallIndex="1" DefaultValue="0" />
+            <DataItem Name="Red_Ref_B" DataType="Single" DefaultTerminalDirection="Output" CallUsage="None" CallDirection="Input" CallIndex="2" DefaultValue="0" />
             <FrontPanel>
                 <fpruntime:FrontPanelCanvas xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:fpruntime="clr-namespace:NationalInstruments.LabVIEW.FrontPanelRuntime;assembly=NationalInstruments.LabVIEW.FrontPanelRuntime" xmlns:Model0="clr-namespace:NationalInstruments.SourceModel.Designer;assembly=NationalInstruments.SourceModel" x:Name="FrontPanel" Width="640" Height="480" />
             </FrontPanel>
             <BlockDiagram Name="__RootDiagram__">
                 <DataAccessor DataItem="SequenceIn" Id="nSeqIn" Bounds="100 100 98 14"><Terminal Id="Value" Direction="Output" Wire="wSeq0" Hotspot="1 0.5" Bounds="0 0 98 14" /></DataAccessor>
-                <DataAccessor DataItem="Ref_R" Id="nRefR" Bounds="100 200 70 14"><Terminal Id="Numeric" Direction="Output" Wire="wRefR" Hotspot="1 0.5" Bounds="0 0 70 14" /></DataAccessor>
-                <DataAccessor DataItem="Ref_G" Id="nRefG" Bounds="100 250 70 14"><Terminal Id="Numeric" Direction="Output" Wire="wRefG" Hotspot="1 0.5" Bounds="0 0 70 14" /></DataAccessor>
-                <DataAccessor DataItem="Ref_B" Id="nRefB" Bounds="100 300 70 14"><Terminal Id="Numeric" Direction="Output" Wire="wRefB" Hotspot="1 0.5" Bounds="0 0 70 14" /></DataAccessor>
+                <DataAccessor DataItem="Red_Ref_R" Id="nRefR" Bounds="100 200 70 14"><Terminal Id="Numeric" Direction="Output" Wire="wRefR" Hotspot="1 0.5" Bounds="0 0 70 14" /></DataAccessor>
+                <DataAccessor DataItem="Red_Ref_G" Id="nRefG" Bounds="100 250 70 14"><Terminal Id="Numeric" Direction="Output" Wire="wRefG" Hotspot="1 0.5" Bounds="0 0 70 14" /></DataAccessor>
+                <DataAccessor DataItem="Red_Ref_B" Id="nRefB" Bounds="100 300 70 14"><Terminal Id="Numeric" Direction="Output" Wire="wRefB" Hotspot="1 0.5" Bounds="0 0 70 14" /></DataAccessor>
                 <ConfigurableMethodCall Id="nSetR" Bounds="300 200 101 91" Target="X3\.Lib:GlobalSetSingle">
                     <ConfigurableMethodTerminal><Terminal Id="valueIn" Direction="Input" Wire="wRefR" DataType="Single" Hotspot="0.5 1" Bounds="54 56 30 27" /></ConfigurableMethodTerminal>
                     <ConfigurableMethodTerminal ConfiguredValue="OFDLCC_C1_R"><Terminal Id="name" Direction="Input" DataType="String" Hotspot="0.5 1" Bounds="0 0 0 0" /></ConfigurableMethodTerminal>

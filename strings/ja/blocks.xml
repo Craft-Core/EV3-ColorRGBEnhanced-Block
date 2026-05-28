@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <EditorStrings>
   <PolyGroups ModuleName="ColorSensorRGB">
     <PolyGroup Name="ColorSensorRGB" DisplayName="カラーセンサー RGB 拡張" DisplayNamePrefix="ColorSensorRGB">
@@ -111,52 +111,124 @@
         <Description><![CDATA[<p>最も近いプリセット色までの距離</p>]]></Description>
       </Parameter>
       <Parameter Name="D_Red" DisplayName="赤">
-        <Description><![CDATA[<p>Squared distance from input RGB to 赤 reference</p>]]></Description>
+        <Description><![CDATA[<p>入力 RGB から赤の基準値までの二乗距離</p>]]></Description>
       </Parameter>
       <Parameter Name="D_Green" DisplayName="緑">
-        <Description><![CDATA[<p>Squared distance from input RGB to 緑 reference</p>]]></Description>
+        <Description><![CDATA[<p>入力 RGB から緑の基準値までの二乗距離</p>]]></Description>
       </Parameter>
       <Parameter Name="D_Blue" DisplayName="青">
-        <Description><![CDATA[<p>Squared distance from input RGB to 青 reference</p>]]></Description>
+        <Description><![CDATA[<p>入力 RGB から青の基準値までの二乗距離</p>]]></Description>
       </Parameter>
       <Parameter Name="D_Yellow" DisplayName="黄">
-        <Description><![CDATA[<p>Squared distance from input RGB to 黄 reference</p>]]></Description>
+        <Description><![CDATA[<p>入力 RGB から黄の基準値までの二乗距離</p>]]></Description>
       </Parameter>
       <Parameter Name="D_White" DisplayName="白">
-        <Description><![CDATA[<p>Squared distance from input RGB to 白 reference</p>]]></Description>
+        <Description><![CDATA[<p>入力 RGB から白の基準値までの二乗距離</p>]]></Description>
       </Parameter>
       <Parameter Name="D_Black" DisplayName="黒">
-        <Description><![CDATA[<p>Squared distance from input RGB to 黒 reference</p>]]></Description>
+        <Description><![CDATA[<p>入力 RGB から黒の基準値までの二乗距離</p>]]></Description>
       </Parameter>
       <Parameter Name="D_Brown" DisplayName="茶">
-        <Description><![CDATA[<p>Squared distance from input RGB to 茶 reference</p>]]></Description>
+        <Description><![CDATA[<p>入力 RGB から茶の基準値までの二乗距離</p>]]></Description>
       </Parameter>
       <Parameter Name="D_Pink" DisplayName="ピンク">
-        <Description><![CDATA[<p>Squared distance from input RGB to ピンク reference</p>]]></Description>
+        <Description><![CDATA[<p>入力 RGB からピンクの基準値までの二乗距離</p>]]></Description>
       </Parameter>
       <Parameter Name="D_Red_in" DisplayName="赤">
-        <Description><![CDATA[<p>Distance to 赤 (from Distance mode)</p>]]></Description>
+        <Description><![CDATA[<p>赤までの距離 (Distance ブロックの出力)</p>]]></Description>
       </Parameter>
       <Parameter Name="D_Green_in" DisplayName="緑">
-        <Description><![CDATA[<p>Distance to 緑 (from Distance mode)</p>]]></Description>
+        <Description><![CDATA[<p>緑までの距離 (Distance ブロックの出力)</p>]]></Description>
       </Parameter>
       <Parameter Name="D_Blue_in" DisplayName="青">
-        <Description><![CDATA[<p>Distance to 青 (from Distance mode)</p>]]></Description>
+        <Description><![CDATA[<p>青までの距離 (Distance ブロックの出力)</p>]]></Description>
       </Parameter>
       <Parameter Name="D_Yellow_in" DisplayName="黄">
-        <Description><![CDATA[<p>Distance to 黄 (from Distance mode)</p>]]></Description>
+        <Description><![CDATA[<p>黄までの距離 (Distance ブロックの出力)</p>]]></Description>
       </Parameter>
       <Parameter Name="D_White_in" DisplayName="白">
-        <Description><![CDATA[<p>Distance to 白 (from Distance mode)</p>]]></Description>
+        <Description><![CDATA[<p>白までの距離 (Distance ブロックの出力)</p>]]></Description>
       </Parameter>
       <Parameter Name="D_Black_in" DisplayName="黒">
-        <Description><![CDATA[<p>Distance to 黒 (from Distance mode)</p>]]></Description>
+        <Description><![CDATA[<p>黒までの距離 (Distance ブロックの出力)</p>]]></Description>
       </Parameter>
       <Parameter Name="D_Brown_in" DisplayName="茶">
-        <Description><![CDATA[<p>Distance to 茶 (from Distance mode)</p>]]></Description>
+        <Description><![CDATA[<p>茶までの距離 (Distance ブロックの出力)</p>]]></Description>
       </Parameter>
       <Parameter Name="D_Pink_in" DisplayName="ピンク">
-        <Description><![CDATA[<p>Distance to ピンク (from Distance mode)</p>]]></Description>
+        <Description><![CDATA[<p>ピンクまでの距離 (Distance ブロックの出力)</p>]]></Description>
+      </Parameter>
+      <Parameter Name="Red_Ref_R" DisplayName="R (赤)">
+        <Description><![CDATA[<p>R (0–255)</p>]]></Description>
+      </Parameter>
+      <Parameter Name="Red_Ref_G" DisplayName="G (赤)">
+        <Description><![CDATA[<p>G (0–255)</p>]]></Description>
+      </Parameter>
+      <Parameter Name="Red_Ref_B" DisplayName="B (赤)">
+        <Description><![CDATA[<p>B (0–255)</p>]]></Description>
+      </Parameter>
+      <Parameter Name="Green_Ref_R" DisplayName="R (緑)">
+        <Description><![CDATA[<p>R (0–255)</p>]]></Description>
+      </Parameter>
+      <Parameter Name="Green_Ref_G" DisplayName="G (緑)">
+        <Description><![CDATA[<p>G (0–255)</p>]]></Description>
+      </Parameter>
+      <Parameter Name="Green_Ref_B" DisplayName="B (緑)">
+        <Description><![CDATA[<p>B (0–255)</p>]]></Description>
+      </Parameter>
+      <Parameter Name="Blue_Ref_R" DisplayName="R (青)">
+        <Description><![CDATA[<p>R (0–255)</p>]]></Description>
+      </Parameter>
+      <Parameter Name="Blue_Ref_G" DisplayName="G (青)">
+        <Description><![CDATA[<p>G (0–255)</p>]]></Description>
+      </Parameter>
+      <Parameter Name="Blue_Ref_B" DisplayName="B (青)">
+        <Description><![CDATA[<p>B (0–255)</p>]]></Description>
+      </Parameter>
+      <Parameter Name="Yellow_Ref_R" DisplayName="R (黄)">
+        <Description><![CDATA[<p>R (0–255)</p>]]></Description>
+      </Parameter>
+      <Parameter Name="Yellow_Ref_G" DisplayName="G (黄)">
+        <Description><![CDATA[<p>G (0–255)</p>]]></Description>
+      </Parameter>
+      <Parameter Name="Yellow_Ref_B" DisplayName="B (黄)">
+        <Description><![CDATA[<p>B (0–255)</p>]]></Description>
+      </Parameter>
+      <Parameter Name="White_Ref_R" DisplayName="R (白)">
+        <Description><![CDATA[<p>R (0–255)</p>]]></Description>
+      </Parameter>
+      <Parameter Name="White_Ref_G" DisplayName="G (白)">
+        <Description><![CDATA[<p>G (0–255)</p>]]></Description>
+      </Parameter>
+      <Parameter Name="White_Ref_B" DisplayName="B (白)">
+        <Description><![CDATA[<p>B (0–255)</p>]]></Description>
+      </Parameter>
+      <Parameter Name="Black_Ref_R" DisplayName="R (黒)">
+        <Description><![CDATA[<p>R (0–255)</p>]]></Description>
+      </Parameter>
+      <Parameter Name="Black_Ref_G" DisplayName="G (黒)">
+        <Description><![CDATA[<p>G (0–255)</p>]]></Description>
+      </Parameter>
+      <Parameter Name="Black_Ref_B" DisplayName="B (黒)">
+        <Description><![CDATA[<p>B (0–255)</p>]]></Description>
+      </Parameter>
+      <Parameter Name="Brown_Ref_R" DisplayName="R (茶)">
+        <Description><![CDATA[<p>R (0–255)</p>]]></Description>
+      </Parameter>
+      <Parameter Name="Brown_Ref_G" DisplayName="G (茶)">
+        <Description><![CDATA[<p>G (0–255)</p>]]></Description>
+      </Parameter>
+      <Parameter Name="Brown_Ref_B" DisplayName="B (茶)">
+        <Description><![CDATA[<p>B (0–255)</p>]]></Description>
+      </Parameter>
+      <Parameter Name="Pink_Ref_R" DisplayName="R (ピンク)">
+        <Description><![CDATA[<p>R (0–255)</p>]]></Description>
+      </Parameter>
+      <Parameter Name="Pink_Ref_G" DisplayName="G (ピンク)">
+        <Description><![CDATA[<p>G (0–255)</p>]]></Description>
+      </Parameter>
+      <Parameter Name="Pink_Ref_B" DisplayName="B (ピンク)">
+        <Description><![CDATA[<p>B (0–255)</p>]]></Description>
       </Parameter>
       <Block Mode="Normalize" DisplayName="正規化 – RGB">
         <Description><![CDATA[<p>生の R, G, B を比率に変換します (各チャンネル÷合計、100倍)。明るさの影響を除去し、色情報のみを残します。</p>]]></Description>

@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <EditorStrings>
   <PolyGroups ModuleName="ColorSensorRGB">
     <PolyGroup Name="ColorSensorRGB" DisplayName="Colour Sensor RGB Enhanced" DisplayNamePrefix="ColorSensorRGB">
@@ -157,6 +157,78 @@
       </Parameter>
       <Parameter Name="D_Pink_in" DisplayName="Pink">
         <Description><![CDATA[<p>Distance to Pink (from Distance mode)</p>]]></Description>
+      </Parameter>
+      <Parameter Name="Red_Ref_R" DisplayName="R (Red)">
+        <Description><![CDATA[<p>R (0–255)</p>]]></Description>
+      </Parameter>
+      <Parameter Name="Red_Ref_G" DisplayName="G (Red)">
+        <Description><![CDATA[<p>G (0–255)</p>]]></Description>
+      </Parameter>
+      <Parameter Name="Red_Ref_B" DisplayName="B (Red)">
+        <Description><![CDATA[<p>B (0–255)</p>]]></Description>
+      </Parameter>
+      <Parameter Name="Green_Ref_R" DisplayName="R (Green)">
+        <Description><![CDATA[<p>R (0–255)</p>]]></Description>
+      </Parameter>
+      <Parameter Name="Green_Ref_G" DisplayName="G (Green)">
+        <Description><![CDATA[<p>G (0–255)</p>]]></Description>
+      </Parameter>
+      <Parameter Name="Green_Ref_B" DisplayName="B (Green)">
+        <Description><![CDATA[<p>B (0–255)</p>]]></Description>
+      </Parameter>
+      <Parameter Name="Blue_Ref_R" DisplayName="R (Blue)">
+        <Description><![CDATA[<p>R (0–255)</p>]]></Description>
+      </Parameter>
+      <Parameter Name="Blue_Ref_G" DisplayName="G (Blue)">
+        <Description><![CDATA[<p>G (0–255)</p>]]></Description>
+      </Parameter>
+      <Parameter Name="Blue_Ref_B" DisplayName="B (Blue)">
+        <Description><![CDATA[<p>B (0–255)</p>]]></Description>
+      </Parameter>
+      <Parameter Name="Yellow_Ref_R" DisplayName="R (Yellow)">
+        <Description><![CDATA[<p>R (0–255)</p>]]></Description>
+      </Parameter>
+      <Parameter Name="Yellow_Ref_G" DisplayName="G (Yellow)">
+        <Description><![CDATA[<p>G (0–255)</p>]]></Description>
+      </Parameter>
+      <Parameter Name="Yellow_Ref_B" DisplayName="B (Yellow)">
+        <Description><![CDATA[<p>B (0–255)</p>]]></Description>
+      </Parameter>
+      <Parameter Name="White_Ref_R" DisplayName="R (White)">
+        <Description><![CDATA[<p>R (0–255)</p>]]></Description>
+      </Parameter>
+      <Parameter Name="White_Ref_G" DisplayName="G (White)">
+        <Description><![CDATA[<p>G (0–255)</p>]]></Description>
+      </Parameter>
+      <Parameter Name="White_Ref_B" DisplayName="B (White)">
+        <Description><![CDATA[<p>B (0–255)</p>]]></Description>
+      </Parameter>
+      <Parameter Name="Black_Ref_R" DisplayName="R (Black)">
+        <Description><![CDATA[<p>R (0–255)</p>]]></Description>
+      </Parameter>
+      <Parameter Name="Black_Ref_G" DisplayName="G (Black)">
+        <Description><![CDATA[<p>G (0–255)</p>]]></Description>
+      </Parameter>
+      <Parameter Name="Black_Ref_B" DisplayName="B (Black)">
+        <Description><![CDATA[<p>B (0–255)</p>]]></Description>
+      </Parameter>
+      <Parameter Name="Brown_Ref_R" DisplayName="R (Brown)">
+        <Description><![CDATA[<p>R (0–255)</p>]]></Description>
+      </Parameter>
+      <Parameter Name="Brown_Ref_G" DisplayName="G (Brown)">
+        <Description><![CDATA[<p>G (0–255)</p>]]></Description>
+      </Parameter>
+      <Parameter Name="Brown_Ref_B" DisplayName="B (Brown)">
+        <Description><![CDATA[<p>B (0–255)</p>]]></Description>
+      </Parameter>
+      <Parameter Name="Pink_Ref_R" DisplayName="R (Pink)">
+        <Description><![CDATA[<p>R (0–255)</p>]]></Description>
+      </Parameter>
+      <Parameter Name="Pink_Ref_G" DisplayName="G (Pink)">
+        <Description><![CDATA[<p>G (0–255)</p>]]></Description>
+      </Parameter>
+      <Parameter Name="Pink_Ref_B" DisplayName="B (Pink)">
+        <Description><![CDATA[<p>B (0–255)</p>]]></Description>
       </Parameter>
       <Block Mode="Normalize" DisplayName="Normalise – RGB">
         <Description><![CDATA[<p>Convert raw R, G, B into ratios (each channel divided by the total, scaled to 100). Removes overall brightness from the value, leaving only colour.</p>]]></Description>

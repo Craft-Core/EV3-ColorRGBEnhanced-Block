@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <EditorStrings>
   <PolyGroups ModuleName="ColorSensorRGB">
     <PolyGroup Name="ColorSensorRGB" DisplayName="颜色传感器 RGB 增强版" DisplayNamePrefix="ColorSensorRGB">
@@ -111,52 +111,124 @@
         <Description><![CDATA[<p>到最接近颜色的距离</p>]]></Description>
       </Parameter>
       <Parameter Name="D_Red" DisplayName="红">
-        <Description><![CDATA[<p>Squared distance from input RGB to 红 reference</p>]]></Description>
+        <Description><![CDATA[<p>输入 RGB 到红参考值的距离平方</p>]]></Description>
       </Parameter>
       <Parameter Name="D_Green" DisplayName="绿">
-        <Description><![CDATA[<p>Squared distance from input RGB to 绿 reference</p>]]></Description>
+        <Description><![CDATA[<p>输入 RGB 到绿参考值的距离平方</p>]]></Description>
       </Parameter>
       <Parameter Name="D_Blue" DisplayName="蓝">
-        <Description><![CDATA[<p>Squared distance from input RGB to 蓝 reference</p>]]></Description>
+        <Description><![CDATA[<p>输入 RGB 到蓝参考值的距离平方</p>]]></Description>
       </Parameter>
       <Parameter Name="D_Yellow" DisplayName="黄">
-        <Description><![CDATA[<p>Squared distance from input RGB to 黄 reference</p>]]></Description>
+        <Description><![CDATA[<p>输入 RGB 到黄参考值的距离平方</p>]]></Description>
       </Parameter>
       <Parameter Name="D_White" DisplayName="白">
-        <Description><![CDATA[<p>Squared distance from input RGB to 白 reference</p>]]></Description>
+        <Description><![CDATA[<p>输入 RGB 到白参考值的距离平方</p>]]></Description>
       </Parameter>
       <Parameter Name="D_Black" DisplayName="黑">
-        <Description><![CDATA[<p>Squared distance from input RGB to 黑 reference</p>]]></Description>
+        <Description><![CDATA[<p>输入 RGB 到黑参考值的距离平方</p>]]></Description>
       </Parameter>
       <Parameter Name="D_Brown" DisplayName="棕">
-        <Description><![CDATA[<p>Squared distance from input RGB to 棕 reference</p>]]></Description>
+        <Description><![CDATA[<p>输入 RGB 到棕参考值的距离平方</p>]]></Description>
       </Parameter>
       <Parameter Name="D_Pink" DisplayName="粉">
-        <Description><![CDATA[<p>Squared distance from input RGB to 粉 reference</p>]]></Description>
+        <Description><![CDATA[<p>输入 RGB 到粉参考值的距离平方</p>]]></Description>
       </Parameter>
       <Parameter Name="D_Red_in" DisplayName="红">
-        <Description><![CDATA[<p>Distance to 红 (from Distance mode)</p>]]></Description>
+        <Description><![CDATA[<p>到红的距离（来自 Distance 模式）</p>]]></Description>
       </Parameter>
       <Parameter Name="D_Green_in" DisplayName="绿">
-        <Description><![CDATA[<p>Distance to 绿 (from Distance mode)</p>]]></Description>
+        <Description><![CDATA[<p>到绿的距离（来自 Distance 模式）</p>]]></Description>
       </Parameter>
       <Parameter Name="D_Blue_in" DisplayName="蓝">
-        <Description><![CDATA[<p>Distance to 蓝 (from Distance mode)</p>]]></Description>
+        <Description><![CDATA[<p>到蓝的距离（来自 Distance 模式）</p>]]></Description>
       </Parameter>
       <Parameter Name="D_Yellow_in" DisplayName="黄">
-        <Description><![CDATA[<p>Distance to 黄 (from Distance mode)</p>]]></Description>
+        <Description><![CDATA[<p>到黄的距离（来自 Distance 模式）</p>]]></Description>
       </Parameter>
       <Parameter Name="D_White_in" DisplayName="白">
-        <Description><![CDATA[<p>Distance to 白 (from Distance mode)</p>]]></Description>
+        <Description><![CDATA[<p>到白的距离（来自 Distance 模式）</p>]]></Description>
       </Parameter>
       <Parameter Name="D_Black_in" DisplayName="黑">
-        <Description><![CDATA[<p>Distance to 黑 (from Distance mode)</p>]]></Description>
+        <Description><![CDATA[<p>到黑的距离（来自 Distance 模式）</p>]]></Description>
       </Parameter>
       <Parameter Name="D_Brown_in" DisplayName="棕">
-        <Description><![CDATA[<p>Distance to 棕 (from Distance mode)</p>]]></Description>
+        <Description><![CDATA[<p>到棕的距离（来自 Distance 模式）</p>]]></Description>
       </Parameter>
       <Parameter Name="D_Pink_in" DisplayName="粉">
-        <Description><![CDATA[<p>Distance to 粉 (from Distance mode)</p>]]></Description>
+        <Description><![CDATA[<p>到粉的距离（来自 Distance 模式）</p>]]></Description>
+      </Parameter>
+      <Parameter Name="Red_Ref_R" DisplayName="R (红)">
+        <Description><![CDATA[<p>R (0–255)</p>]]></Description>
+      </Parameter>
+      <Parameter Name="Red_Ref_G" DisplayName="G (红)">
+        <Description><![CDATA[<p>G (0–255)</p>]]></Description>
+      </Parameter>
+      <Parameter Name="Red_Ref_B" DisplayName="B (红)">
+        <Description><![CDATA[<p>B (0–255)</p>]]></Description>
+      </Parameter>
+      <Parameter Name="Green_Ref_R" DisplayName="R (绿)">
+        <Description><![CDATA[<p>R (0–255)</p>]]></Description>
+      </Parameter>
+      <Parameter Name="Green_Ref_G" DisplayName="G (绿)">
+        <Description><![CDATA[<p>G (0–255)</p>]]></Description>
+      </Parameter>
+      <Parameter Name="Green_Ref_B" DisplayName="B (绿)">
+        <Description><![CDATA[<p>B (0–255)</p>]]></Description>
+      </Parameter>
+      <Parameter Name="Blue_Ref_R" DisplayName="R (蓝)">
+        <Description><![CDATA[<p>R (0–255)</p>]]></Description>
+      </Parameter>
+      <Parameter Name="Blue_Ref_G" DisplayName="G (蓝)">
+        <Description><![CDATA[<p>G (0–255)</p>]]></Description>
+      </Parameter>
+      <Parameter Name="Blue_Ref_B" DisplayName="B (蓝)">
+        <Description><![CDATA[<p>B (0–255)</p>]]></Description>
+      </Parameter>
+      <Parameter Name="Yellow_Ref_R" DisplayName="R (黄)">
+        <Description><![CDATA[<p>R (0–255)</p>]]></Description>
+      </Parameter>
+      <Parameter Name="Yellow_Ref_G" DisplayName="G (黄)">
+        <Description><![CDATA[<p>G (0–255)</p>]]></Description>
+      </Parameter>
+      <Parameter Name="Yellow_Ref_B" DisplayName="B (黄)">
+        <Description><![CDATA[<p>B (0–255)</p>]]></Description>
+      </Parameter>
+      <Parameter Name="White_Ref_R" DisplayName="R (白)">
+        <Description><![CDATA[<p>R (0–255)</p>]]></Description>
+      </Parameter>
+      <Parameter Name="White_Ref_G" DisplayName="G (白)">
+        <Description><![CDATA[<p>G (0–255)</p>]]></Description>
+      </Parameter>
+      <Parameter Name="White_Ref_B" DisplayName="B (白)">
+        <Description><![CDATA[<p>B (0–255)</p>]]></Description>
+      </Parameter>
+      <Parameter Name="Black_Ref_R" DisplayName="R (黑)">
+        <Description><![CDATA[<p>R (0–255)</p>]]></Description>
+      </Parameter>
+      <Parameter Name="Black_Ref_G" DisplayName="G (黑)">
+        <Description><![CDATA[<p>G (0–255)</p>]]></Description>
+      </Parameter>
+      <Parameter Name="Black_Ref_B" DisplayName="B (黑)">
+        <Description><![CDATA[<p>B (0–255)</p>]]></Description>
+      </Parameter>
+      <Parameter Name="Brown_Ref_R" DisplayName="R (棕)">
+        <Description><![CDATA[<p>R (0–255)</p>]]></Description>
+      </Parameter>
+      <Parameter Name="Brown_Ref_G" DisplayName="G (棕)">
+        <Description><![CDATA[<p>G (0–255)</p>]]></Description>
+      </Parameter>
+      <Parameter Name="Brown_Ref_B" DisplayName="B (棕)">
+        <Description><![CDATA[<p>B (0–255)</p>]]></Description>
+      </Parameter>
+      <Parameter Name="Pink_Ref_R" DisplayName="R (粉红)">
+        <Description><![CDATA[<p>R (0–255)</p>]]></Description>
+      </Parameter>
+      <Parameter Name="Pink_Ref_G" DisplayName="G (粉红)">
+        <Description><![CDATA[<p>G (0–255)</p>]]></Description>
+      </Parameter>
+      <Parameter Name="Pink_Ref_B" DisplayName="B (粉红)">
+        <Description><![CDATA[<p>B (0–255)</p>]]></Description>
       </Parameter>
       <Block Mode="Normalize" DisplayName="归一化 – RGB">
         <Description><![CDATA[<p>将原始 R、G、B 转换为比例（每个通道除以总和，乘 100）。消除亮度影响，只保留颜色信息。</p>]]></Description>

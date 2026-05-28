@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <EditorStrings>
   <PolyGroups ModuleName="ColorSensorRGB">
     <PolyGroup Name="ColorSensorRGB" DisplayName="컬러 센서 RGB Enhanced" DisplayNamePrefix="ColorSensorRGB">
@@ -111,52 +111,124 @@
         <Description><![CDATA[<p>가장 가까운 컬러까지의 거리</p>]]></Description>
       </Parameter>
       <Parameter Name="D_Red" DisplayName="빨강">
-        <Description><![CDATA[<p>Squared distance from input RGB to 빨강 reference</p>]]></Description>
+        <Description><![CDATA[<p>입력 RGB에서 빨강 기준값까지의 제곱 거리</p>]]></Description>
       </Parameter>
       <Parameter Name="D_Green" DisplayName="초록">
-        <Description><![CDATA[<p>Squared distance from input RGB to 초록 reference</p>]]></Description>
+        <Description><![CDATA[<p>입력 RGB에서 초록 기준값까지의 제곱 거리</p>]]></Description>
       </Parameter>
       <Parameter Name="D_Blue" DisplayName="파랑">
-        <Description><![CDATA[<p>Squared distance from input RGB to 파랑 reference</p>]]></Description>
+        <Description><![CDATA[<p>입력 RGB에서 파랑 기준값까지의 제곱 거리</p>]]></Description>
       </Parameter>
       <Parameter Name="D_Yellow" DisplayName="노랑">
-        <Description><![CDATA[<p>Squared distance from input RGB to 노랑 reference</p>]]></Description>
+        <Description><![CDATA[<p>입력 RGB에서 노랑 기준값까지의 제곱 거리</p>]]></Description>
       </Parameter>
       <Parameter Name="D_White" DisplayName="흰색">
-        <Description><![CDATA[<p>Squared distance from input RGB to 흰색 reference</p>]]></Description>
+        <Description><![CDATA[<p>입력 RGB에서 흰색 기준값까지의 제곱 거리</p>]]></Description>
       </Parameter>
       <Parameter Name="D_Black" DisplayName="검정">
-        <Description><![CDATA[<p>Squared distance from input RGB to 검정 reference</p>]]></Description>
+        <Description><![CDATA[<p>입력 RGB에서 검정 기준값까지의 제곱 거리</p>]]></Description>
       </Parameter>
       <Parameter Name="D_Brown" DisplayName="갈색">
-        <Description><![CDATA[<p>Squared distance from input RGB to 갈색 reference</p>]]></Description>
+        <Description><![CDATA[<p>입력 RGB에서 갈색 기준값까지의 제곱 거리</p>]]></Description>
       </Parameter>
       <Parameter Name="D_Pink" DisplayName="분홍">
-        <Description><![CDATA[<p>Squared distance from input RGB to 분홍 reference</p>]]></Description>
+        <Description><![CDATA[<p>입력 RGB에서 분홍 기준값까지의 제곱 거리</p>]]></Description>
       </Parameter>
       <Parameter Name="D_Red_in" DisplayName="빨강">
-        <Description><![CDATA[<p>Distance to 빨강 (from Distance mode)</p>]]></Description>
+        <Description><![CDATA[<p>빨강까지의 거리 (Distance 모드 출력)</p>]]></Description>
       </Parameter>
       <Parameter Name="D_Green_in" DisplayName="초록">
-        <Description><![CDATA[<p>Distance to 초록 (from Distance mode)</p>]]></Description>
+        <Description><![CDATA[<p>초록까지의 거리 (Distance 모드 출력)</p>]]></Description>
       </Parameter>
       <Parameter Name="D_Blue_in" DisplayName="파랑">
-        <Description><![CDATA[<p>Distance to 파랑 (from Distance mode)</p>]]></Description>
+        <Description><![CDATA[<p>파랑까지의 거리 (Distance 모드 출력)</p>]]></Description>
       </Parameter>
       <Parameter Name="D_Yellow_in" DisplayName="노랑">
-        <Description><![CDATA[<p>Distance to 노랑 (from Distance mode)</p>]]></Description>
+        <Description><![CDATA[<p>노랑까지의 거리 (Distance 모드 출력)</p>]]></Description>
       </Parameter>
       <Parameter Name="D_White_in" DisplayName="흰색">
-        <Description><![CDATA[<p>Distance to 흰색 (from Distance mode)</p>]]></Description>
+        <Description><![CDATA[<p>흰색까지의 거리 (Distance 모드 출력)</p>]]></Description>
       </Parameter>
       <Parameter Name="D_Black_in" DisplayName="검정">
-        <Description><![CDATA[<p>Distance to 검정 (from Distance mode)</p>]]></Description>
+        <Description><![CDATA[<p>검정까지의 거리 (Distance 모드 출력)</p>]]></Description>
       </Parameter>
       <Parameter Name="D_Brown_in" DisplayName="갈색">
-        <Description><![CDATA[<p>Distance to 갈색 (from Distance mode)</p>]]></Description>
+        <Description><![CDATA[<p>갈색까지의 거리 (Distance 모드 출력)</p>]]></Description>
       </Parameter>
       <Parameter Name="D_Pink_in" DisplayName="분홍">
-        <Description><![CDATA[<p>Distance to 분홍 (from Distance mode)</p>]]></Description>
+        <Description><![CDATA[<p>분홍까지의 거리 (Distance 모드 출력)</p>]]></Description>
+      </Parameter>
+      <Parameter Name="Red_Ref_R" DisplayName="R (빨강)">
+        <Description><![CDATA[<p>R (0–255)</p>]]></Description>
+      </Parameter>
+      <Parameter Name="Red_Ref_G" DisplayName="G (빨강)">
+        <Description><![CDATA[<p>G (0–255)</p>]]></Description>
+      </Parameter>
+      <Parameter Name="Red_Ref_B" DisplayName="B (빨강)">
+        <Description><![CDATA[<p>B (0–255)</p>]]></Description>
+      </Parameter>
+      <Parameter Name="Green_Ref_R" DisplayName="R (초록)">
+        <Description><![CDATA[<p>R (0–255)</p>]]></Description>
+      </Parameter>
+      <Parameter Name="Green_Ref_G" DisplayName="G (초록)">
+        <Description><![CDATA[<p>G (0–255)</p>]]></Description>
+      </Parameter>
+      <Parameter Name="Green_Ref_B" DisplayName="B (초록)">
+        <Description><![CDATA[<p>B (0–255)</p>]]></Description>
+      </Parameter>
+      <Parameter Name="Blue_Ref_R" DisplayName="R (파랑)">
+        <Description><![CDATA[<p>R (0–255)</p>]]></Description>
+      </Parameter>
+      <Parameter Name="Blue_Ref_G" DisplayName="G (파랑)">
+        <Description><![CDATA[<p>G (0–255)</p>]]></Description>
+      </Parameter>
+      <Parameter Name="Blue_Ref_B" DisplayName="B (파랑)">
+        <Description><![CDATA[<p>B (0–255)</p>]]></Description>
+      </Parameter>
+      <Parameter Name="Yellow_Ref_R" DisplayName="R (노랑)">
+        <Description><![CDATA[<p>R (0–255)</p>]]></Description>
+      </Parameter>
+      <Parameter Name="Yellow_Ref_G" DisplayName="G (노랑)">
+        <Description><![CDATA[<p>G (0–255)</p>]]></Description>
+      </Parameter>
+      <Parameter Name="Yellow_Ref_B" DisplayName="B (노랑)">
+        <Description><![CDATA[<p>B (0–255)</p>]]></Description>
+      </Parameter>
+      <Parameter Name="White_Ref_R" DisplayName="R (흰색)">
+        <Description><![CDATA[<p>R (0–255)</p>]]></Description>
+      </Parameter>
+      <Parameter Name="White_Ref_G" DisplayName="G (흰색)">
+        <Description><![CDATA[<p>G (0–255)</p>]]></Description>
+      </Parameter>
+      <Parameter Name="White_Ref_B" DisplayName="B (흰색)">
+        <Description><![CDATA[<p>B (0–255)</p>]]></Description>
+      </Parameter>
+      <Parameter Name="Black_Ref_R" DisplayName="R (검정)">
+        <Description><![CDATA[<p>R (0–255)</p>]]></Description>
+      </Parameter>
+      <Parameter Name="Black_Ref_G" DisplayName="G (검정)">
+        <Description><![CDATA[<p>G (0–255)</p>]]></Description>
+      </Parameter>
+      <Parameter Name="Black_Ref_B" DisplayName="B (검정)">
+        <Description><![CDATA[<p>B (0–255)</p>]]></Description>
+      </Parameter>
+      <Parameter Name="Brown_Ref_R" DisplayName="R (갈색)">
+        <Description><![CDATA[<p>R (0–255)</p>]]></Description>
+      </Parameter>
+      <Parameter Name="Brown_Ref_G" DisplayName="G (갈색)">
+        <Description><![CDATA[<p>G (0–255)</p>]]></Description>
+      </Parameter>
+      <Parameter Name="Brown_Ref_B" DisplayName="B (갈색)">
+        <Description><![CDATA[<p>B (0–255)</p>]]></Description>
+      </Parameter>
+      <Parameter Name="Pink_Ref_R" DisplayName="R (분홍)">
+        <Description><![CDATA[<p>R (0–255)</p>]]></Description>
+      </Parameter>
+      <Parameter Name="Pink_Ref_G" DisplayName="G (분홍)">
+        <Description><![CDATA[<p>G (0–255)</p>]]></Description>
+      </Parameter>
+      <Parameter Name="Pink_Ref_B" DisplayName="B (분홍)">
+        <Description><![CDATA[<p>B (0–255)</p>]]></Description>
       </Parameter>
       <Block Mode="Normalize" DisplayName="정규화 – RGB">
         <Description><![CDATA[<p>원시 R, G, B를 비율로 변환합니다 (각 채널/합계 × 100). 밝기 영향을 제거하고 색상 정보만 남깁니다.</p>]]></Description>

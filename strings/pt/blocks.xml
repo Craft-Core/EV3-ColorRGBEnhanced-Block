@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <EditorStrings>
   <PolyGroups ModuleName="ColorSensorRGB">
     <PolyGroup Name="ColorSensorRGB" DisplayName="Sensor de cor RGB melhorado" DisplayNamePrefix="ColorSensorRGB">
@@ -111,52 +111,124 @@
         <Description><![CDATA[<p>Distância à cor mais próxima</p>]]></Description>
       </Parameter>
       <Parameter Name="D_Red" DisplayName="Vermelho">
-        <Description><![CDATA[<p>Squared distance from input RGB to Vermelho reference</p>]]></Description>
+        <Description><![CDATA[<p>Distância quadrática do RGB de entrada à referência de Vermelho</p>]]></Description>
       </Parameter>
       <Parameter Name="D_Green" DisplayName="Verde">
-        <Description><![CDATA[<p>Squared distance from input RGB to Verde reference</p>]]></Description>
+        <Description><![CDATA[<p>Distância quadrática do RGB de entrada à referência de Verde</p>]]></Description>
       </Parameter>
       <Parameter Name="D_Blue" DisplayName="Azul">
-        <Description><![CDATA[<p>Squared distance from input RGB to Azul reference</p>]]></Description>
+        <Description><![CDATA[<p>Distância quadrática do RGB de entrada à referência de Azul</p>]]></Description>
       </Parameter>
       <Parameter Name="D_Yellow" DisplayName="Amarelo">
-        <Description><![CDATA[<p>Squared distance from input RGB to Amarelo reference</p>]]></Description>
+        <Description><![CDATA[<p>Distância quadrática do RGB de entrada à referência de Amarelo</p>]]></Description>
       </Parameter>
       <Parameter Name="D_White" DisplayName="Branco">
-        <Description><![CDATA[<p>Squared distance from input RGB to Branco reference</p>]]></Description>
+        <Description><![CDATA[<p>Distância quadrática do RGB de entrada à referência de Branco</p>]]></Description>
       </Parameter>
       <Parameter Name="D_Black" DisplayName="Preto">
-        <Description><![CDATA[<p>Squared distance from input RGB to Preto reference</p>]]></Description>
+        <Description><![CDATA[<p>Distância quadrática do RGB de entrada à referência de Preto</p>]]></Description>
       </Parameter>
       <Parameter Name="D_Brown" DisplayName="Castanho">
-        <Description><![CDATA[<p>Squared distance from input RGB to Castanho reference</p>]]></Description>
+        <Description><![CDATA[<p>Distância quadrática do RGB de entrada à referência de Marrom</p>]]></Description>
       </Parameter>
       <Parameter Name="D_Pink" DisplayName="Rosa">
-        <Description><![CDATA[<p>Squared distance from input RGB to Rosa reference</p>]]></Description>
+        <Description><![CDATA[<p>Distância quadrática do RGB de entrada à referência de Rosa</p>]]></Description>
       </Parameter>
       <Parameter Name="D_Red_in" DisplayName="Vermelho">
-        <Description><![CDATA[<p>Distance to Vermelho (from Distance mode)</p>]]></Description>
+        <Description><![CDATA[<p>Distância para Vermelho (do modo Distância)</p>]]></Description>
       </Parameter>
       <Parameter Name="D_Green_in" DisplayName="Verde">
-        <Description><![CDATA[<p>Distance to Verde (from Distance mode)</p>]]></Description>
+        <Description><![CDATA[<p>Distância para Verde (do modo Distância)</p>]]></Description>
       </Parameter>
       <Parameter Name="D_Blue_in" DisplayName="Azul">
-        <Description><![CDATA[<p>Distance to Azul (from Distance mode)</p>]]></Description>
+        <Description><![CDATA[<p>Distância para Azul (do modo Distância)</p>]]></Description>
       </Parameter>
       <Parameter Name="D_Yellow_in" DisplayName="Amarelo">
-        <Description><![CDATA[<p>Distance to Amarelo (from Distance mode)</p>]]></Description>
+        <Description><![CDATA[<p>Distância para Amarelo (do modo Distância)</p>]]></Description>
       </Parameter>
       <Parameter Name="D_White_in" DisplayName="Branco">
-        <Description><![CDATA[<p>Distance to Branco (from Distance mode)</p>]]></Description>
+        <Description><![CDATA[<p>Distância para Branco (do modo Distância)</p>]]></Description>
       </Parameter>
       <Parameter Name="D_Black_in" DisplayName="Preto">
-        <Description><![CDATA[<p>Distance to Preto (from Distance mode)</p>]]></Description>
+        <Description><![CDATA[<p>Distância para Preto (do modo Distância)</p>]]></Description>
       </Parameter>
       <Parameter Name="D_Brown_in" DisplayName="Castanho">
-        <Description><![CDATA[<p>Distance to Castanho (from Distance mode)</p>]]></Description>
+        <Description><![CDATA[<p>Distância para Marrom (do modo Distância)</p>]]></Description>
       </Parameter>
       <Parameter Name="D_Pink_in" DisplayName="Rosa">
-        <Description><![CDATA[<p>Distance to Rosa (from Distance mode)</p>]]></Description>
+        <Description><![CDATA[<p>Distância para Rosa (do modo Distância)</p>]]></Description>
+      </Parameter>
+      <Parameter Name="Red_Ref_R" DisplayName="R (Vermelho)">
+        <Description><![CDATA[<p>R (0–255)</p>]]></Description>
+      </Parameter>
+      <Parameter Name="Red_Ref_G" DisplayName="G (Vermelho)">
+        <Description><![CDATA[<p>G (0–255)</p>]]></Description>
+      </Parameter>
+      <Parameter Name="Red_Ref_B" DisplayName="B (Vermelho)">
+        <Description><![CDATA[<p>B (0–255)</p>]]></Description>
+      </Parameter>
+      <Parameter Name="Green_Ref_R" DisplayName="R (Verde)">
+        <Description><![CDATA[<p>R (0–255)</p>]]></Description>
+      </Parameter>
+      <Parameter Name="Green_Ref_G" DisplayName="G (Verde)">
+        <Description><![CDATA[<p>G (0–255)</p>]]></Description>
+      </Parameter>
+      <Parameter Name="Green_Ref_B" DisplayName="B (Verde)">
+        <Description><![CDATA[<p>B (0–255)</p>]]></Description>
+      </Parameter>
+      <Parameter Name="Blue_Ref_R" DisplayName="R (Azul)">
+        <Description><![CDATA[<p>R (0–255)</p>]]></Description>
+      </Parameter>
+      <Parameter Name="Blue_Ref_G" DisplayName="G (Azul)">
+        <Description><![CDATA[<p>G (0–255)</p>]]></Description>
+      </Parameter>
+      <Parameter Name="Blue_Ref_B" DisplayName="B (Azul)">
+        <Description><![CDATA[<p>B (0–255)</p>]]></Description>
+      </Parameter>
+      <Parameter Name="Yellow_Ref_R" DisplayName="R (Amarelo)">
+        <Description><![CDATA[<p>R (0–255)</p>]]></Description>
+      </Parameter>
+      <Parameter Name="Yellow_Ref_G" DisplayName="G (Amarelo)">
+        <Description><![CDATA[<p>G (0–255)</p>]]></Description>
+      </Parameter>
+      <Parameter Name="Yellow_Ref_B" DisplayName="B (Amarelo)">
+        <Description><![CDATA[<p>B (0–255)</p>]]></Description>
+      </Parameter>
+      <Parameter Name="White_Ref_R" DisplayName="R (Branco)">
+        <Description><![CDATA[<p>R (0–255)</p>]]></Description>
+      </Parameter>
+      <Parameter Name="White_Ref_G" DisplayName="G (Branco)">
+        <Description><![CDATA[<p>G (0–255)</p>]]></Description>
+      </Parameter>
+      <Parameter Name="White_Ref_B" DisplayName="B (Branco)">
+        <Description><![CDATA[<p>B (0–255)</p>]]></Description>
+      </Parameter>
+      <Parameter Name="Black_Ref_R" DisplayName="R (Preto)">
+        <Description><![CDATA[<p>R (0–255)</p>]]></Description>
+      </Parameter>
+      <Parameter Name="Black_Ref_G" DisplayName="G (Preto)">
+        <Description><![CDATA[<p>G (0–255)</p>]]></Description>
+      </Parameter>
+      <Parameter Name="Black_Ref_B" DisplayName="B (Preto)">
+        <Description><![CDATA[<p>B (0–255)</p>]]></Description>
+      </Parameter>
+      <Parameter Name="Brown_Ref_R" DisplayName="R (Castanho)">
+        <Description><![CDATA[<p>R (0–255)</p>]]></Description>
+      </Parameter>
+      <Parameter Name="Brown_Ref_G" DisplayName="G (Castanho)">
+        <Description><![CDATA[<p>G (0–255)</p>]]></Description>
+      </Parameter>
+      <Parameter Name="Brown_Ref_B" DisplayName="B (Castanho)">
+        <Description><![CDATA[<p>B (0–255)</p>]]></Description>
+      </Parameter>
+      <Parameter Name="Pink_Ref_R" DisplayName="R (Rosa)">
+        <Description><![CDATA[<p>R (0–255)</p>]]></Description>
+      </Parameter>
+      <Parameter Name="Pink_Ref_G" DisplayName="G (Rosa)">
+        <Description><![CDATA[<p>G (0–255)</p>]]></Description>
+      </Parameter>
+      <Parameter Name="Pink_Ref_B" DisplayName="B (Rosa)">
+        <Description><![CDATA[<p>B (0–255)</p>]]></Description>
       </Parameter>
       <Block Mode="Normalize" DisplayName="Normalizar – RGB">
         <Description><![CDATA[<p>Converte R, G, B brutos em proporções (cada canal dividido pela soma, × 100). Remove o brilho e mantém apenas a cor.</p>]]></Description>
