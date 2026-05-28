@@ -525,6 +525,46 @@
                 <Wire Id="wDcalc_Yellow"    Joints="N(nM2_C4:Result)       N(nGate_Yellow:Y)" />
                 <Wire Id="wEn_Yellow"       Joints="N(nGetEn_Yellow:valueOut) N(nGate_Yellow:X)" />
                 <Wire Id="wD_Yellow"        Joints="N(nGate_Yellow:Result)    N(nD_Yellow:Numeric)" />
+                <Wire Id="wRin_White"      Joints="N(nRin_White:Numeric)    N(nM1_C5:X)" />
+                <Wire Id="wGin_White"      Joints="N(nGin_White:Numeric)    N(nM1_C5:C)" />
+                <Wire Id="wBin_White"      Joints="N(nBin_White:Numeric)    N(nM2_C5:X)" />
+                <Wire Id="wRef_White_R"    Joints="N(nGetC5R:valueOut)    N(nM1_C5:Y)" />
+                <Wire Id="wRef_White_G"    Joints="N(nGetC5G:valueOut)    N(nM1_C5:D)" />
+                <Wire Id="wRef_White_B"    Joints="N(nGetC5B:valueOut)    N(nM2_C5:Y)" />
+                <Wire Id="wPart_White"     Joints="N(nM1_C5:Result)       N(nM2_C5:C)" />
+                <Wire Id="wDcalc_White"    Joints="N(nM2_C5:Result)       N(nGate_White:Y)" />
+                <Wire Id="wEn_White"       Joints="N(nGetEn_White:valueOut) N(nGate_White:X)" />
+                <Wire Id="wD_White"        Joints="N(nGate_White:Result)    N(nD_White:Numeric)" />
+                <Wire Id="wRin_Black"      Joints="N(nRin_Black:Numeric)    N(nM1_C6:X)" />
+                <Wire Id="wGin_Black"      Joints="N(nGin_Black:Numeric)    N(nM1_C6:C)" />
+                <Wire Id="wBin_Black"      Joints="N(nBin_Black:Numeric)    N(nM2_C6:X)" />
+                <Wire Id="wRef_Black_R"    Joints="N(nGetC6R:valueOut)    N(nM1_C6:Y)" />
+                <Wire Id="wRef_Black_G"    Joints="N(nGetC6G:valueOut)    N(nM1_C6:D)" />
+                <Wire Id="wRef_Black_B"    Joints="N(nGetC6B:valueOut)    N(nM2_C6:Y)" />
+                <Wire Id="wPart_Black"     Joints="N(nM1_C6:Result)       N(nM2_C6:C)" />
+                <Wire Id="wDcalc_Black"    Joints="N(nM2_C6:Result)       N(nGate_Black:Y)" />
+                <Wire Id="wEn_Black"       Joints="N(nGetEn_Black:valueOut) N(nGate_Black:X)" />
+                <Wire Id="wD_Black"        Joints="N(nGate_Black:Result)    N(nD_Black:Numeric)" />
+                <Wire Id="wRin_Brown"      Joints="N(nRin_Brown:Numeric)    N(nM1_C7:X)" />
+                <Wire Id="wGin_Brown"      Joints="N(nGin_Brown:Numeric)    N(nM1_C7:C)" />
+                <Wire Id="wBin_Brown"      Joints="N(nBin_Brown:Numeric)    N(nM2_C7:X)" />
+                <Wire Id="wRef_Brown_R"    Joints="N(nGetC7R:valueOut)    N(nM1_C7:Y)" />
+                <Wire Id="wRef_Brown_G"    Joints="N(nGetC7G:valueOut)    N(nM1_C7:D)" />
+                <Wire Id="wRef_Brown_B"    Joints="N(nGetC7B:valueOut)    N(nM2_C7:Y)" />
+                <Wire Id="wPart_Brown"     Joints="N(nM1_C7:Result)       N(nM2_C7:C)" />
+                <Wire Id="wDcalc_Brown"    Joints="N(nM2_C7:Result)       N(nGate_Brown:Y)" />
+                <Wire Id="wEn_Brown"       Joints="N(nGetEn_Brown:valueOut) N(nGate_Brown:X)" />
+                <Wire Id="wD_Brown"        Joints="N(nGate_Brown:Result)    N(nD_Brown:Numeric)" />
+                <Wire Id="wRin_Pink"      Joints="N(nRin_Pink:Numeric)    N(nM1_C8:X)" />
+                <Wire Id="wGin_Pink"      Joints="N(nGin_Pink:Numeric)    N(nM1_C8:C)" />
+                <Wire Id="wBin_Pink"      Joints="N(nBin_Pink:Numeric)    N(nM2_C8:X)" />
+                <Wire Id="wRef_Pink_R"    Joints="N(nGetC8R:valueOut)    N(nM1_C8:Y)" />
+                <Wire Id="wRef_Pink_G"    Joints="N(nGetC8G:valueOut)    N(nM1_C8:D)" />
+                <Wire Id="wRef_Pink_B"    Joints="N(nGetC8B:valueOut)    N(nM2_C8:Y)" />
+                <Wire Id="wPart_Pink"     Joints="N(nM1_C8:Result)       N(nM2_C8:C)" />
+                <Wire Id="wDcalc_Pink"    Joints="N(nM2_C8:Result)       N(nGate_Pink:Y)" />
+                <Wire Id="wEn_Pink"       Joints="N(nGetEn_Pink:valueOut) N(nGate_Pink:X)" />
+                <Wire Id="wD_Pink"        Joints="N(nGate_Pink:Result)    N(nD_Pink:Numeric)" />
             </BlockDiagram>
             <Icon>
                 <Model:IconPanel xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:Model="clr-namespace:NationalInstruments.LabVIEW.VI.Design;assembly=NationalInstruments.LabVIEW.VI.SourceModel" xmlns:fpruntime="clr-namespace:NationalInstruments.LabVIEW.FrontPanelRuntime;assembly=NationalInstruments.LabVIEW.FrontPanelRuntime" xmlns:ation="http://schemas.microsoft.com/winfx/2006/xaml/presentation" Height="98" Width="56">
