@@ -1,4 +1,4 @@
-# EV3-ColorRGBEnhanced-Block
+﻿# EV3-ColorRGBEnhanced-Block
 
 > An extended, multi-language fork of [EV3-ColorRGBEnhanced-Block](https://github.com/a10036gt/EV3-ColorRGBEnhanced-Block) — adding a distance-based **Color Classifier** in the Data Operations tab so your EV3 robot can tell colors apart even under changing light.
 
@@ -28,6 +28,25 @@ All UI strings are localized into 15 languages.
 | Block | Modes | Description |
 | ----- | ----- | ----------- |
 | **Color Classifier** | Normalize, Setup_C1..C8, Distance, Identify | Distance-based color classification: teach 8 reference colors then identify which one is closest to a live RGB reading |
+
+---
+
+## Color Index (Identify block output)
+
+The `Identify` block outputs a number **1–8** that maps to these colors:
+
+| # | Color  | Default R | Default G | Default B |
+|---|--------|-----------|-----------|-----------|
+| 1 | Red    | 255 | 0   | 0   |
+| 2 | Green  | 0   | 255 | 0   |
+| 3 | Blue   | 0   | 0   | 255 |
+| 4 | Yellow | 255 | 255 | 0   |
+| 5 | White  | 255 | 255 | 255 |
+| 6 | Black  | 0   | 0   | 0   |
+| 7 | Brown  | 128 | 64  | 0   |
+| 8 | Pink   | 200 | 50  | 150 |
+
+> Default values are ideal — always calibrate with your actual sensor readings.
 
 ---
 

@@ -1,4 +1,4 @@
-# Colour Classifier — Usage Guide
+﻿# Colour Classifier — Usage Guide
 
 A distance-based colour classification block for the **Data Operations** palette. Teach the robot up to 8 reference colours and identify which one a live RGB reading is closest to.
 
@@ -19,7 +19,25 @@ Identify:   BestColour = argmin(D1..D8); BestDistance = min(D1..D8)
 ## Modes
 
 | Mode | Category | Description |
-|------|----------|-------------|
+|---
+
+## Colour Index
+
+`Identify` returns a number **1–8**. The fixed assignment is:
+
+| Index | Colour | Default R | Default G | Default B |
+|-------|--------|-----------|-----------|-----------|
+| **1** | Red    | 255 | 0   | 0   |
+| **2** | Green  | 0   | 255 | 0   |
+| **3** | Blue   | 0   | 0   | 255 |
+| **4** | Yellow | 255 | 255 | 0   |
+| **5** | White  | 255 | 255 | 255 |
+| **6** | Black  | 0   | 0   | 0   |
+| **7** | Brown  | 128 | 64  | 0   |
+| **8** | Pink   | 200 | 50  | 150 |
+
+> **Important:** The default values above are ideal values. Real EV3 sensors produce much lower numbers. Always measure each colour with your sensor and enter those values in the Setup blocks.
+---|----------|-------------|
 | `Normalise` | — | Divide each channel by R+G+B and scale to 100 |
 | `Setup_C1`..`Setup_C8` | Setup | Store reference colour in slot n |
 | `Distance` | — | Squared distance from input RGB to each of 8 stored colours |

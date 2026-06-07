@@ -1,10 +1,30 @@
-# Color Classifier — Usage Guide
+﻿# Color Classifier — Usage Guide
 
 A distance-based color classification block for the **Data Operations** palette. Lets you teach the robot up to 8 reference colors and then identify which one a live RGB reading is closest to.
 
 ---
 
 ## Concept
+
+---
+
+## Color Index
+
+`Identify` returns a number **1–8**. The fixed assignment is:
+
+| Index | Color  | Default R | Default G | Default B |
+|-------|--------|-----------|-----------|-----------|
+| **1** | Red    | 255 | 0   | 0   |
+| **2** | Green  | 0   | 255 | 0   |
+| **3** | Blue   | 0   | 0   | 255 |
+| **4** | Yellow | 255 | 255 | 0   |
+| **5** | White  | 255 | 255 | 255 |
+| **6** | Black  | 0   | 0   | 0   |
+| **7** | Brown  | 128 | 64  | 0   |
+| **8** | Pink   | 200 | 50  | 150 |
+
+> **Important:** The default values above are ideal values. Real EV3 sensors produce much lower numbers. Always measure each color with your sensor and enter those values in the Setup blocks.
+
 
 ```
 Normalize:  Rn = R / (R+G+B) × 100         (illumination invariant)
